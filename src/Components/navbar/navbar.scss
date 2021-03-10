@@ -4,52 +4,56 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	.nav {
-		align-items: center;
-		justify-content: space-between;
-		padding: 12px 0;
-		&__logo {
-			font-size: 26px;
-			font-weight: bold;
-			margin: 0;
-
-			a {
-				text-decoration: none;
-				color: white;
-			}
-		}
-		&__navigations {
-			margin: 0;
-			list-style-type: none;
-			display: flex;
-			justify-content: space-between;
+	z-index: 999;
+	.container {
+		transition: 0.3s ease;
+		.nav {
 			align-items: center;
-		}
+			justify-content: space-between;
+			padding: 12px 0;
+			&__logo {
+				font-size: 26px;
+				font-weight: bold;
+				margin: 0;
 
-		&__navigation {
-			position: relative;
-			padding: 3px;
-			transition: 0.2s ease-in-out;
-			a {
-				text-decoration: none;
-				color: white;
-				font-size: 15px;
+				a {
+					text-decoration: none;
+					color: white;
+				}
+			}
+			&__navigations {
+				margin: 0;
+				list-style-type: none;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
 			}
 
-			&:hover::before {
-				width: 25px;
-			}
+			&__navigation {
+				position: relative;
+				padding: 3px;
+				transition: 0.2s ease-in-out;
+				a {
+					text-decoration: none;
+					color: white;
+					font-size: 15px;
+				}
 
-			&::before {
-				content: "";
-				position: absolute;
-				bottom: -2px;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				width: 0;
-				height: 2px;
-				background-color: #fff;
-				transition: 0.3s ease-in-out;
+				&:hover::before {
+					width: 25px;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: -2px;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 0;
+					height: 2px;
+					background-color: #fff;
+					transition: 0.3s ease-in-out;
+				}
 			}
 		}
 	}

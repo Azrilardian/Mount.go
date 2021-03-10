@@ -31,9 +31,15 @@ const Jumbotron = () => {
 								</div>
 								<div className="col-8 picture">
 									<picture>
+										<span>
+											<button>Zoom</button>
+										</span>
 										<img src={mountImgOne} alt="cristina-gottardi.jpg" loading="lazy" decoding="async" />
 									</picture>
 									<picture>
+										<span>
+											<button>Zoom</button>
+										</span>
 										<img src={mountImgTwo} alt="arno-senoner.jpg" loading="lazy" decoding="async" />
 									</picture>
 									<button className="picture-button">See All</button>

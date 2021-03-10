@@ -6,12 +6,12 @@ const Navbar = () => {
 		<header>
 			<div className="container">
 				<nav className="row nav">
-					<div className="col-lg-7 col-md-7">
+					<div className="col-lg-7 col-md-5 col-sm-4">
 						<h3 className="nav__logo">
 							<a href="#">Mount.go</a>
 						</h3>
 					</div>
-					<ul className="nav__navigations col-lg-5 col-md-7">
+					<ul className="nav__navigations col-lg-5 col-md-7 col-sm-8">
 						<li className="nav__navigation">
 							<a href="#">Home</a>
 						</li>

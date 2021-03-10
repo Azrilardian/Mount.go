@@ -1,0 +1,153 @@
+.jumbotron {
+  height: 100vh;
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#23232360), color-stop(#202020bb), color-stop(#131414e5), to(#111213)), url(../../img/cristina-gottardi.jpg);
+  background: linear-gradient(#23232360, #202020bb, #131414e5, #111213), url(../../img/cristina-gottardi.jpg);
+}
+
+.jumbotron .container {
+  height: 100%;
+}
+
+.jumbotron .container .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+}
+
+.jumbotron .container .row .tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.jumbotron .container .row .tagline__heading {
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.jumbotron .container .row .tagline__paragraph {
+  width: 370px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.jumbotron .container .row .tagline__button {
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.jumbotron .container .row .mountinformation .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jumbotron .container .row .mountinformation .row .mount {
+  color: white;
+}
+
+.jumbotron .container .row .mountinformation .row .mount__name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.jumbotron .container .row .mountinformation .row .mount__country {
+  font-size: 17px;
+  color: #757575;
+}
+
+.jumbotron .container .row .mountinformation .row .mount__description {
+  font-size: 13px;
+}
+
+.jumbotron .container .row .mountinformation .row .mount__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+}
+
+.jumbotron .container .row .mountinformation .row .mount__button span:last-child {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 7px;
+}
+
+.jumbotron .container .row .mountinformation .row .mount__button span:last-child:hover {
+  background-color: #cfcfcf;
+}
+
+.jumbotron .container .row .mountinformation .row .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jumbotron .container .row .mountinformation .row .picture picture img {
+  width: 250px;
+  height: 150px;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=jumbotron.css.map */

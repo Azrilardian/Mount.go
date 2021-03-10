@@ -1,0 +1,74 @@
+header {
+  background-color: #3a3a3a48;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header .nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+}
+
+header .nav__logo {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header .nav__logo a {
+  text-decoration: none;
+  color: white;
+}
+
+header .nav__navigations {
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav__navigation {
+  position: relative;
+  padding: 3px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+header .nav__navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+header .nav__navigation:hover::before {
+  width: 25px;
+}
+
+header .nav__navigation::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+/*# sourceMappingURL=navbar.css.map */

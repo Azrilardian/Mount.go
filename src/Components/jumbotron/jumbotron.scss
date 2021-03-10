@@ -1,0 +1,108 @@
+.jumbotron {
+	height: 100vh;
+	background-position: center !important;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	background: linear-gradient(#23232360, #202020bb, #131414e5, #111213), url(../../img/cristina-gottardi.jpg);
+	.container {
+		height: 100%;
+		.row {
+			flex-direction: column;
+			// background-color: lightblue;
+			justify-content: space-evenly;
+			height: 100%;
+
+			.tagline {
+				// background-color: palevioletred;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-end;
+				padding-bottom: 30px;
+				color: white;
+				&__heading {
+					font-weight: 800;
+					font-size: 50px;
+					letter-spacing: 2px;
+					margin: 0;
+				}
+				&__paragraph {
+					width: 370px;
+					text-align: center;
+					font-size: 13px;
+				}
+
+				&__button {
+					width: 40px;
+					height: 40px;
+					border: 3px solid white;
+					background-color: transparent;
+					border-radius: 50%;
+				}
+			}
+			.mountinformation {
+				.row {
+					flex-direction: row;
+					align-items: flex-end;
+					justify-content: space-between;
+					// background-color: lawngreen;
+					.mount {
+						color: white;
+						&__name {
+							font-weight: bold;
+							margin: 0;
+						}
+
+						&__country {
+							font-size: 17px;
+							color: #757575;
+						}
+
+						&__description {
+							font-size: 13px;
+						}
+
+						&__button {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							padding-left: 10px;
+							width: 150px;
+							height: 35px;
+							border-radius: 10px;
+							font-size: 14px;
+							overflow: hidden;
+							outline: none;
+							border: none;
+
+							span:last-child {
+								transition: 0.2s ease;
+								height: 100%;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								padding: 0 7px;
+								&:hover {
+									background-color: #cfcfcf;
+								}
+							}
+						}
+					}
+					.picture {
+						display: flex;
+						justify-content: flex-end;
+						align-items: center;
+						picture {
+							img {
+								width: 250px;
+								height: 150px;
+								margin: 0 15px;
+								border-radius: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

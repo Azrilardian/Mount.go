@@ -1,16 +1,16 @@
 .jumbotron {
   height: 100vh;
+  border-radius: 0px;
+  margin: 0;
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(#23232360), color-stop(#202020bb), color-stop(#131414e5), to(#111213)), url(../../img/cristina-gottardi.jpg);
-  background: linear-gradient(#23232360, #202020bb, #131414e5, #111213), url(../../img/cristina-gottardi.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#23232360), color-stop(#202020bb), color-stop(#131414e5), to(#101010)), url(../../img/cristina-gottardi.jpg);
+  background: linear-gradient(#23232360, #202020bb, #131414e5, #101010), url(../../img/cristina-gottardi.jpg);
 }
 
 .jumbotron .container {
   height: 100%;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
 }
 
 .jumbotron .container .row {

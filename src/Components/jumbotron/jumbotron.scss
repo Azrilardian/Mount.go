@@ -2,13 +2,14 @@
 
 .jumbotron {
 	height: 100vh;
+	border-radius: 0px;
+	margin: 0;
 	background-position: center !important;
 	background-repeat: no-repeat;
 	background-size: cover !important;
-	background: linear-gradient(#23232360, #202020bb, #131414e5, #111213), url(../../img/cristina-gottardi.jpg);
+	background: linear-gradient(#23232360, #202020bb, #131414e5, #101010), url(../../img/cristina-gottardi.jpg);
 	.container {
 		height: 100%;
-		transition: 0.3s ease;
 		.row {
 			flex-direction: column;
 			justify-content: space-evenly;

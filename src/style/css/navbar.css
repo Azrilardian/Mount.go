@@ -7,12 +7,7 @@ header {
   z-index: 999;
 }
 
-header .container {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-header .container .nav {
+header .nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -22,18 +17,18 @@ header .container .nav {
   padding: 12px 0;
 }
 
-header .container .nav__logo {
+header .nav__logo {
   font-size: 26px;
   font-weight: bold;
   margin: 0;
 }
 
-header .container .nav__logo a {
+header .nav__logo a {
   text-decoration: none;
   color: white;
 }
 
-header .container .nav__navigations {
+header .nav__navigations {
   margin: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -47,24 +42,24 @@ header .container .nav__navigations {
           align-items: center;
 }
 
-header .container .nav__navigation {
+header .nav__navigation {
   position: relative;
   padding: 3px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-header .container .nav__navigation a {
+header .nav__navigation a {
   text-decoration: none;
   color: white;
   font-size: 15px;
 }
 
-header .container .nav__navigation:hover::before {
+header .nav__navigation:hover::before {
   width: 25px;
 }
 
-header .container .nav__navigation::before {
+header .nav__navigation::before {
   content: "";
   position: absolute;
   bottom: -2px;

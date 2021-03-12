@@ -13,6 +13,7 @@
   left: -215px;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  z-index: 1;
 }
 
 .introduction .row {
@@ -26,6 +27,7 @@
 
 .introduction__left {
   color: white;
+  z-index: 2;
 }
 
 .introduction__left__heading {
@@ -44,8 +46,7 @@
   font-weight: 300;
 }
 
-.introduction__right img {
-  width: 100%;
-  height: auto;
+.introduction__right {
+  z-index: 2;
 }
 /*# sourceMappingURL=introduction.css.map */

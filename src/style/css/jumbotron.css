@@ -1,7 +1,7 @@
 .jumbotron {
   height: 100vh;
   border-radius: 0px;
-  margin: 0;
+  margin: -55px 0 0 0;
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -232,6 +232,12 @@
 @media screen and (max-width: 992px) {
   .jumbotron .container .row .mountinformation .row .picture picture img {
     height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    margin: -85px 0 0 0;
   }
 }
 /*# sourceMappingURL=jumbotron.css.map */

@@ -12,6 +12,7 @@
 		top: 100px;
 		left: -215px;
 		transform: scale(0.9);
+		z-index: 1;
 	}
 
 	.row {
@@ -21,7 +22,7 @@
 
 	&__left {
 		color: white;
-
+		z-index: 2;
 		&__heading {
 			font-weight: 600;
 			span {
@@ -39,9 +40,6 @@
 	}
 
 	&__right {
-		img {
-			width: 100%;
-			height: auto;
-		}
+		z-index: 2;
 	}
 }

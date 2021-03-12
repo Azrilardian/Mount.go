@@ -12,7 +12,7 @@ const Introduction = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-5 col-md-6 col-sm-12 introduction__left">
-							<h1 className="introduction__left__heading">
+							<h1 className="introduction__left__header">
 								WHAT <span>US</span> ?
 							</h1>
 							<p className="introduction__left__paragraph">

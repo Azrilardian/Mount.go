@@ -2,7 +2,7 @@
 
 .introduction {
 	background-color: #0f0f0f;
-	height: 100vh;
+	min-height: 100vh;
 	display: grid;
 	place-items: center;
 	position: relative;
@@ -23,7 +23,7 @@
 	&__left {
 		color: white;
 		z-index: 2;
-		&__heading {
+		&__header {
 			font-weight: 600;
 			span {
 				color: $default-green-color;

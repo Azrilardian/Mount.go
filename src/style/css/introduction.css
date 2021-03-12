@@ -1,6 +1,6 @@
 .introduction {
   background-color: #0f0f0f;
-  height: 100vh;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -30,11 +30,11 @@
   z-index: 2;
 }
 
-.introduction__left__heading {
+.introduction__left__header {
   font-weight: 600;
 }
 
-.introduction__left__heading span {
+.introduction__left__header span {
   color: #0f5a58;
 }
 

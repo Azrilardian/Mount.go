@@ -1,0 +1,22 @@
+@import "../../style/scss/variabel.scss";
+
+.features {
+	background-color: #0f0f0f;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	color: white;
+	position: relative;
+	&__backgroundtext {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__header {
+		font-weight: 600;
+		margin-bottom: 80px;
+		span {
+			color: $default-green-color;
+		}
+	}
+}

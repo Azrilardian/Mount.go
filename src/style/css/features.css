@@ -1,0 +1,25 @@
+.features {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: relative;
+}
+
+.features__backgroundtext {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.features__header {
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.features__header span {
+  color: #0f5a58;
+}
+/*# sourceMappingURL=features.css.map */

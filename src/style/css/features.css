@@ -6,20 +6,31 @@
   place-items: center;
   color: white;
   position: relative;
+  overflow: hidden;
 }
 
-.features__backgroundtext {
-  position: absolute;
-  top: 0;
-  left: 0;
+.features__contactbtn {
+  padding: 13px 30px;
+  border-radius: 50px;
+  margin-top: 70px;
+  color: white;
+  background-color: #151d25;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 13px;
+  -webkit-box-shadow: 3px 5px 10px #0a0a0a;
+          box-shadow: 3px 5px 10px #0a0a0a;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.features__header {
-  font-weight: 600;
-  margin-bottom: 80px;
+.features__contactbtn:hover {
+  -webkit-transform: translateY(-5px) scale(0.95);
+          transform: translateY(-5px) scale(0.95);
 }
 
-.features__header span {
-  color: #0f5a58;
+.features__contactbtn:active {
+  background-color: #0c1015;
 }
 /*# sourceMappingURL=features.css.map */

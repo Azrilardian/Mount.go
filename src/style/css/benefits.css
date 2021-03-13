@@ -1,0 +1,11 @@
+.benefits {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+/*# sourceMappingURL=benefits.css.map */

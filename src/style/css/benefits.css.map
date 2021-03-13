@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC;EACT,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,KAAK;EACZ,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,MAAM;CAChB",
+    "sources": [
+        "../../Components/benefits/benefits.scss",
+        "../scss/variabel.scss"
+    ],
+    "names": [],
+    "file": "benefits.css"
+}

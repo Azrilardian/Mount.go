@@ -7,16 +7,26 @@
 	place-items: center;
 	color: white;
 	position: relative;
-	&__backgroundtext {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	&__header {
-		font-weight: 600;
-		margin-bottom: 80px;
-		span {
-			color: $default-green-color;
+	overflow: hidden;
+
+	&__contactbtn {
+		padding: 13px 30px;
+		border-radius: 50px;
+		margin-top: 70px;
+		color: white;
+		background-color: $default-blue-grey-darken-color;
+		outline: none;
+		border: none;
+		letter-spacing: 2px;
+		font-size: 13px;
+		box-shadow: 3px 5px 10px #0a0a0a;
+		transition: 0.3s ease;
+		&:hover {
+			transform: translateY(-5px) scale(0.95);
+		}
+
+		&:active {
+			background-color: darken($color: $default-blue-grey-darken-color, $amount: 5);
 		}
 	}
 }

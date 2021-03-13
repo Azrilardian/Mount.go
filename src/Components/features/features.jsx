@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Feature from "./feature";
+import Heading from "../heading/heading";
 import "../../style/css/features.css";
 
 import timeIcon from "../../icon/lnr-hourglass.svg";
@@ -41,16 +42,15 @@ class Features extends Component {
 			<>
 				<section className="features">
 					<div className="container">
-						<h1 className="features__backgroundtext">WHY CHOOSE US ?</h1>
-						<h1 className="features__backgroundtext">WHY CHOOSE US ?</h1>
-						<h1 className="features__header text-center">
-							WHY CHOOSE <span>US</span> ?
-						</h1>
+						<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true"></Heading>
 						<div className="row">
 							{this.state.features.map((feature, index) => {
 								const { icon, header, paragraph } = feature;
 								return <Feature icon={icon} header={header} paragraph={paragraph} key={index}></Feature>;
 							})}
+						</div>
+						<div className="row justify-content-center align-center">
+							<button className="features__contactbtn">CONTACT US</button>
 						</div>
 					</div>
 				</section>

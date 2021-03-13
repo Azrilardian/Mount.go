@@ -1,0 +1,40 @@
+@import "../../style/scss/variabel.scss";
+.heading__backgroundtext {
+	position: absolute;
+	user-select: none;
+	&--left {
+		left: -150px;
+		margin-top: 20px;
+
+		@media screen and (max-width: 992px) {
+			display: none;
+		}
+	}
+
+	&--right {
+		right: -140px;
+		margin-top: -3px;
+	}
+}
+.heading__header {
+	font-weight: 600;
+	font-size: 34px;
+	margin-bottom: 100px;
+	position: relative;
+	width: 100%;
+	span {
+		color: $default-green-color;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 49%;
+		left: 50%;
+		transform: translate(190px, -50%);
+		width: 60%;
+		height: 3px;
+		background-color: $default-dark-gray-color;
+		border-radius: 5px;
+	}
+}

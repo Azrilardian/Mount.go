@@ -1,0 +1,36 @@
+@import "../../style/scss/variabel.scss";
+
+.benefit {
+	&__margin {
+		background-color: $default-green-color;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		overflow: hidden;
+
+		position: relative;
+		&__header {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		&__paragraph {
+			font-size: 13px;
+			line-height: 28px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 4%;
+			height: 100%;
+			background-color: lighten($color: $default-green-color, $amount: 5);
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		margin-bottom: 30px;
+	}
+}

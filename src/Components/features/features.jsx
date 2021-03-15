@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Feature from "./feature";
 import Heading from "../heading/heading";
+import Button from "../Button/button";
 import "../../style/css/features.css";
 
 import timeIcon from "../../icon/lnr-hourglass.svg";
@@ -49,8 +50,8 @@ class Features extends Component {
 								return <Feature icon={icon} header={header} paragraph={paragraph} key={index}></Feature>;
 							})}
 						</div>
-						<div className="row justify-content-center align-center">
-							<button className="features__contactbtn">CONTACT US</button>
+						<div className="row justify-content-center">
+							<Button text="CONTACT US"></Button>
 						</div>
 					</div>
 				</section>

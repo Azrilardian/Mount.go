@@ -1,9 +1,17 @@
+.benefit {
+  margin-bottom: 30px;
+}
+
 .benefit__margin {
   background-color: #0f5a58;
-  padding: 10px 30px;
-  border-radius: 10px;
+  border-radius: 7px;
+  padding: 7px 30px;
   text-align: center;
   overflow: hidden;
+  -webkit-box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.808);
+          box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.808);
+  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   position: relative;
 }
 
@@ -24,12 +32,18 @@
   right: 0;
   width: 4%;
   height: 100%;
-  background-color: #13706d;
+  background-color: #0b4443;
+  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-@media screen and (max-width: 992px) {
-  .benefit {
-    margin-bottom: 30px;
-  }
+.benefit__margin:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: #0c4947;
+}
+
+.benefit__margin:hover::before {
+  background-color: #147976;
 }
 /*# sourceMappingURL=benefit.css.map */

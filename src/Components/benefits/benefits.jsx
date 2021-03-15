@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Benefit from "./benefit";
 import Heading from "../heading/heading";
+import Button from "../Button/button";
 import "../../style/css/benefits.css";
 
 class Benefits extends Component {
@@ -11,17 +12,17 @@ class Benefits extends Component {
 				{
 					icon: "",
 					header: "Lorem Ipsum Donor",
-					paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini ayo kita pergi lorem ke pantai dan bersuka cita disana`,
+					paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini makan kamu kenapa gitu.`,
 				},
 				{
 					icon: "",
 					header: "Lorem Ipsum Donor",
-					paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini ayo kita pergi lorem ke pantai dan bersuka cita disana`,
+					paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini ada kamu menemani.`,
 				},
 				{
 					icon: "",
 					header: "Lorem Ipsum Donor",
-					paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini ayo kita pergi lorem ke pantai dan bersuka cita disana`,
+					paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini lah memangnya kenapa.`,
 				},
 			],
 		};
@@ -37,6 +38,9 @@ class Benefits extends Component {
 							const { icon, header, paragraph } = benefit;
 							return <Benefit icon={icon} header={header} paragraph={paragraph} key={index}></Benefit>;
 						})}
+					</div>
+					<div className="row justify-content-center">
+						<Button text="SEE MORE"></Button>
 					</div>
 				</div>
 			</section>

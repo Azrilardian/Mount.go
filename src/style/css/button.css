@@ -1,0 +1,26 @@
+.defaultbtn {
+  padding: 13px 30px;
+  border-radius: 50px;
+  margin-top: 70px;
+  color: white;
+  background-color: #151d25;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 13px;
+  -webkit-box-shadow: 3px 5px 10px #0a0a0a;
+          box-shadow: 3px 5px 10px #0a0a0a;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.defaultbtn:hover {
+  -webkit-transform: translateY(-5px) scale(0.99);
+          transform: translateY(-5px) scale(0.99);
+  background-color: #131a22;
+}
+
+.defaultbtn:active {
+  background-color: #0c1015;
+}
+/*# sourceMappingURL=button.css.map */

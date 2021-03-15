@@ -8,6 +8,16 @@ html body {
 	font-family: "Poppins", sans-serif;
 }
 
+#root {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+section {
+	scroll-snap-align: center;
+}
+
 .container {
 	transition: 0.3s ease;
 }

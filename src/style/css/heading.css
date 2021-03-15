@@ -1,9 +1,14 @@
+.heading {
+  margin-top: 150px;
+}
+
 .heading__backgroundtext {
   position: absolute;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  color: #0f5a58;
 }
 
 .heading__backgroundtext--left {
@@ -43,7 +48,7 @@
           transform: translate(190px, -50%);
   width: 60%;
   height: 3px;
-  background-color: #6b6b6b;
+  background-color: whitesmoke;
   border-radius: 5px;
 }
 /*# sourceMappingURL=heading.css.map */

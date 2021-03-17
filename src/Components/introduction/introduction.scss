@@ -2,17 +2,18 @@
 
 .introduction {
 	background-color: #0f0f0f;
-	min-height: 100vh;
-	display: grid;
-	place-items: center;
 	position: relative;
-
+	padding: 100px 0;
 	&__img {
 		position: absolute;
 		top: 100px;
 		left: -215px;
 		transform: scale(0.9);
 		z-index: 1;
+
+		@media screen and(max-width:578px) {
+			left: -240px;
+		}
 	}
 
 	.row {
@@ -42,5 +43,12 @@
 
 	&__right {
 		z-index: 2;
+
+		@media screen and(max-width:992px) {
+			margin-top: 70px;
+		}
+		@media screen and(max-width:578px) {
+			transform: scale(0.9);
+		}
 	}
 }

@@ -1,8 +1,6 @@
 .benefits {
   background-color: #0f0f0f;
-  min-height: 100vh;
-  color: white;
   position: relative;
-  overflow: hidden;
+  padding-bottom: 100px;
 }
 /*# sourceMappingURL=benefits.css.map */

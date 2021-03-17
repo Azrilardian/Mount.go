@@ -1,5 +1,4 @@
 import React from "react";
-import campImage from "../../img/undraw_trip_dv9f.svg";
 import dotPatternImage from "../../img/dot.png";
 import "../../style/css/introduction.css";
 import "../../style/css/svg.css";

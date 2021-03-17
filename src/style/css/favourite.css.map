@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,sBAAsB,CAAC;EACtB,gBAAgB,EAAE,OAAO;EACzB,QAAQ,EAAE,QAAQ;CAClB",
+    "sources": [
+        "../../Components/favourite/favourite.scss",
+        "../scss/variabel.scss"
+    ],
+    "names": [],
+    "file": "favourite.css"
+}

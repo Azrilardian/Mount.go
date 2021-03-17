@@ -1,10 +1,7 @@
 .introduction {
   background-color: #0f0f0f;
-  min-height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
   position: relative;
+  padding: 100px 0;
 }
 
 .introduction__img {
@@ -14,6 +11,12 @@
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   z-index: 1;
+}
+
+@media screen and (max-width: 578px) {
+  .introduction__img {
+    left: -240px;
+  }
 }
 
 .introduction .row {
@@ -49,5 +52,18 @@
 
 .introduction__right {
   z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .introduction__right {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .introduction__right {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 /*# sourceMappingURL=introduction.css.map */

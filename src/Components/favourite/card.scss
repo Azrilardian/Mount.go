@@ -1,0 +1,66 @@
+@import "../../style/scss/variabel.scss";
+.card {
+	overflow: hidden;
+	border-radius: unset;
+	border: none;
+	padding: 0;
+	position: relative;
+	&__overlay {
+		background-position: center;
+		height: 460px;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(../../img/favourite-one.jpg);
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+
+	&__container {
+		background-color: #1c1e20f1;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px 50px;
+		transition: 0.5s ease;
+	}
+
+	&__name {
+		margin: 0;
+		font-weight: 600;
+		transition: 0.5s ease;
+	}
+
+	&__country {
+		color: $default-dark-gray-color;
+		transition: 0.5s ease;
+	}
+
+	&__keterangan-singkat {
+		width: 70%;
+		font-size: 13px;
+		transition: 0.5s ease;
+	}
+
+	&:hover {
+		.card__container {
+			padding: 50px;
+		}
+		.card__overlay {
+			transform: scale(1.1);
+		}
+		.card__name {
+			transform: translateY(-10px);
+			transition-delay: 0.1s;
+		}
+		.card__country {
+			transform: translateY(-10px);
+			transition-delay: 0.2s;
+		}
+		.card__keterangan-singkat {
+			transform: translateY(-10px);
+			transition-delay: 0.3s;
+		}
+	}
+}

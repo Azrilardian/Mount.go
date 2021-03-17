@@ -20,7 +20,7 @@ const Jumbotron = () => {
 						</div>
 						<div className="col mountinformation">
 							<div className="row">
-								<div className="col-4 mount">
+								<div className="col-lg-4 col-md-4 col-sm-4 col-6 mount">
 									<h2 className="mount__name">Rinjani, Lombok</h2>
 									<p className="mount__country">Indonesia</p>
 									<p className="mount__description">makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai dan bersuka cita disana </p>
@@ -29,7 +29,7 @@ const Jumbotron = () => {
 										<span>--></span>
 									</button>
 								</div>
-								<div className="col-8 picture">
+								<div className="col-lg-8 col-md-8 col-sm-8 col-6 picture">
 									<picture>
 										<span>
 											<button>Zoom</button>
@@ -42,7 +42,7 @@ const Jumbotron = () => {
 										</span>
 										<img src={mountImgTwo} alt="arno-senoner.jpg" loading="lazy" decoding="async" />
 									</picture>
-									<button className="picture-button">See All</button>
+									<button className="picture__button">See All</button>
 								</div>
 							</div>
 						</div>

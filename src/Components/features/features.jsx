@@ -31,7 +31,7 @@ class Features extends Component {
 				},
 				{
 					icon: smileIcon,
-					header: "Tanggap dan Cepat",
+					header: "Tanggap",
 					paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai dan bersuka cita  disana hah saying aku disini ayo pergi lreom ke p maksn.`,
 				},
 			],
@@ -40,22 +40,20 @@ class Features extends Component {
 
 	render() {
 		return (
-			<>
-				<section className="features">
-					<div className="container">
-						<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true"></Heading>
-						<div className="row">
-							{this.state.features.map((feature, index) => {
-								const { icon, header, paragraph } = feature;
-								return <Feature icon={icon} header={header} paragraph={paragraph} key={index}></Feature>;
-							})}
-						</div>
-						<div className="row justify-content-center">
-							<Button text="CONTACT US"></Button>
-						</div>
+			<section className="features">
+				<div className="container">
+					<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true"></Heading>
+					<div className="row">
+						{this.state.features.map((feature, index) => {
+							const { icon, header, paragraph } = feature;
+							return <Feature icon={icon} header={header} paragraph={paragraph} key={index}></Feature>;
+						})}
 					</div>
-				</section>
-			</>
+					<div className="row justify-content-center">
+						<Button text="CONTACT US"></Button>
+					</div>
+				</div>
+			</section>
 		);
 	}
 }

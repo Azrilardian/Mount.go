@@ -26,5 +26,6 @@ Merupakan website pertama saya yang menggunakan _library_ Javascript React.Js. P
 
 Karena ini pertama kalinya saya menulis `class` pada html menggunakan aturan BEM, terkadang penamaan `class` menjadi sangat membingungkan, padahal seharusnya tidak sesulit itu.
 
-Demo website :
-_Screenshot_ website :
+Website masih dalam pengembangan.
+
+## Screenshot

@@ -40,7 +40,7 @@ class Benefits extends Component {
 						})}
 					</div>
 					<div className="row justify-content-center">
-						<Button text="SEE MORE"></Button>
+						<Button>SEE MORE</Button>
 					</div>
 				</div>
 			</section>

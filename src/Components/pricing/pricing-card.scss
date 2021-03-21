@@ -1,0 +1,60 @@
+@import "../../style/scss/variabel.scss";
+
+.card {
+	background-color: transparent;
+	&__margin {
+		margin: 0 15px;
+		border-radius: 10px;
+		background-color: #10151a;
+	}
+
+	&__header {
+		display: inline-block;
+		padding: 20px 0;
+		background-color: #151d25;
+		display: grid;
+		place-items: center;
+		h3 {
+			font-size: 24px;
+		}
+	}
+
+	&__price {
+		text-align: center;
+		margin: 40px 0;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "";
+			bottom: -40px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80%;
+			height: 1px;
+			background-color: #d3d3d325;
+		}
+	}
+
+	&__benefits {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		margin-top: 80px;
+		span {
+			display: inline-block;
+			display: flex;
+			align-items: flex-start;
+			padding: 0 30px;
+			img {
+				width: 17px;
+				height: auto;
+				margin: 5px 8px 0 0;
+			}
+			p {
+				font-size: 13px;
+			}
+		}
+	}
+}

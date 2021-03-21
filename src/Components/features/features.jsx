@@ -50,7 +50,7 @@ class Features extends Component {
 						})}
 					</div>
 					<div className="row justify-content-center">
-						<Button text="CONTACT US"></Button>
+						<Button>CONTACT US</Button>
 					</div>
 				</div>
 			</section>

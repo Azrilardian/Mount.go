@@ -1,0 +1,79 @@
+.card {
+  background-color: transparent;
+}
+
+.card__margin {
+  margin: 0 15px;
+  border-radius: 10px;
+  background-color: #10151a;
+}
+
+.card__header {
+  display: inline-block;
+  padding: 20px 0;
+  background-color: #151d25;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.card__header h3 {
+  font-size: 24px;
+}
+
+.card__price {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+.card__price::before {
+  position: absolute;
+  content: "";
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background-color: #d3d3d325;
+}
+
+.card__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+.card__benefits span {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 30px;
+}
+
+.card__benefits span img {
+  width: 17px;
+  height: auto;
+  margin: 5px 8px 0 0;
+}
+
+.card__benefits span p {
+  font-size: 13px;
+}
+/*# sourceMappingURL=pricing-card.css.map */

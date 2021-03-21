@@ -4,6 +4,7 @@ import Introduction from "./Components/introduction/introduction";
 import Features from "./Components/features/features";
 import Benefits from "./Components/benefits/benefits";
 import Favourite from "./Components/favourite/favourite";
+import Pricing from "./Components/pricing/pricing";
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Features></Features>
 			<Benefits></Benefits>
 			<Favourite></Favourite>
+			<Pricing></Pricing>
 		</>
 	);
 };

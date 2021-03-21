@@ -1,9 +1,7 @@
 .defaultbtn {
   padding: 13px 30px;
   border-radius: 50px;
-  margin-top: 70px;
   color: white;
-  background-color: #151d25;
   outline: none;
   border: none;
   letter-spacing: 2px;
@@ -22,5 +20,13 @@
 
 .defaultbtn:active {
   background-color: #0c1015;
+}
+
+.blue {
+  background-color: #151d25;
+}
+
+.green {
+  background-color: #0f5a58;
 }
 /*# sourceMappingURL=button.css.map */

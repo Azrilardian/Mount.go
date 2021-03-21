@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/css/card.css";
+import "../../style/css/favourite-card.css";
 
 const Card = (props) => {
 	const { name, daerah, country, picture, keteranganSingkat } = props;

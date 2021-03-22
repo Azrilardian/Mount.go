@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/css/benefit.css";
+// import "../../style/css/benefit.css";
 
 const Benefit = (props) => {
 	const { icon, header, paragraph } = props;

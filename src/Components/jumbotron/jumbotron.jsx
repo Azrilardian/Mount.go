@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar/navbar";
-import "../../style/css/jumbotron.css";
+import styles from "../../style/css/jumbotron.module.css";
 import mountImgOne from "../../img/cristina-gottardi.jpg";
 import mountImgTwo from "../../img/arno-senoner.jpg";
 
@@ -8,28 +8,28 @@ const Jumbotron = () => {
 	return (
 		<>
 			<Navbar></Navbar>
-			<section className="jumbotron">
-				<div className="container">
-					<div className="row">
-						<div className="col tagline">
-							<h1 className="tagline__heading">TO THE MOUNT.</h1>
-							<p className="tagline__paragraph">makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai.</p>
-							<button className="tagline__button">
+			<section className={styles.jumbotron}>
+				<div className={`container ${styles.container}`}>
+					<div className={`row ${styles.row}`}>
+						<div className={styles.tagline}>
+							<h1 className={styles.tagline__heading}>TO THE MOUNT.</h1>
+							<p className={styles.tagline__paragraph}>makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai.</p>
+							<button className={styles.tagline__button}>
 								<span></span>
 							</button>
 						</div>
-						<div className="col mountinformation">
-							<div className="row">
-								<div className="col-lg-4 col-md-4 col-sm-4 col-6 mount">
-									<h2 className="mount__name">Rinjani, Lombok</h2>
-									<p className="mount__country">Indonesia</p>
-									<p className="mount__description">makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai dan bersuka cita disana </p>
-									<button className="mount__button">
+						<div className={`col ${styles["mount-information"]}`}>
+							<div className={`row ${styles.row}`}>
+								<div className={`col-lg-4 col-md-4 col-sm-4 col-6 ${styles.mount}`}>
+									<h2 className={styles.mount__name}>Rinjani, Lombok</h2>
+									<p className={styles.mount__country}>Indonesia</p>
+									<p className={styles.mount__description}>makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai dan bersuka cita disana </p>
+									<button className={styles.mount__button}>
 										<span>See Detail</span>
 										<span>--></span>
 									</button>
 								</div>
-								<div className="col-lg-8 col-md-8 col-sm-8 col-6 picture">
+								<div className={`col-lg-8 col-md-8 col-sm-8 col-6 ${styles.picture}`}>
 									<picture>
 										<span>
 											<button>Zoom</button>
@@ -42,7 +42,7 @@ const Jumbotron = () => {
 										</span>
 										<img src={mountImgTwo} alt="arno-senoner.jpg" loading="lazy" decoding="async" />
 									</picture>
-									<button className="picture__button">See All</button>
+									<button className={styles.picture__button}>See All</button>
 								</div>
 							</div>
 						</div>

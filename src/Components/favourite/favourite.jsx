@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Heading from "../heading/heading";
 import Card from "./card";
-import "../../style/css/favourite.css";
+// import "../../style/css/favourite.css";
 
 class Favourite extends Component {
 	constructor(props) {

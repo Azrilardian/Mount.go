@@ -12,6 +12,9 @@
 
 .jumbotron .container {
   height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .jumbotron .container .row {
@@ -19,9 +22,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
   height: 100%;
 }
 
@@ -39,7 +42,10 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-bottom: 20px;
   color: white;
 }
 
@@ -70,7 +76,14 @@
   border-radius: 50%;
 }
 
-.jumbotron .container .row .mountinformation .row {
+.jumbotron .container .row .mount-information {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-bottom: 80px;
+}
+
+.jumbotron .container .row .mount-information .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -83,43 +96,43 @@
           justify-content: space-between;
 }
 
-.jumbotron .container .row .mountinformation .row .mount {
+.jumbotron .container .row .mount-information .row .mount {
   color: white;
 }
 
-.jumbotron .container .row .mountinformation .row .mount__name {
+.jumbotron .container .row .mount-information .row .mount__name {
   font-weight: bold;
   margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
-  .jumbotron .container .row .mountinformation .row .mount__name {
+  .jumbotron .container .row .mount-information .row .mount__name {
     font-size: 24px;
   }
 }
 
-.jumbotron .container .row .mountinformation .row .mount__country {
+.jumbotron .container .row .mount-information .row .mount__country {
   font-size: 17px;
   color: #6b6b6b;
 }
 
 @media screen and (max-width: 1200px) {
-  .jumbotron .container .row .mountinformation .row .mount__country {
+  .jumbotron .container .row .mount-information .row .mount__country {
     font-size: 15px;
   }
 }
 
-.jumbotron .container .row .mountinformation .row .mount__description {
+.jumbotron .container .row .mount-information .row .mount__description {
   font-size: 13px;
 }
 
 @media screen and (max-width: 992px) {
-  .jumbotron .container .row .mountinformation .row .mount__description {
+  .jumbotron .container .row .mount-information .row .mount__description {
     display: none;
   }
 }
 
-.jumbotron .container .row .mountinformation .row .mount__button {
+.jumbotron .container .row .mount-information .row .mount__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +152,7 @@
   border: none;
 }
 
-.jumbotron .container .row .mountinformation .row .mount__button span:last-child {
+.jumbotron .container .row .mount-information .row .mount__button span:last-child {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   height: 100%;
@@ -155,18 +168,18 @@
   padding: 0 7px;
 }
 
-.jumbotron .container .row .mountinformation .row .mount__button span:last-child:hover {
+.jumbotron .container .row .mount-information .row .mount__button span:last-child:hover {
   background-color: #cfcfcf;
 }
 
 @media screen and (max-width: 768px) {
-  .jumbotron .container .row .mountinformation .row .mount__button span:last-child {
+  .jumbotron .container .row .mount-information .row .mount__button span:last-child {
     display: none;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .jumbotron .container .row .mountinformation .row .mount__button span:last-child {
+  .jumbotron .container .row .mount-information .row .mount__button span:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,18 +187,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .jumbotron .container .row .mountinformation .row .mount__button {
+  .jumbotron .container .row .mount-information .row .mount__button {
     width: 90px;
   }
 }
 
 @media screen and (max-width: 578px) {
-  .jumbotron .container .row .mountinformation .row .mount__button {
+  .jumbotron .container .row .mount-information .row .mount__button {
     width: 130px;
   }
 }
 
-.jumbotron .container .row .mountinformation .row .picture {
+.jumbotron .container .row .mount-information .row .picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +211,7 @@
   padding: 0;
 }
 
-.jumbotron .container .row .mountinformation .row .picture picture {
+.jumbotron .container .row .mount-information .row .picture picture {
   position: relative;
   margin-right: 15px;
   border-radius: 10px;
@@ -210,7 +223,7 @@
   place-items: center;
 }
 
-.jumbotron .container .row .mountinformation .row .picture picture span {
+.jumbotron .container .row .mount-information .row .picture picture span {
   position: absolute;
   top: 0;
   left: 0;
@@ -236,7 +249,7 @@
   z-index: 2;
 }
 
-.jumbotron .container .row .mountinformation .row .picture picture img {
+.jumbotron .container .row .mount-information .row .picture picture img {
   width: 250px;
   height: 150px;
   border-radius: 10px;
@@ -245,43 +258,43 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .jumbotron .container .row .mountinformation .row .picture picture img {
+  .jumbotron .container .row .mount-information .row .picture picture img {
     width: 220px;
     height: 130px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .jumbotron .container .row .mountinformation .row .picture picture img {
+  .jumbotron .container .row .mount-information .row .picture picture img {
     height: 120px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .jumbotron .container .row .mountinformation .row .picture picture img {
+  .jumbotron .container .row .mount-information .row .picture picture img {
     height: 185px;
     margin-left: -50px;
   }
 }
 
-.jumbotron .container .row .mountinformation .row .picture picture:hover img {
+.jumbotron .container .row .mount-information .row .picture picture:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.jumbotron .container .row .mountinformation .row .picture picture:hover span {
+.jumbotron .container .row .mount-information .row .picture picture:hover span {
   opacity: 1 !important;
 }
 
 @media screen and (max-width: 576px) {
-  .jumbotron .container .row .mountinformation .row {
+  .jumbotron .container .row .mount-information .row {
     width: 140%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .jumbotron {
     margin: -85px 0 0 0;
   }
 }
-/*# sourceMappingURL=jumbotron.css.map */
+/*# sourceMappingURL=jumbotron.module.css.map */

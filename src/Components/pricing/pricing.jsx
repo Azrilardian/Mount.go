@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Heading from "./../heading/heading";
+import Heading from "../heading/heading";
 import Card from "./card";
-import "./../../style/css/pricing.css";
+import style from "../../style/css/pricing.module.css";
 
 class Pricing extends Component {
 	constructor(props) {
@@ -45,7 +45,7 @@ class Pricing extends Component {
 	render() {
 		return (
 			<>
-				<section className="pricing">
+				<section className={style.pricing}>
 					<div className="container">
 						<Heading backgroundText="PRICE AND PACKAGE ?" whiteText="PRICE AND " greenText="PACKAGE" questionMark="false"></Heading>
 						<div className="row">

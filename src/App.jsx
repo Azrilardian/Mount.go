@@ -11,10 +11,10 @@ const App = () => {
 		<>
 			<Jumbotron></Jumbotron>
 			<Introduction></Introduction>
-			<Features></Features>
+			{/* <Features></Features>
 			<Benefits></Benefits>
 			<Favourite></Favourite>
-			<Pricing></Pricing>
+			<Pricing></Pricing> */}
 		</>
 	);
 };

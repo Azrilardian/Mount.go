@@ -11,17 +11,19 @@
 	overflow: hidden;
 	.container {
 		height: 100%;
+		display: grid;
+		place-items: center;
 		.row {
 			flex-direction: column;
-			justify-content: space-evenly;
+			justify-content: space-evenly !important;
 			height: 100%;
-
 			.tagline {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: flex-end;
-				padding-bottom: 30px;
+				flex: 1;
+				padding-bottom: 20px;
 				color: white;
 				&__heading {
 					font-weight: 800;
@@ -46,7 +48,9 @@
 					border-radius: 50%;
 				}
 			}
-			.mountinformation {
+			.mount-information {
+				flex: 1;
+				padding-bottom: 80px;
 				.row {
 					flex-direction: row;
 					align-items: flex-end;
@@ -184,7 +188,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 576px) {
 		margin: -85px 0 0 0;
 	}
 }

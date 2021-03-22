@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Feature from "./feature";
 import Heading from "../heading/heading";
 import Button from "../Button/button";
-import "../../style/css/features.css";
+// import "../../style/css/features.css";
 
 import timeIcon from "../../icon/lnr-hourglass.svg";
 import LicenseIcon from "../../icon/lnr-license.svg";
@@ -43,13 +43,13 @@ class Features extends Component {
 			<section className="features">
 				<div className="container">
 					<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true"></Heading>
-					<div className="row">
+					<div className="row mb-5">
 						{this.state.features.map((feature, index) => {
 							const { icon, header, paragraph } = feature;
 							return <Feature icon={icon} header={header} paragraph={paragraph} key={index}></Feature>;
 						})}
 					</div>
-					<div className="row justify-content-center">
+					<div className="row justify-content-center mt-5 pt-4">
 						<Button>CONTACT US</Button>
 					</div>
 				</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/css/heading.css";
+// import "../../style/css/heading.css";
 
 const Heading = (props) => {
 	const { backgroundText, whiteText, greenText, questionMark } = props;

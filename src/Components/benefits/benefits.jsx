@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Benefit from "./benefit";
 import Heading from "../heading/heading";
 import Button from "../Button/button";
-import "../../style/css/benefits.css";
+// import "../../style/css/benefits.css";
 
 class Benefits extends Component {
 	constructor(props) {
@@ -39,7 +39,7 @@ class Benefits extends Component {
 							return <Benefit icon={icon} header={header} paragraph={paragraph} key={index}></Benefit>;
 						})}
 					</div>
-					<div className="row justify-content-center">
+					<div className="row justify-content-center mt-5 pt-4">
 						<Button>SEE MORE</Button>
 					</div>
 				</div>

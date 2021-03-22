@@ -1,26 +1,27 @@
 import React from "react";
 import dotPatternImage from "../../img/dot.png";
-import "../../style/css/introduction.css";
+import styles from "../../style/css/introduction.module.css";
 import "../../style/css/svg.css";
 
 const Introduction = () => {
 	return (
 		<>
-			<section className="introduction">
-				<img src={dotPatternImage} alt="dot.png" className="introduction__img" />
+			<section className={styles.introduction}>
+				<img src={dotPatternImage} alt="dot.png" className={styles.introduction__img} />
 				<div className="container">
-					<div className="row">
-						<div className="col-lg-5 col-md-6 col-sm-12 introduction__left">
-							<h1 className="introduction__left__header">
+					<div className={`row ${styles.row}`}>
+						<div className={`col-lg-5 col-md-6 col-sm-12 ${styles.introduction__left}`}>
+							<h1 className={styles.introduction__left__header}>
 								WHAT <span>US</span> ?
 							</h1>
-							<p className="introduction__left__paragraph">
+							<p className={styles.introduction__left__paragraph}>
 								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate odio culpa recusandae tenetur excepturi sint quasi voluptatibus perspiciatis ea veritatis, ipsa
 								laudantium illum, molestiae nulla ullam adipisci neque eaque. Asperiores earum neque, itaque beatae, excepturi maiores maxime architecto repellat minima perspiciatis
 								perferendis quaerat saepe voluptates officia consectetur, magni expedita? Laudantium!
 							</p>
 						</div>
-						<picture className="col-lg-6 col-md-6 col-sm-12 introduction__right img-fluid" loading="lazy" decoding="async">
+
+						<picture className={`col-lg-6 col-md-6 col-sm-12 ${styles["introduction__right"]}`} loading="lazy" decoding="async">
 							<svg viewBox="0 0 681.69 473.623">
 								<g id="undraw_trip_dv9f" transform="translate(0.022)">
 									<path

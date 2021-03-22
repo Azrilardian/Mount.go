@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../Button/button";
-import "../../style/css/pricing-card.css";
+// import style from "../../style/css/card-pricing.css";
 import checkIcon from "../../icon/check-solid.svg";
 
 const Card = (props) => {
 	const { name, price, benefits } = props;
 	return (
-		<div className="col-lg-4 col-md-4 col-sm-12 card">
+		<div className="col-lg-4 col-md-6 col-sm-12 card">
 			<div className="card__margin">
 				<span className="card__header">
 					<h3 className="card__name">{name}</h3>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/css/feature.css";
+// import "../../style/css/feature.css";
 
 const Feature = (props) => {
 	const { icon, header, paragraph } = props;

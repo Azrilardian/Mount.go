@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "AAEA,AAAA,QAAQ,CAAC;EACR,gBAAgB,ECHK,OAAO;EDI5B,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,OAAO;CAChB",
     "sources": [
-        "../../Components/pricing/pricing.scss",
+        "../../Components/pricing/pricing.module.scss",
         "../scss/variabel.scss"
     ],
     "names": [],
-    "file": "pricing.css"
+    "file": "pricing.module.css"
 }

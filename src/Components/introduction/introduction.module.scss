@@ -1,7 +1,6 @@
 @import "../../style/scss/variable.scss";
 
 .introduction {
-	background-color: #0f0f0f;
 	position: relative;
 	padding: 100px 0;
 	&__img {
@@ -10,15 +9,9 @@
 		left: -215px;
 		transform: scale(0.9);
 		z-index: 1;
-
 		@media screen and(max-width:578px) {
 			left: -240px;
 		}
-	}
-
-	.row {
-		justify-content: space-between;
-		align-items: center;
 	}
 
 	&__left {

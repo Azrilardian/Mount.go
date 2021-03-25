@@ -1,9 +1,8 @@
-@import "../../style/scss/variabel.scss";
+@import "../../style/scss/variable.scss";
 
 .card {
 	background-color: transparent;
 	&__margin {
-		margin: 0 15px;
 		background-color: #10151a;
 		border-radius: 10px;
 		overflow: hidden;
@@ -17,6 +16,8 @@
 		place-items: center;
 		h3 {
 			font-size: 24px;
+			font-weight: 500;
+			margin: 0;
 		}
 	}
 
@@ -56,6 +57,10 @@
 			p {
 				font-size: 13px;
 				color: #acacac;
+			}
+
+			@media screen and (max-width: 765px) {
+				padding: 0 50px;
 			}
 		}
 	}

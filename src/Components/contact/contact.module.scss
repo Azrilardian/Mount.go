@@ -1,0 +1,41 @@
+@import "../../style/scss/variable.scss";
+.contact {
+	background: linear-gradient(#24282dd7, #24282dd7), url(../../img/bg-contact.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+	position: relative;
+	.form {
+		display: flex;
+		flex-direction: column;
+		background-color: #10151a;
+		border-radius: 10px;
+		&__heading {
+			font-weight: 500;
+			margin: 0;
+		}
+
+		&__main {
+			&__right {
+				&__label {
+					font-size: 13px;
+					margin-top: 20px;
+				}
+				&__textarea {
+					height: 100px;
+					padding: 10px;
+					width: 100%;
+					border-radius: 5px;
+					background-color: #151d25;
+					color: $default-light-gray-color;
+					border: none;
+					outline: none;
+					resize: none;
+					font-size: 13px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

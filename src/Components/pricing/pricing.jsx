@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Heading from "../heading/heading";
-import Card from "./card";
+import Card from "./card-pricing";
 import style from "../../style/css/pricing.module.css";
 
 class Pricing extends Component {

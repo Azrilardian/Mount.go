@@ -3,18 +3,20 @@ import Jumbotron from "./Components/jumbotron/jumbotron";
 import Introduction from "./Components/introduction/introduction";
 import Features from "./Components/features/features";
 import Benefits from "./Components/benefits/benefits";
-import Favourite from "./Components/favourite/favourite";
+import Favourites from "./Components/favourites/favourites";
 import Pricing from "./Components/pricing/pricing";
+import Contact from "./Components/contact/contact";
 
 const App = () => {
 	return (
 		<>
 			<Jumbotron></Jumbotron>
 			<Introduction></Introduction>
-			{/* <Features></Features>
+			<Features></Features>
 			<Benefits></Benefits>
-			<Favourite></Favourite>
-			<Pricing></Pricing> */}
+			<Favourites></Favourites>
+			<Pricing></Pricing>
+			<Contact></Contact>
 		</>
 	);
 };

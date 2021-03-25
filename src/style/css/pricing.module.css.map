@@ -3,7 +3,7 @@
     "mappings": "AAEA,AAAA,QAAQ,CAAC;EACR,gBAAgB,ECHK,OAAO;EDI5B,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,OAAO;CAChB",
     "sources": [
         "../../Components/pricing/pricing.module.scss",
-        "../scss/variabel.scss"
+        "../scss/variable.scss"
     ],
     "names": [],
     "file": "pricing.module.css"

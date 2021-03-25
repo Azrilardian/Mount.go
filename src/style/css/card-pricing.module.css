@@ -3,7 +3,6 @@
 }
 
 .card__margin {
-  margin: 0 15px;
   background-color: #10151a;
   border-radius: 10px;
   overflow: hidden;
@@ -20,6 +19,8 @@
 
 .card__header h3 {
   font-size: 24px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .card__price {
@@ -77,5 +78,11 @@
 .card__benefits span p {
   font-size: 13px;
   color: #acacac;
+}
+
+@media screen and (max-width: 765px) {
+  .card__benefits span {
+    padding: 0 50px;
+  }
 }
 /*# sourceMappingURL=card-pricing.module.css.map */

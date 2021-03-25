@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Benefit from "./benefit";
+import Benefit from "./card-benefit";
 import Heading from "../heading/heading";
 import Button from "../Button/button";
-// import "../../style/css/benefits.css";
+import styles from "../../style/css/benefits.module.css";
 
 class Benefits extends Component {
 	constructor(props) {
@@ -30,7 +30,7 @@ class Benefits extends Component {
 
 	render() {
 		return (
-			<section className="benefits">
+			<section className={styles.benefits}>
 				<div className="container">
 					<Heading backgroundText="WHAT YOU GET ?" whiteText="WHAT YOU " greenText="GET" questionMark="true"></Heading>
 					<div className="row">

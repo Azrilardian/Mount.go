@@ -1,0 +1,42 @@
+.defaultbtn {
+  padding: 13px 30px;
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 13px;
+  -webkit-box-shadow: 3px 5px 10px #0a0a0a;
+          box-shadow: 3px 5px 10px #0a0a0a;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.blue {
+  background-color: #151d25;
+}
+
+.blue:hover {
+  -webkit-transform: translateY(-5px) scale(0.99);
+          transform: translateY(-5px) scale(0.99);
+  background-color: #131a22;
+}
+
+.blue:active {
+  background-color: #0c1015;
+}
+
+.green {
+  background-color: #0f5a58;
+}
+
+.green:hover {
+  -webkit-transform: translateY(-5px) scale(0.99);
+          transform: translateY(-5px) scale(0.99);
+  background-color: #0a3b3a;
+}
+
+.green:active {
+  background-color: #082e2d;
+}
+/*# sourceMappingURL=button.module.css.map */

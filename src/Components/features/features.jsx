@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Feature from "./feature";
+import Card from "./card-features";
 import Heading from "../heading/heading";
 import Button from "../Button/button";
-// import "../../style/css/features.css";
-
+import styles from "../../style/css/features.module.css";
 import timeIcon from "../../icon/lnr-hourglass.svg";
 import LicenseIcon from "../../icon/lnr-license.svg";
 import bubbleIcon from "../../icon/lnr-bubble.svg";
@@ -40,13 +39,13 @@ class Features extends Component {
 
 	render() {
 		return (
-			<section className="features">
+			<section className={styles.features}>
 				<div className="container">
 					<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true"></Heading>
 					<div className="row mb-5">
 						{this.state.features.map((feature, index) => {
 							const { icon, header, paragraph } = feature;
-							return <Feature icon={icon} header={header} paragraph={paragraph} key={index}></Feature>;
+							return <Card icon={icon} header={header} paragraph={paragraph} key={index}></Card>;
 						})}
 					</div>
 					<div className="row justify-content-center mt-5 pt-4">

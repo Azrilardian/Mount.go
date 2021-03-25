@@ -1,0 +1,80 @@
+.card {
+  overflow: hidden;
+  border-radius: unset;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+
+.card__overlay {
+  background-position: center;
+  height: 460px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.card__container {
+  background-color: #1c1e20f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.card__name {
+  margin: 0;
+  font-weight: 600;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.card__country {
+  color: #6b6b6b;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.card__keterangan-singkat {
+  width: 70%;
+  font-size: 13px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.card:hover .card__container {
+  padding: 50px;
+}
+
+.card:hover .card__overlay {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card:hover .card__name {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.card:hover .card__country {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.card:hover .card__keterangan-singkat {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+/*# sourceMappingURL=card-favourites.module.css.map */

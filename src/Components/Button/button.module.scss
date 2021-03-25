@@ -1,4 +1,4 @@
-@import "../../style/scss/variabel.scss";
+@import "../../style/scss/variable.scss";
 
 .defaultbtn {
 	padding: 13px 30px;
@@ -10,6 +10,10 @@
 	font-size: 13px;
 	box-shadow: 3px 5px 10px #0a0a0a;
 	transition: 0.3s ease;
+}
+
+.blue {
+	background-color: $default-blue-grey-darken-color;
 	&:hover {
 		transform: translateY(-5px) scale(0.99);
 		background-color: darken($color: $default-blue-grey-darken-color, $amount: 1);
@@ -20,10 +24,14 @@
 	}
 }
 
-.blue {
-	background-color: $default-blue-grey-darken-color;
-}
-
 .green {
 	background-color: $default-green-color;
+	&:hover {
+		transform: translateY(-5px) scale(0.99);
+		background-color: darken($color: $default-green-color, $amount: 7);
+	}
+
+	&:active {
+		background-color: darken($color: $default-green-color, $amount: 10);
+	}
 }

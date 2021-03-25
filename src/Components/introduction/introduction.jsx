@@ -6,11 +6,11 @@ import "../../style/css/svg.css";
 const Introduction = () => {
 	return (
 		<>
-			<section className={styles.introduction}>
-				<img src={dotPatternImage} alt="dot.png" className={styles.introduction__img} />
+			<section className={`position-relative ${styles.introduction}`}>
+				<img src={dotPatternImage} alt="dot.png" className={`position-absolute ${styles.introduction__img}`} />
 				<div className="container">
 					<div className="row justify-content-between align-items-center">
-						<div className={`col-lg-5 col-md-6 col-sm-12 ${styles.introduction__left}`}>
+						<div className={`col-lg-5 col-md-6 col-sm-12 text-white ${styles.introduction__left}`}>
 							<h1 className={styles.introduction__left__header}>
 								WHAT <span>US</span> ?
 							</h1>

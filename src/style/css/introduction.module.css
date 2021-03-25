@@ -1,10 +1,8 @@
 .introduction {
-  position: relative;
   padding: 100px 0;
 }
 
 .introduction__img {
-  position: absolute;
   top: 100px;
   left: -215px;
   -webkit-transform: scale(0.9);
@@ -19,13 +17,11 @@
 }
 
 .introduction__left {
-  color: white;
   z-index: 2;
 }
 
 .introduction__left__header {
   font-weight: 600;
-  font-size: 34px;
 }
 
 .introduction__left__header span {

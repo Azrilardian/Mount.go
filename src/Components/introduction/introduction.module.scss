@@ -1,10 +1,8 @@
 @import "../../style/scss/variable.scss";
 
 .introduction {
-	position: relative;
 	padding: 100px 0;
 	&__img {
-		position: absolute;
 		top: 100px;
 		left: -215px;
 		transform: scale(0.9);
@@ -15,11 +13,9 @@
 	}
 
 	&__left {
-		color: white;
 		z-index: 2;
 		&__header {
 			font-weight: 600;
-			font-size: 34px;
 			span {
 				color: $default-green-color;
 			}
@@ -36,7 +32,6 @@
 
 	&__right {
 		z-index: 2;
-
 		@media screen and(max-width:992px) {
 			margin-top: 70px;
 		}

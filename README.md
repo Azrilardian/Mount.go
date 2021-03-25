@@ -6,16 +6,16 @@ Website ini merupakan website agen travel perjalanan gunung. Dibuat untuk memuda
 
 ## Catatan :
 
-Merupakan website pertama saya yang menggunakan _library_ Javascript React.Js. Pada website ini juga pertama kalinya saya menerapkan salah satu metodology css BEM
-( _Block Element Modifier_ ).
+Merupakan website pertama saya yang menggunakan _library_ Javascript React.Js. Pada website ini juga pertama kalinya saya menerapkan salah satu metodology css BEM ( _Block Element Modifier_ ).
 
 ## Teknologi yang digunakan :
 
 1. Html
 2. Css
-3. Bootstrap
-4. Javascript
-5. React.Js
+3. Sass
+4. Bootstrap
+5. Javascript
+6. React.Js
 
 ## Fitur :
 

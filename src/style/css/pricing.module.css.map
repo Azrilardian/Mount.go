@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACR,gBAAgB,ECHK,OAAO;EDI5B,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,OAAO;CAChB",
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACR,OAAO,EAAE,OAAO;CAChB",
     "sources": [
-        "../../Components/pricing/pricing.module.scss",
-        "../scss/variable.scss"
+        "../../Components/pricing/pricing.module.scss"
     ],
     "names": [],
     "file": "pricing.module.css"

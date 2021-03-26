@@ -7,14 +7,14 @@ const Card = (props) => {
 	const { name, price, benefits } = props;
 	return (
 		<div className={`col-lg-4 col-md-6 col-sm-12 ${styles.card}`}>
-			<div className={styles.card__margin}>
-				<span className={styles.card__header}>
-					<h3 className={styles.card__name}>{name}</h3>
+			<div className={`overflow-hidden ${styles.card__margin}`}>
+				<span className={`d-flex justify-content-center align-items-center ${styles.card__header}`}>
+					<h3 className={`m-0 ${styles.card__name}`}>{name}</h3>
 				</span>
-				<h1 className={styles.card__price}>${price}</h1>
-				<div className={styles.card__benefits}>
+				<h1 className={`position-relative text-center my-4 ${styles.card__price}`}>${price}</h1>
+				<div className={`d-flex flex-column justify-content-center align-items-start ${styles.card__benefits}`}>
 					{benefits.map((benefit) => (
-						<span>
+						<span className="d-flex align-items-start">
 							<img src={checkIcon} alt="check-solid.svg" />
 							<p>{benefit}</p>
 						</span>

@@ -45,7 +45,7 @@ class Pricing extends Component {
 	render() {
 		return (
 			<>
-				<section className={style.pricing}>
+				<section className={`position-relative ${style.pricing}`}>
 					<div className="container">
 						<Heading backgroundText="PRICE AND PACKAGE ?" whiteText="PRICE AND " greenText="PACKAGE" questionMark="false" position="left"></Heading>
 						<div className="row">

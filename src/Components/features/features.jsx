@@ -3,10 +3,10 @@ import Card from "./card-features";
 import Heading from "../heading/heading";
 import Button from "../Button/button";
 import styles from "../../style/css/features.module.css";
-import timeIcon from "../../icon/lnr-hourglass.svg";
-import LicenseIcon from "../../icon/lnr-license.svg";
-import bubbleIcon from "../../icon/lnr-bubble.svg";
-import smileIcon from "../../icon/lnr-smile.svg";
+import timeIcon from "../../icon/lnr-hourglass.png";
+import LicenseIcon from "../../icon/lnr-license.png";
+import bubbleIcon from "../../icon/lnr-bubble.png";
+import smileIcon from "../../icon/lnr-smile.png";
 
 class Features extends Component {
 	constructor(props) {

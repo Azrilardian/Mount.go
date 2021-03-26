@@ -74,6 +74,13 @@
   border: 3px solid white;
   background-color: transparent;
   border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.jumbotron .container .row .tagline__button:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .jumbotron .container .row .mount-information {
@@ -249,6 +256,11 @@
   z-index: 2;
 }
 
+.jumbotron .container .row .mount-information .row .picture picture span span {
+  font-size: 27px;
+  cursor: pointer;
+}
+
 .jumbotron .container .row .mount-information .row .picture picture img {
   width: 250px;
   height: 150px;
@@ -284,6 +296,18 @@
 
 .jumbotron .container .row .mount-information .row .picture picture:hover span {
   opacity: 1 !important;
+}
+
+.jumbotron .container .row .mount-information .row .picture__button {
+  cursor: pointer;
+}
+
+.jumbotron .container .row .mount-information .row .picture__button span {
+  font-size: 24px;
+}
+
+.jumbotron .container .row .mount-information .row .picture__button p {
+  font-size: 13px;
 }
 
 @media screen and (max-width: 576px) {

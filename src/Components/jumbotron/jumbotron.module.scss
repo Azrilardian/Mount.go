@@ -46,6 +46,10 @@
 					border: 3px solid white;
 					background-color: transparent;
 					border-radius: 50%;
+					transition: 0.3s ease;
+					&:hover {
+						transform: scale(0.95);
+					}
 				}
 			}
 			.mount-information {
@@ -149,6 +153,10 @@
 								transition: 0.3s ease;
 								user-select: none;
 								z-index: 2;
+								span {
+									font-size: 27px;
+									cursor: pointer;
+								}
 							}
 							img {
 								width: 250px;
@@ -177,6 +185,15 @@
 								span {
 									opacity: 1 !important;
 								}
+							}
+						}
+						&__button {
+							cursor: pointer;
+							span {
+								font-size: 24px;
+							}
+							p {
+								font-size: 13px;
 							}
 						}
 					}

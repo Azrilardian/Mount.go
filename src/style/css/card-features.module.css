@@ -1,10 +1,10 @@
 .feature__heading {
   color: #0f5a58;
+  min-height: 40px;
 }
 
 .feature__heading__icon {
-  background-color: #0f5a58;
-  width: 25px;
+  width: 20px;
   height: auto;
 }
 

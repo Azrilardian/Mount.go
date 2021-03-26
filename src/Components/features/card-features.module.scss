@@ -3,9 +3,9 @@
 .feature {
 	&__heading {
 		color: $default-green-color;
+		min-height: 40px;
 		&__icon {
-			background-color: $default-green-color;
-			width: 25px;
+			width: 20px;
 			height: auto;
 		}
 	}

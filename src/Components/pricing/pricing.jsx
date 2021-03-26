@@ -47,7 +47,7 @@ class Pricing extends Component {
 			<>
 				<section className={style.pricing}>
 					<div className="container">
-						<Heading backgroundText="PRICE AND PACKAGE ?" whiteText="PRICE AND " greenText="PACKAGE" questionMark="false"></Heading>
+						<Heading backgroundText="PRICE AND PACKAGE ?" whiteText="PRICE AND " greenText="PACKAGE" questionMark="false" position="left"></Heading>
 						<div className="row">
 							{this.state.packages.map((pck) => {
 								const { name, priceInDollar, benefits } = pck;

@@ -32,7 +32,7 @@ class Benefits extends Component {
 		return (
 			<section className={styles.benefits}>
 				<div className="container">
-					<Heading backgroundText="WHAT YOU GET ?" whiteText="WHAT YOU " greenText="GET" questionMark="true"></Heading>
+					<Heading backgroundText="WHAT YOU GET ?" whiteText="WHAT YOU " greenText="GET" questionMark="true" position="left"></Heading>
 					<div className="row">
 						{this.state.benefits.map((benefit, index) => {
 							const { icon, header, paragraph } = benefit;

@@ -16,7 +16,7 @@ class Contact extends Component {
 		return (
 			<section className={styles.contact}>
 				<div className="container">
-					<Heading backgroundText="CONTACT US" whiteText="CONTACT " greenText="US" questionMark="false"></Heading>
+					<Heading backgroundText="CONTACT US" whiteText="CONTACT " greenText="US" questionMark="false" position="right"></Heading>
 					<div className="row justify-content-center">
 						<div className={`col-10 p-4 ${styles.form}`}>
 							<h4 className={`mt-2 ${styles.form__heading}`}>Contact form</h4>

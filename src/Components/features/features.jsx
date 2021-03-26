@@ -41,7 +41,7 @@ class Features extends Component {
 		return (
 			<section className={styles.features}>
 				<div className="container">
-					<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true"></Heading>
+					<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true" position="right"></Heading>
 					<div className="row mb-5">
 						{this.state.features.map((feature, index) => {
 							const { icon, header, paragraph } = feature;

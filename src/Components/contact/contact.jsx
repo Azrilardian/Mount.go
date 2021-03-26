@@ -25,7 +25,7 @@ class Contact extends Component {
 									{this.state.inputLabel
 										.filter((label) => label !== "Message")
 										.map((label, index) => (
-											<Input height="45" key={index}>
+											<Input height="43" key={index}>
 												{label}
 											</Input>
 										))}

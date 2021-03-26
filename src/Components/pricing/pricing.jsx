@@ -49,9 +49,9 @@ class Pricing extends Component {
 					<div className="container">
 						<Heading backgroundText="PRICE AND PACKAGE ?" whiteText="PRICE AND " greenText="PACKAGE" questionMark="false" position="left"></Heading>
 						<div className="row">
-							{this.state.packages.map((pck) => {
+							{this.state.packages.map((pck, index) => {
 								const { name, priceInDollar, benefits } = pck;
-								return <Card name={name} price={priceInDollar} benefits={benefits}></Card>;
+								return <Card name={name} price={priceInDollar} benefits={benefits} key={index}></Card>;
 							})}
 						</div>
 					</div>

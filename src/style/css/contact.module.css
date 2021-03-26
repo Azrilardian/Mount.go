@@ -1,28 +1,19 @@
 .contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24282dd7), to(#24282dd7)), url(../../img/bg-contact.jpg);
-  background: linear-gradient(#24282dd7, #24282dd7), url(../../img/bg-contact.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e2125d7), to(#1e2125d7)), url(../../img/bg-contact.jpg);
+  background: linear-gradient(#1e2125d7, #1e2125d7), url(../../img/bg-contact.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 100px;
-  position: relative;
 }
 
 .contact .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #10151a;
   border-radius: 10px;
 }
 
 .contact .form__heading {
   font-weight: 500;
-  margin: 0;
 }
 
 .contact .form__main__right__label {

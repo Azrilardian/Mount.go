@@ -14,12 +14,12 @@ class Contact extends Component {
 
 	render() {
 		return (
-			<section className={styles.contact}>
+			<section className={`position-relative ${styles.contact}`}>
 				<div className="container">
 					<Heading backgroundText="CONTACT US" whiteText="CONTACT " greenText="US" questionMark="false" position="right"></Heading>
 					<div className="row justify-content-center">
-						<div className={`col-10 p-4 ${styles.form}`}>
-							<h4 className={`mt-2 ${styles.form__heading}`}>Contact form</h4>
+						<div className={`col-10 p-4 d-flex flex-column ${styles.form}`}>
+							<h4 className={`mt-2 mx-0 ${styles.form__heading}`}>Contact form</h4>
 							<div className={`row justify-content-between ${styles.form__main}`}>
 								<div className={`col-lg-6 col-md-12 col-sm-12 col-12 ${styles.form__main__left}`}>
 									{this.state.inputLabel

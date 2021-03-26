@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,SAAS,CAAC;EACT,gBAAgB,EAAE,OAAO;EACzB,QAAQ,EAAE,QAAQ;EAClB,cAAc,EAAE,KAAK;CACrB",
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACT,cAAc,EAAE,KAAK;CACrB",
     "sources": [
-        "../../Components/features/features.module.scss",
-        "../scss/variable.scss"
+        "../../Components/features/features.module.scss"
     ],
     "names": [],
     "file": "features.module.css"

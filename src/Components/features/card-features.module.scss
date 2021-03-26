@@ -2,19 +2,11 @@
 
 .feature {
 	&__heading {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
 		color: $default-green-color;
-		margin-bottom: 15px;
 		&__icon {
 			background-color: $default-green-color;
 			width: 25px;
 			height: auto;
-		}
-
-		&__header {
-			margin: 0 0 0 5px;
 		}
 	}
 

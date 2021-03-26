@@ -39,7 +39,7 @@ class Features extends Component {
 
 	render() {
 		return (
-			<section className={styles.features}>
+			<section className={`position-relative ${styles.features}`}>
 				<div className="container">
 					<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true" position="right"></Heading>
 					<div className="row mb-5">

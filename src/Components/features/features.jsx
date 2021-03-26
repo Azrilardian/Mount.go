@@ -42,7 +42,7 @@ class Features extends Component {
 			<section className={`position-relative ${styles.features}`}>
 				<div className="container">
 					<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true" position="right"></Heading>
-					<div className="row mb-5">
+					<div className="row">
 						{this.state.features.map((feature, index) => {
 							const { icon, header, paragraph } = feature;
 							return <Card icon={icon} header={header} paragraph={paragraph} key={index}></Card>;

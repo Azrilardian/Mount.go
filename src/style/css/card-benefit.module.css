@@ -1,18 +1,11 @@
-.benefit {
-  margin-bottom: 30px;
-}
-
 .benefit__margin {
   background-color: #0f5a58;
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 7px 30px;
-  text-align: center;
-  overflow: hidden;
-  -webkit-box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.808);
-          box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.808);
+  -webkit-box-shadow: 3px 8px 10px #000000ce;
+          box-shadow: 3px 8px 10px #000000ce;
   -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  position: relative;
 }
 
 .benefit__margin__header {

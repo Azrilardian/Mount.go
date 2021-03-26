@@ -30,7 +30,7 @@ class Benefits extends Component {
 
 	render() {
 		return (
-			<section className={styles.benefits}>
+			<section className={`position-relative ${styles.benefits}`}>
 				<div className="container">
 					<Heading backgroundText="WHAT YOU GET ?" whiteText="WHAT YOU " greenText="GET" questionMark="true" position="left"></Heading>
 					<div className="row">

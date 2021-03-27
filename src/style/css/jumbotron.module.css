@@ -248,7 +248,6 @@
 @media screen and (max-width: 576px) {
   .jumbotron .container .row .mount-information .row {
     width: 135%;
-    background-color: lawngreen;
   }
 }
 

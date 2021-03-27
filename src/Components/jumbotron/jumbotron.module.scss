@@ -173,9 +173,13 @@
 							}
 						}
 					}
-					@media screen and(max-width:576px) {
+					@media screen and (max-width: 576px) {
 						width: 135%;
 					}
+				}
+				@media screen and (max-width: 576px) {
+					width: 135%;
+					padding-bottom: 30px;
 				}
 			}
 		}

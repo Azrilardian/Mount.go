@@ -252,6 +252,13 @@
 }
 
 @media screen and (max-width: 576px) {
+  .jumbotron .container .row .mount-information {
+    width: 135%;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .jumbotron {
     margin: -85px 0 0 0;
   }

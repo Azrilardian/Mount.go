@@ -105,7 +105,7 @@
 							@media screen and (max-width: 768px) {
 								width: 90px;
 							}
-							@media screen and (max-width: 578px) {
+							@media screen and (max-width: 576px) {
 								width: 130px;
 							}
 						}
@@ -150,7 +150,7 @@
 
 								@media screen and(max-width: 576px) {
 									height: 185px;
-									margin-left: -50px;
+									margin-left: -20px;
 								}
 							}
 							&:hover {
@@ -174,7 +174,8 @@
 						}
 					}
 					@media screen and(max-width:576px) {
-						width: 140%;
+						width: 135%;
+						background-color: lawngreen;
 					}
 				}
 			}

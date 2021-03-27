@@ -25,7 +25,7 @@ class Jumbotron extends Component {
 							</div>
 							<div className={`col ${styles["mount-information"]}`}>
 								<div className={`row align-items-end justify-content-between p-0 m-0 ${styles.row}`}>
-									<div className={`col-lg-4 col-md-4 col-sm-4 col-6 p-0 text-white ${styles.mount}`}>
+									<div className={`col-lg-4 col-md-4 col-6 p-0 text-white ${styles.mount}`}>
 										<h2 className={`m-0 ${styles.mount__name}`}>Rinjani, Lombok</h2>
 										<p className={styles.mount__country}>Indonesia</p>
 										<div className={`position-relative w-100 ${styles.mount__description__container}`}>
@@ -40,7 +40,7 @@ class Jumbotron extends Component {
 											<span className="lnr lnr-arrow-right"></span>
 										</button>
 									</div>
-									<div className={`col-lg-8 col-md-8 col-sm-8 col-6 d-flex justify-content-end align-items-center p-0 ${styles.picture}`}>
+									<div className={`col-lg-8 col-md-8 col-6 d-flex justify-content-end align-items-center p-0 ${styles.picture}`}>
 										<picture className="position-relative overflow-hidden d-flex justify-content-center align-items-center">
 											<div className="picture__container">
 												<span className="lnr lnr-eye picture__icon"></span>

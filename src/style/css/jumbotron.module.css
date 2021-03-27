@@ -150,7 +150,7 @@
   }
 }
 
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 576px) {
   .jumbotron .container .row .mount-information .row .mount__button {
     width: 130px;
   }
@@ -220,7 +220,7 @@
 @media screen and (max-width: 576px) {
   .jumbotron .container .row .mount-information .row .picture picture img {
     height: 185px;
-    margin-left: -50px;
+    margin-left: -20px;
   }
 }
 
@@ -247,7 +247,8 @@
 
 @media screen and (max-width: 576px) {
   .jumbotron .container .row .mount-information .row {
-    width: 140%;
+    width: 135%;
+    background-color: lawngreen;
   }
 }
 

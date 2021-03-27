@@ -8,35 +8,21 @@
 	background-repeat: no-repeat;
 	background-size: cover !important;
 	background: linear-gradient(#23232360, #202020bb, #131414e5, #101010), url(../../img/cristina-gottardi.jpg);
-	overflow: hidden;
 	.container {
-		height: 100%;
-		display: grid;
-		place-items: center;
 		.row {
-			flex-direction: column;
-			justify-content: space-evenly !important;
 			height: 100%;
 			.tagline {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: flex-end;
 				flex: 1;
-				padding-bottom: 20px;
-				color: white;
 				&__heading {
 					font-weight: 800;
 					font-size: 50px;
 					letter-spacing: 2px;
-					margin: 0;
 					@media screen and (max-width: 1200px) {
 						font-size: 40px;
 					}
 				}
 				&__paragraph {
 					width: 370px;
-					text-align: center;
 					font-size: 13px;
 				}
 
@@ -53,17 +39,13 @@
 				}
 			}
 			.mount-information {
-				flex: 1;
+				padding: 0;
 				padding-bottom: 80px;
+				flex: 1;
 				.row {
-					flex-direction: row;
-					align-items: flex-end;
-					justify-content: space-between;
 					.mount {
-						color: white;
 						&__name {
 							font-weight: bold;
-							margin: 0;
 							@media screen and (max-width: 1200px) {
 								font-size: 24px;
 							}
@@ -77,24 +59,26 @@
 							}
 						}
 
+						&__description__container {
+							height: 80px;
+							@media screen and (max-width: 992px) {
+								height: auto;
+							}
+						}
+
 						&__description {
 							font-size: 13px;
-
 							@media screen and (max-width: 992px) {
 								display: none;
 							}
 						}
 
 						&__button {
-							display: flex;
-							justify-content: space-between;
-							align-items: center;
 							padding-left: 10px;
 							width: 150px;
 							height: 35px;
 							border-radius: 10px;
 							font-size: 14px;
-							overflow: hidden;
 							outline: none;
 							border: none;
 
@@ -127,19 +111,11 @@
 						}
 					}
 					.picture {
-						display: flex;
-						justify-content: flex-end;
-						align-items: center;
-						padding: 0;
 						picture {
-							position: relative;
 							margin-right: 15px;
 							border-radius: 10px;
-							overflow: hidden;
 							box-shadow: 3px 4px 10px #0f0f0f50;
-							display: grid;
-							place-items: center;
-							span {
+							div {
 								position: absolute;
 								top: 0;
 								left: 0;
@@ -156,6 +132,7 @@
 								span {
 									font-size: 27px;
 									cursor: pointer;
+									filter: drop-shadow(10px 10px 40px 3px black);
 								}
 							}
 							img {
@@ -163,7 +140,6 @@
 								height: 150px;
 								border-radius: 10px;
 								transition: 0.3s ease-out;
-
 								@media screen and (max-width: 1200px) {
 									width: 220px;
 									height: 130px;
@@ -182,7 +158,7 @@
 									transform: scale(1.1);
 								}
 
-								span {
+								div {
 									opacity: 1 !important;
 								}
 							}
@@ -197,7 +173,6 @@
 							}
 						}
 					}
-
 					@media screen and(max-width:576px) {
 						width: 140%;
 					}

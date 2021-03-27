@@ -7,53 +7,22 @@
   background-size: cover !important;
   background: -webkit-gradient(linear, left top, left bottom, from(#23232360), color-stop(#202020bb), color-stop(#131414e5), to(#101010)), url(../../img/cristina-gottardi.jpg);
   background: linear-gradient(#23232360, #202020bb, #131414e5, #101010), url(../../img/cristina-gottardi.jpg);
-  overflow: hidden;
-}
-
-.jumbotron .container {
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
 }
 
 .jumbotron .container .row {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly !important;
-      -ms-flex-pack: space-evenly !important;
-          justify-content: space-evenly !important;
   height: 100%;
 }
 
 .jumbotron .container .row .tagline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-bottom: 20px;
-  color: white;
 }
 
 .jumbotron .container .row .tagline__heading {
   font-weight: 800;
   font-size: 50px;
   letter-spacing: 2px;
-  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -64,7 +33,6 @@
 
 .jumbotron .container .row .tagline__paragraph {
   width: 370px;
-  text-align: center;
   font-size: 13px;
 }
 
@@ -84,32 +52,15 @@
 }
 
 .jumbotron .container .row .mount-information {
+  padding: 0;
+  padding-bottom: 80px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-bottom: 80px;
-}
-
-.jumbotron .container .row .mount-information .row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.jumbotron .container .row .mount-information .row .mount {
-  color: white;
 }
 
 .jumbotron .container .row .mount-information .row .mount__name {
   font-weight: bold;
-  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -129,6 +80,16 @@
   }
 }
 
+.jumbotron .container .row .mount-information .row .mount__description__container {
+  height: 80px;
+}
+
+@media screen and (max-width: 992px) {
+  .jumbotron .container .row .mount-information .row .mount__description__container {
+    height: auto;
+  }
+}
+
 .jumbotron .container .row .mount-information .row .mount__description {
   font-size: 13px;
 }
@@ -140,21 +101,11 @@
 }
 
 .jumbotron .container .row .mount-information .row .mount__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-left: 10px;
   width: 150px;
   height: 35px;
   border-radius: 10px;
   font-size: 14px;
-  overflow: hidden;
   outline: none;
   border: none;
 }
@@ -205,32 +156,14 @@
   }
 }
 
-.jumbotron .container .row .mount-information .row .picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-}
-
 .jumbotron .container .row .mount-information .row .picture picture {
-  position: relative;
   margin-right: 15px;
   border-radius: 10px;
-  overflow: hidden;
   -webkit-box-shadow: 3px 4px 10px #0f0f0f50;
           box-shadow: 3px 4px 10px #0f0f0f50;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
 }
 
-.jumbotron .container .row .mount-information .row .picture picture span {
+.jumbotron .container .row .mount-information .row .picture picture div {
   position: absolute;
   top: 0;
   left: 0;
@@ -256,9 +189,11 @@
   z-index: 2;
 }
 
-.jumbotron .container .row .mount-information .row .picture picture span span {
+.jumbotron .container .row .mount-information .row .picture picture div span {
   font-size: 27px;
   cursor: pointer;
+  -webkit-filter: drop-shadow(10px 10px 40px 3px black);
+          filter: drop-shadow(10px 10px 40px 3px black);
 }
 
 .jumbotron .container .row .mount-information .row .picture picture img {
@@ -294,7 +229,7 @@
           transform: scale(1.1);
 }
 
-.jumbotron .container .row .mount-information .row .picture picture:hover span {
+.jumbotron .container .row .mount-information .row .picture picture:hover div {
   opacity: 1 !important;
 }
 

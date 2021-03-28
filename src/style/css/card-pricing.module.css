@@ -1,6 +1,57 @@
 .card__margin {
   background-color: #10151a;
   border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 10px rgba(10, 10, 10, 0.39);
+          box-shadow: 5px 10px 10px rgba(10, 10, 10, 0.39);
+  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+
+.card__margin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240%;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.027);
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.048), inset 0 0 10px rgba(255, 255, 255, 0.048);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.048), inset 0 0 10px rgba(255, 255, 255, 0.048);
+  -webkit-transform: rotate(-40deg) translateX(-250px) translateY(-480px);
+          transform: rotate(-40deg) translateX(-250px) translateY(-480px);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.card__margin:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 10px 15px 10px rgba(10, 10, 10, 0.596);
+          box-shadow: 10px 15px 10px rgba(10, 10, 10, 0.596);
+}
+
+.card__margin:hover::before {
+  -webkit-transform: rotate(-40deg) translateX(-200px) translateY(480px);
+          transform: rotate(-40deg) translateX(-200px) translateY(480px);
+}
+
+@media screen and (max-width: 992px) {
+  .card__margin {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card__margin {
+    margin: 0 60px 40px 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card__margin {
+    margin: 0 50px 40px 50px;
+  }
 }
 
 .card__header {
@@ -25,6 +76,12 @@
   background-color: #d3d3d325;
 }
 
+@media screen and (max-width: 768px) {
+  .card__price::before {
+    width: 84%;
+  }
+}
+
 .card__benefits {
   margin-top: 70px;
 }
@@ -44,9 +101,9 @@
   color: #acacac;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
   .card__benefits span {
-    padding: 0 50px;
+    padding: 0 30px;
   }
 }
 /*# sourceMappingURL=card-pricing.module.css.map */

@@ -18,6 +18,12 @@
   line-height: 28px;
 }
 
+@media screen and (max-width: 768px) {
+  .benefit__margin__paragraph {
+    line-height: 26px;
+  }
+}
+
 .benefit__margin::before {
   content: "";
   position: absolute;
@@ -38,5 +44,18 @@
 
 .benefit__margin:hover::before {
   background-color: #147976;
+}
+
+@media screen and (max-width: 992px) {
+  .benefit__margin {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .benefit__margin {
+    margin-bottom: 25px;
+    padding: 25px 30px;
+  }
 }
 /*# sourceMappingURL=card-benefit.module.css.map */

@@ -32,7 +32,7 @@ class Jumbotron extends Component {
 											<p
 												className={`text position-absolute ${styles.mount__description}`}
 												data-wait="1000"
-												data-words='["makansana rumahsaya dimana kamu berada sayang aku disini ayo kita pergi ke pantai dan bersuka cita disana."]'
+												data-words='["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, architecto suscipit? Consequuntur quis in cumque optio error consectetur, dolorum iusto."]'
 											></p>
 										</div>
 										<button className={`d-flex justify-content-between align-items-center overflow-hidden ${styles.mount__button}`}>

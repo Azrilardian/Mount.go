@@ -56,6 +56,12 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  .heading.right .heading__header::after {
+    display: none;
+  }
+}
+
 .heading.left .heading__backgroundtext--right {
   right: -140px;
   margin-top: 10px;
@@ -103,6 +109,12 @@
   .heading.left .heading__header::after {
     -webkit-transform: translate(15px, -50%);
             transform: translate(15px, -50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading.left .heading__header::after {
+    display: none;
   }
 }
 

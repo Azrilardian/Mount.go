@@ -15,6 +15,9 @@
 		&__paragraph {
 			font-size: 13px;
 			line-height: 28px;
+			@media screen and (max-width: 768px) {
+				line-height: 26px;
+			}
 		}
 
 		&::before {
@@ -34,6 +37,14 @@
 			&::before {
 				background-color: lighten($color: $default-green-color, $amount: 7);
 			}
+		}
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 30px;
+		}
+		@media screen and (max-width: 576px) {
+			margin-bottom: 25px;
+			padding: 25px 30px;
 		}
 	}
 }

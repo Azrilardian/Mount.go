@@ -35,7 +35,7 @@ class Favourites extends Component {
 		return (
 			<section className={styles["favourite-destination"]}>
 				<Heading backgroundText="FAV DESTINATION" whiteText="FAV " greenText="DESTINATION" questionMark="false" position="right"></Heading>
-				<div className="row">
+				<div className="row m-0 p-0 w-100">
 					{this.state.favourites.map((favourite, index) => {
 						const { name, daerah, country, picture, keteranganSingkat } = favourite;
 						return <Card name={name} daerah={daerah} country={country} picture={picture} keteranganSingkat={keteranganSingkat} key={index}></Card>;

@@ -5,9 +5,7 @@ const Card = (props) => {
 	const { name, daerah, country, picture, keteranganSingkat } = props;
 	return (
 		<div className={`col-lg-6 col-md-6 col-sm-12 ${styles.card}`}>
-			<span className={styles.card__overlay}>
-				<img src={picture} alt={picture} />
-			</span>
+			<img src={picture} alt={picture} className="img-fluid" />
 			<div className={styles.card__container}>
 				<h2 className={styles.card__name}>
 					{name} Mount, {daerah}

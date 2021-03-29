@@ -21,6 +21,12 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 992px) {
+  .contact .form__main__right__label {
+    margin-top: 0;
+  }
+}
+
 .contact .form__main__right__textarea {
   height: 100px;
   padding: 10px;

@@ -18,6 +18,9 @@
 				&__label {
 					font-size: 13px;
 					margin-top: 20px;
+					@media screen and (max-width: 992px) {
+						margin-top: 0;
+					}
 				}
 				&__textarea {
 					height: 100px;

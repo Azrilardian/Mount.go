@@ -3,4 +3,38 @@
   font-size: 13px;
   margin-top: 100px;
 }
+
+.footer .row {
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 576px) {
+  .footer .row {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__copyright {
+    text-align: center;
+    margin-bottom: 10px !important;
+  }
+}
+
+.footer__socmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 576px) {
+  .footer__socmed {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=footer.module.css.map */

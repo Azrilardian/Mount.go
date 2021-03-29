@@ -2,4 +2,23 @@
 	background-color: #10151a;
 	font-size: 13px;
 	margin-top: 100px;
+	.row {
+		padding: 20px 0;
+		@media screen and (max-width: 576px) {
+			padding: 30px 0;
+		}
+	}
+	&__copyright {
+		@media screen and (max-width: 576px) {
+			text-align: center;
+			margin-bottom: 10px !important;
+		}
+	}
+	&__socmed {
+		display: flex;
+		justify-content: flex-end;
+		@media screen and (max-width: 576px) {
+			justify-content: center;
+		}
+	}
 }

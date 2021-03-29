@@ -14,22 +14,22 @@ const Navbar = () => {
 						</h3>
 					</div>
 					<ul className={`col-lg-5 col-md-7 col-sm-8 m-0 ${styles.nav__navigations}`}>
-						<li className={styles.nav__navigation}>
+						<li className={`position-relative ${styles.nav__navigation}`}>
 							<a href="#" className="text-white">
 								Home
 							</a>
 						</li>
-						<li className={styles.nav__navigation}>
+						<li className={`position-relative ${styles.nav__navigation}`}>
 							<a href="#" className="text-white">
 								Info
 							</a>
 						</li>
-						<li className={styles.nav__navigation}>
+						<li className={`position-relative ${styles.nav__navigation}`}>
 							<a href="#" className="text-white">
 								Price
 							</a>
 						</li>
-						<li className={styles.nav__navigation}>
+						<li className={`position-relative ${styles.nav__navigation}`}>
 							<a href="#" className="text-white">
 								Contact
 							</a>

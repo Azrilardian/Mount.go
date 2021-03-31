@@ -13,8 +13,8 @@ const Card = (props) => {
 				</span>
 				<h1 className={`position-relative text-center my-4 ${styles.card__price}`}>${price}</h1>
 				<div className={`d-flex flex-column justify-content-center align-items-start ${styles.card__benefits}`}>
-					{benefits.map((benefit) => (
-						<span className="d-flex align-items-start">
+					{benefits.map((benefit, index) => (
+						<span className="d-flex align-items-start" key={index}>
 							<img src={checkIcon} alt="check-solid.svg" />
 							<p>{benefit}</p>
 						</span>

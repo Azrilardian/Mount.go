@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 578px) {
   .jumbotron .container .row .mount-information .row .mount__button span:last-child {
     display: -webkit-box;
     display: -ms-flexbox;

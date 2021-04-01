@@ -4,6 +4,7 @@
 	&__backgroundtext {
 		user-select: none;
 		color: #0f5a587c;
+		transition: 1s ease;
 	}
 	&__header {
 		font-weight: 600;
@@ -16,14 +17,26 @@
 	&.right {
 		.heading__backgroundtext {
 			&--right {
-				right: -140px;
-				margin-top: -4px;
+				right: 50%;
+				transform: translateX(50%);
+				margin-top: 0px;
+				&.onscreen-effect {
+					right: -140px;
+					margin-top: -4px;
+					transform: unset;
+				}
 			}
 			&--left {
-				left: -140px;
-				margin-top: 10px;
+				right: 50%;
+				transform: translateX(50%);
+				margin-top: 0px;
 				@media screen and (max-width: 992px) {
 					display: none;
+				}
+				&.onscreen-effect {
+					left: -140px;
+					margin-top: 10px;
+					transform: unset;
 				}
 			}
 		}
@@ -32,12 +45,13 @@
 			content: "";
 			position: absolute;
 			top: 49%;
-			left: 50%;
-			transform: translate(190px, -50%);
+			right: 0;
+			transform: translate(130%, -50%);
 			width: 60%;
 			height: 3px;
 			background-color: #474747;
 			border-radius: 5px;
+			transition: 1s ease;
 			@media screen and (max-width: 1200px) {
 				transform: translate(210px, -50%);
 			}
@@ -45,19 +59,34 @@
 				display: none;
 			}
 		}
+		.heading__header.onscreen-effect::after {
+			left: 50%;
+			transform: translate(190px, -50%);
+		}
 	}
 	&.left {
 		.heading__backgroundtext {
 			&--right {
-				right: -140px;
-				margin-top: 10px;
+				right: 50%;
+				transform: translateX(50%);
 				@media screen and (max-width: 992px) {
 					display: none;
 				}
+
+				&.onscreen-effect {
+					right: -140px;
+					margin-top: 10px;
+					transform: unset;
+				}
 			}
 			&--left {
-				left: -140px;
-				margin-top: -4px;
+				left: 50%;
+				transform: translateX(-50%);
+				&.onscreen-effect {
+					left: -140px;
+					margin-top: -4px;
+					transform: unset;
+				}
 			}
 		}
 
@@ -65,12 +94,13 @@
 			content: "";
 			position: absolute;
 			top: 49%;
-			left: -50%;
-			transform: translate(230px, -50%);
+			left: 0;
+			transform: translate(-130%, -50%);
 			width: 60%;
 			height: 3px;
 			background-color: #474747;
 			border-radius: 5px;
+			transition: 1s ease;
 			@media screen and (max-width: 1200px) {
 				transform: translate(160px, -50%);
 			}
@@ -83,6 +113,10 @@
 			@media screen and (max-width: 576px) {
 				display: none;
 			}
+		}
+		.heading__header.onscreen-effect::after {
+			left: -50%;
+			transform: translate(230px, -50%);
 		}
 	}
 }

@@ -14,6 +14,10 @@
 
 	&__left {
 		z-index: 2;
+		transform: translateY(100px);
+		transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		content-visibility: hidden;
+		opacity: 0;
 		&__header {
 			font-weight: 600;
 			span {
@@ -28,15 +32,30 @@
 			color: $default-light-gray-color;
 			font-weight: 300;
 		}
+
+		&.onscreen-effect {
+			transform: unset;
+			content-visibility: auto;
+			opacity: 1;
+		}
 	}
 
 	&__right {
 		z-index: 2;
+		transform: translateX(100px);
+		content-visibility: hidden;
+		transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		opacity: 0;
 		@media screen and(max-width:992px) {
 			margin-top: 70px;
 		}
 		@media screen and(max-width:578px) {
 			transform: scale(0.9);
+		}
+		&.onscreen-effect {
+			transform: unset;
+			content-visibility: auto;
+			opacity: 1;
 		}
 	}
 }

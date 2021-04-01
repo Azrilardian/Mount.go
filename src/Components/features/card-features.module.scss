@@ -1,6 +1,43 @@
 @import "../../style/scss/variable.scss";
 
 .feature {
+	.margin {
+		position: relative;
+		// min-height: 260px;
+		padding: 10px;
+		border-radius: 10px;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: 0;
+			transform-origin: right;
+			background-color: $default-black-color;
+			transition: 0.8s ease;
+			z-index: 3;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: 0;
+			transform-origin: right;
+			background-color: $default-blue-grey-darken-color;
+			transition: 0.8s ease;
+			transition-delay: 0.2s;
+		}
+	}
+	.margin.onscreen-effect::before {
+		width: 0;
+	}
+	.margin.onscreen-effect::after {
+		width: 0;
+	}
 	&__heading {
 		color: $default-green-color;
 		min-height: 40px;
@@ -14,5 +51,12 @@
 		font-size: 13px;
 		line-height: 28px;
 		color: $default-light-gray-color;
+		opacity: 0;
+		transition: 1s ease;
+		transition-delay: 0.6s;
+	}
+
+	.margin.onscreen-effect &__paragraph {
+		opacity: 1;
 	}
 }

@@ -4,8 +4,16 @@
   padding: 7px 30px;
   -webkit-box-shadow: 3px 8px 10px #000000ce;
           box-shadow: 3px 8px 10px #000000ce;
-  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: margin 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: margin 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  content-visibility: hidden;
 }
 
 .benefit__margin__header {
@@ -37,8 +45,7 @@
 }
 
 .benefit__margin:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  margin-top: -8px;
   background-color: #0c4947;
 }
 
@@ -57,5 +64,12 @@
     margin-bottom: 25px;
     padding: 25px 30px;
   }
+}
+
+.benefit__margin.onscreen-effect {
+  -webkit-transform: unset;
+          transform: unset;
+  opacity: 1;
+  content-visibility: auto;
 }
 /*# sourceMappingURL=card-benefit.module.css.map */

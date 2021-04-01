@@ -5,6 +5,7 @@ const onScreenEffect = (selector, effectName) => {
 			if (!entry.isIntersecting) return entry.target.classList.remove(effectName);
 			entry.target.classList.add(effectName);
 			// observer.unobserve(entry.target);
+			return false;
 		});
 	});
 	targets.forEach((target) => observer.observe(target));

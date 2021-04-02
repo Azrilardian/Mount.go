@@ -17,26 +17,32 @@
 	&.right {
 		.heading__backgroundtext {
 			&--right {
-				right: 50%;
+				right: 26%;
 				transform: translateX(50%);
-				margin-top: 0px;
+				opacity: 0;
+				content-visibility: hidden;
 				&.onscreen-effect {
 					right: -140px;
-					margin-top: -4px;
 					transform: unset;
+					opacity: 1;
+					margin-top: -4px;
+					content-visibility: auto;
 				}
 			}
 			&--left {
-				right: 50%;
+				left: 26%;
 				transform: translateX(50%);
-				margin-top: 0px;
+				opacity: 0;
+				content-visibility: hidden;
 				@media screen and (max-width: 992px) {
 					display: none;
 				}
 				&.onscreen-effect {
-					left: -140px;
-					margin-top: 10px;
+					left: -210px;
 					transform: unset;
+					opacity: 1;
+					margin-top: 10px;
+					content-visibility: auto;
 				}
 			}
 		}
@@ -52,6 +58,8 @@
 			background-color: #474747;
 			border-radius: 5px;
 			transition: 1s ease;
+			opacity: 0;
+			content-visibility: hidden;
 			@media screen and (max-width: 1200px) {
 				transform: translate(210px, -50%);
 			}
@@ -60,8 +68,10 @@
 			}
 		}
 		.heading__header.onscreen-effect::after {
-			left: 50%;
+			right: -12%;
 			transform: translate(190px, -50%);
+			opacity: 1;
+			content-visibility: auto;
 		}
 	}
 	&.left {
@@ -69,23 +79,31 @@
 			&--right {
 				right: 50%;
 				transform: translateX(50%);
+				opacity: 0;
+				content-visibility: hidden;
 				@media screen and (max-width: 992px) {
 					display: none;
 				}
 
 				&.onscreen-effect {
 					right: -140px;
-					margin-top: 10px;
 					transform: unset;
+					opacity: unset;
+					content-visibility: auto;
+					margin-top: 10px;
 				}
 			}
 			&--left {
 				left: 50%;
 				transform: translateX(-50%);
+				opacity: 0;
+				content-visibility: hidden;
 				&.onscreen-effect {
 					left: -140px;
-					margin-top: -4px;
 					transform: unset;
+					opacity: 1;
+					content-visibility: auto;
+					margin-top: -4px;
 				}
 			}
 		}
@@ -101,22 +119,20 @@
 			background-color: #474747;
 			border-radius: 5px;
 			transition: 1s ease;
+			opacity: 0;
+			content-visibility: hidden;
 			@media screen and (max-width: 1200px) {
-				transform: translate(160px, -50%);
-			}
-			@media screen and (max-width: 992px) {
-				transform: translate(60px, -50%);
-			}
-			@media screen and (max-width: 768px) {
-				transform: translate(15px, -50%);
+				transform: translate(210px, -50%);
 			}
 			@media screen and (max-width: 576px) {
 				display: none;
 			}
 		}
 		.heading__header.onscreen-effect::after {
-			left: -50%;
-			transform: translate(230px, -50%);
+			left: -12%;
+			transform: translate(-190px, -50%);
+			opacity: 1;
+			content-visibility: auto;
 		}
 	}
 }

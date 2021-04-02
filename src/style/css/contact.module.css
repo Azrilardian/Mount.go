@@ -1,15 +1,23 @@
 .contact {
+  min-height: 780px;
   background: -webkit-gradient(linear, left top, left bottom, from(#1e2125d7), to(#1e2125d7)), url(../../img/bg-contact.jpg);
   background: linear-gradient(#1e2125d7, #1e2125d7), url(../../img/bg-contact.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  content-visibility: hidden;
   padding-bottom: 100px;
 }
 
 .contact .form {
   background-color: #10151a;
   border-radius: 10px;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  content-visibility: hidden;
 }
 
 .contact .form__heading {
@@ -39,5 +47,15 @@
   resize: none;
   font-size: 13px;
   margin-bottom: 20px;
+}
+
+.contact .form.onscreen-effect {
+  content-visibility: auto;
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+.contact.onscreen-effect {
+  content-visibility: auto;
 }
 /*# sourceMappingURL=contact.module.css.map */

@@ -1,18 +1,23 @@
 @import "../../style/scss/variable.scss";
 
 .contact {
+	min-height: 780px;
 	background: linear-gradient(#1e2125d7, #1e2125d7), url(../../img/bg-contact.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	content-visibility: hidden;
 	padding-bottom: 100px;
 	.form {
 		background-color: #10151a;
 		border-radius: 10px;
+		transform: translateY(100px);
+		transition: 1s ease-out;
+		content-visibility: hidden;
 		&__heading {
 			font-weight: 500;
 		}
-
 		&__main {
 			&__right {
 				&__label {
@@ -37,5 +42,12 @@
 				}
 			}
 		}
+		&.onscreen-effect {
+			content-visibility: auto;
+			transform: unset;
+		}
+	}
+	&.onscreen-effect {
+		content-visibility: auto;
 	}
 }

@@ -5,13 +5,14 @@
 .card__margin {
   background-color: #10151a;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 10px rgba(10, 10, 10, 0.39);
-          box-shadow: 5px 10px 10px rgba(10, 10, 10, 0.39);
+  -webkit-box-shadow: 5px 10px 10px #0a0a0a63;
+          box-shadow: 5px 10px 10px #0a0a0a63;
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
   content-visibility: hidden;
+  opacity: 0;
   position: relative;
 }
 
@@ -23,8 +24,8 @@
   width: 240%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.027);
-  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.048), inset 0 0 10px rgba(255, 255, 255, 0.048);
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.048), inset 0 0 10px rgba(255, 255, 255, 0.048);
+  -webkit-box-shadow: 0 0 10px #ffffff0c, inset 0 0 10px #ffffff0c;
+          box-shadow: 0 0 10px #ffffff0c, inset 0 0 10px #ffffff0c;
   -webkit-transform: rotate(-40deg) translateX(-250px) translateY(-480px);
           transform: rotate(-40deg) translateX(-250px) translateY(-480px);
   -webkit-transition: 0.4s ease-in-out;
@@ -32,12 +33,10 @@
 }
 
 .card__margin:hover {
-  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transform: scale(1.03) !important;
           transform: scale(1.03) !important;
-  -webkit-box-shadow: 10px 15px 10px rgba(10, 10, 10, 0.596);
-          box-shadow: 10px 15px 10px rgba(10, 10, 10, 0.596);
+  -webkit-box-shadow: 10px 15px 10px #0a0a0a98;
+          box-shadow: 10px 15px 10px #0a0a0a98;
 }
 
 .card__margin:hover::before {
@@ -66,6 +65,7 @@
 .card__margin.onscreen-effect {
   -webkit-transform: unset;
           transform: unset;
+  opacity: 1;
   content-visibility: auto;
 }
 

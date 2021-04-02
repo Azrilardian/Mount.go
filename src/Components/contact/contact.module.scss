@@ -43,8 +43,9 @@
 			}
 		}
 		&.onscreen-effect {
-			content-visibility: auto;
 			transform: unset;
+			opacity: 1;
+			content-visibility: auto;
 		}
 	}
 	&.onscreen-effect {

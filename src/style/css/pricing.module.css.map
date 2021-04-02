@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACR,OAAO,EAAE,OAAO;CAChB",
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACR,MAAM,EAAE,eAAe;CACvB",
     "sources": [
         "../../Components/pricing/pricing.module.scss"
     ],

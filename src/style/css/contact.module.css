@@ -50,9 +50,10 @@
 }
 
 .contact .form.onscreen-effect {
-  content-visibility: auto;
   -webkit-transform: unset;
           transform: unset;
+  opacity: 1;
+  content-visibility: auto;
 }
 
 .contact.onscreen-effect {

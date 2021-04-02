@@ -1,3 +1,7 @@
+.card {
+  min-height: 500px;
+}
+
 .card__margin {
   background-color: #10151a;
   border-radius: 10px;

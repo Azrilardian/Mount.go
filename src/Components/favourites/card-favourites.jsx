@@ -4,7 +4,7 @@ import onScreenEffect from "../../js/onScreenEffect";
 
 class Card extends Component {
 	componentDidMount() {
-		onScreenEffect(".onscreen-component", styles["onscreen-effect"]);
+		onScreenEffect(".onscreen-component", styles["onscreen-effect"], "-30px");
 	}
 	render() {
 		const { name, daerah, country, picture, keteranganSingkat } = this.props;

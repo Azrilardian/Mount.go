@@ -6,7 +6,7 @@ const onScreenEffect = (selector, effectName, margin) => {
 		entries.map((entry) => {
 			if (!entry.isIntersecting) return entry.target.classList.remove(effectName);
 			entry.target.classList.add(effectName);
-			// observer.unobserve(entry.target);
+			observer.unobserve(entry.target);
 			return false;
 		});
 	};

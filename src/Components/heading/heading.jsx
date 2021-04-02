@@ -3,10 +3,6 @@ import styles from "../../style/css/heading.module.css";
 import onScreenEffect from "../../js/onScreenEffect";
 
 class Heading extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	componentDidMount() {
 		onScreenEffect(".onscreen-element", styles["onscreen-effect"]);
 	}

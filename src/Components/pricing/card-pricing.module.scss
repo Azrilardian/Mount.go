@@ -1,6 +1,7 @@
 @import "../../style/scss/variable.scss";
 
 .card {
+	min-height: 500px;
 	&__margin {
 		background-color: #10151a;
 		border-radius: 10px;

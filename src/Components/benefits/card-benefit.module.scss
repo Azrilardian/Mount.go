@@ -1,13 +1,14 @@
 @import "../../style/scss/variable.scss";
 
 .benefit {
+	min-height: 200px;
 	&__margin {
 		background-color: $default-green-color;
 		border-radius: 10px;
 		padding: 7px 30px;
 		box-shadow: 3px 8px 10px #000000ce;
-		transition: margin 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		transition: transform 1s ease;
+		// transition: margin 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		transition: transform 1s ease-out;
 		transform: translateY(100px);
 		opacity: 0;
 		content-visibility: hidden;

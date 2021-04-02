@@ -6,7 +6,7 @@ import onsSreenEffect from "../../js/onScreenEffect";
 
 class Card extends Component {
 	componentDidMount() {
-		onsSreenEffect(".onscreen-element", styles["onscreen-effect"]);
+		onsSreenEffect(".onscreen-element", styles["onscreen-effect"], "-30px");
 	}
 	render() {
 		const { name, price, benefits } = this.props;

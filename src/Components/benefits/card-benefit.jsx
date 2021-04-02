@@ -3,11 +3,8 @@ import styles from "../../style/css/card-benefit.module.css";
 import onScreenEffect from "../../js/onScreenEffect";
 
 class Benefit extends Component {
-	constructor(props) {
-		super(props);
-	}
 	componentDidMount() {
-		onScreenEffect(".onscreen-element", styles["onscreen-effect"]);
+		onScreenEffect(".onscreen-element", styles["onscreen-effect"], "-30px");
 	}
 
 	render() {

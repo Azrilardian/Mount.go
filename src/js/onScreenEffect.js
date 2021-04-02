@@ -1,12 +1,17 @@
-const onScreenEffect = (selector, effectName) => {
+import { wait } from "@testing-library/dom";
+
+const onScreenEffect = (selector, effectName, margin) => {
 	const targets = document.querySelectorAll(selector);
-	const observer = new IntersectionObserver((entries) => {
+	const entries = (entries) => {
 		entries.map((entry) => {
 			if (!entry.isIntersecting) return entry.target.classList.remove(effectName);
 			entry.target.classList.add(effectName);
-			observer.unobserve(entry.target);
+			// observer.unobserve(entry.target);
 			return false;
 		});
+	};
+	const observer = new IntersectionObserver(entries, {
+		rootMargin: margin,
 	});
 	targets.forEach((target) => observer.observe(target));
 };

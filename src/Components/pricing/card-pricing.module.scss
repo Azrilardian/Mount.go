@@ -5,7 +5,9 @@
 		background-color: #10151a;
 		border-radius: 10px;
 		box-shadow: 5px 10px 10px rgba(10, 10, 10, 0.39);
-		transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		transition: 1s ease-out;
+		transform: translateY(100px);
+		content-visibility: hidden;
 		position: relative;
 		&::before {
 			content: "";
@@ -20,7 +22,8 @@
 			transition: 0.4s ease-in-out;
 		}
 		&:hover {
-			transform: scale(1.03);
+			transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			transform: scale(1.03) !important;
 			box-shadow: 10px 15px 10px rgba(10, 10, 10, 0.596);
 			&::before {
 				transform: rotate(-40deg) translateX(-200px) translateY(480px);
@@ -34,6 +37,10 @@
 		}
 		@media screen and (max-width: 576px) {
 			margin: 0 50px 40px 50px;
+		}
+		&.onscreen-effect {
+			transform: unset;
+			content-visibility: auto;
 		}
 	}
 

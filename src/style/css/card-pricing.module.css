@@ -3,8 +3,11 @@
   border-radius: 10px;
   -webkit-box-shadow: 5px 10px 10px rgba(10, 10, 10, 0.39);
           box-shadow: 5px 10px 10px rgba(10, 10, 10, 0.39);
-  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  content-visibility: hidden;
   position: relative;
 }
 
@@ -25,8 +28,10 @@
 }
 
 .card__margin:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: scale(1.03) !important;
+          transform: scale(1.03) !important;
   -webkit-box-shadow: 10px 15px 10px rgba(10, 10, 10, 0.596);
           box-shadow: 10px 15px 10px rgba(10, 10, 10, 0.596);
 }
@@ -52,6 +57,12 @@
   .card__margin {
     margin: 0 50px 40px 50px;
   }
+}
+
+.card__margin.onscreen-effect {
+  -webkit-transform: unset;
+          transform: unset;
+  content-visibility: auto;
 }
 
 .card__header {

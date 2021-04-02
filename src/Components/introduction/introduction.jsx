@@ -6,7 +6,7 @@ import onScreenEffect from "../../js/onScreenEffect";
 
 class Introduction extends Component {
 	componentDidMount() {
-		onScreenEffect(".onscreen-element", styles["onscreen-effect"]);
+		onScreenEffect(".onscreen-element", styles["onscreen-effect"], "-60px");
 	}
 
 	render() {

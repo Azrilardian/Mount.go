@@ -23,6 +23,8 @@
   font-weight: 800;
   font-size: 50px;
   letter-spacing: 2px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 @media screen and (max-width: 1200px) {
@@ -34,6 +36,8 @@
 .jumbotron .container .row .tagline__paragraph {
   width: 370px;
   font-size: 13px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .jumbotron .container .row .tagline__button {
@@ -42,6 +46,8 @@
   border: 3px solid white;
   background-color: transparent;
   border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -49,6 +55,45 @@
 .jumbotron .container .row .tagline__button:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+.jumbotron .container .row .tagline__button--fixed {
+  position: fixed;
+  -webkit-transform: translate(0, 950%) scale(1.1) rotate(180deg);
+          transform: translate(0, 950%) scale(1.1) rotate(180deg);
+  background-color: #151d25;
+  opacity: 0.5;
+  border: 3px solid #111213;
+  z-index: 3;
+  -webkit-animation: rotate 0.3s ease;
+          animation: rotate 0.3s ease;
+}
+
+.jumbotron .container .row .tagline__button--fixed:hover {
+  -webkit-transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
+          transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: translate(0, 950%) scale(1.1);
+            transform: translate(0, 950%) scale(1.1);
+  }
+  to {
+    -webkit-transform: translate(0, 950%) scale(1.1) rotate(180deg);
+            transform: translate(0, 950%) scale(1.1) rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: translate(0, 950%) scale(1.1);
+            transform: translate(0, 950%) scale(1.1);
+  }
+  to {
+    -webkit-transform: translate(0, 950%) scale(1.1) rotate(180deg);
+            transform: translate(0, 950%) scale(1.1) rotate(180deg);
+  }
 }
 
 .jumbotron .container .row .mount-information {

@@ -17,6 +17,7 @@
 					font-weight: 800;
 					font-size: 50px;
 					letter-spacing: 2px;
+					transition: 0.3s ease;
 					@media screen and (max-width: 1200px) {
 						font-size: 40px;
 					}
@@ -24,6 +25,7 @@
 				&__paragraph {
 					width: 370px;
 					font-size: 13px;
+					transition: 0.3s ease;
 				}
 
 				&__button {
@@ -32,9 +34,31 @@
 					border: 3px solid white;
 					background-color: transparent;
 					border-radius: 50%;
+					box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
 					transition: 0.3s ease;
 					&:hover {
 						transform: scale(0.95);
+					}
+					&--fixed {
+						position: fixed;
+						transform: translate(0, 950%) scale(1.1) rotate(180deg);
+						background-color: $default-blue-grey-darken-color;
+						opacity: 0.5;
+						border: 3px solid $default-black-color;
+						z-index: 3;
+						animation: rotate 0.3s ease;
+						&:hover {
+							transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
+						}
+					}
+
+					@keyframes rotate {
+						from {
+							transform: translate(0, 950%) scale(1.1);
+						}
+						to {
+							transform: translate(0, 950%) scale(1.1) rotate(180deg);
+						}
 					}
 				}
 			}

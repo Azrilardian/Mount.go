@@ -1,5 +1,3 @@
-import { wait } from "@testing-library/dom";
-
 const onScreenEffect = (selector, effectName, margin) => {
 	const targets = document.querySelectorAll(selector);
 	const entries = (entries) => {

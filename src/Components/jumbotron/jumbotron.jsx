@@ -5,8 +5,22 @@ import mountImgOne from "../../img/cristina-gottardi.jpg";
 import mountImgTwo from "../../img/arno-senoner.jpg";
 import typeWritterEffect from "../../js/writtingeffect";
 class Jumbotron extends Component {
+	state = {};
 	componentDidMount() {
 		typeWritterEffect();
+		const target = document.querySelector(`.${styles.tagline}`);
+		const button = document.querySelector(`.${styles.tagline__button}`);
+		const entries = (entries) => {
+			entries.map((entry) => {
+				if (!entry.isIntersecting) return button.classList.add(`${styles["tagline__button--fixed"]}`);
+				button.classList.remove(`${styles["tagline__button--fixed"]}`);
+				return false;
+			});
+		};
+		const observer = new IntersectionObserver(entries, {
+			rootMargin: "-150px",
+		});
+		observer.observe(target);
 	}
 
 	render() {
@@ -19,7 +33,7 @@ class Jumbotron extends Component {
 							<div className={`d-flex flex-column justify-content-end align-items-center text-white pb-3 ${styles.tagline}`}>
 								<h1 className={`m-0 ${styles.tagline__heading}`}>TO THE MOUNT.</h1>
 								<p className={`text-center ${styles.tagline__paragraph}`}>makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai.</p>
-								<button className={styles.tagline__button}>
+								<button className={`${styles.tagline__button}`}>
 									<span className="lnr lnr-arrow-down text-white"></span>
 								</button>
 							</div>

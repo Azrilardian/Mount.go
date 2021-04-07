@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from "../../style/css/navbar.module.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
 	const [sidebar, setSidebar] = useState(false);
 
 	return (
-		<header className="position-sticky">
+		<header className={`position-sticky ${styles.header} ${props.setBackgroundColor ? styles["header--dark"] : ""} `}>
 			<div className="container">
 				<nav className={`row justify-content-between align-items-center ${styles.nav}`}>
 					<div className="col-lg-7 col-md-5 col-sm-4 col-8">

@@ -36,10 +36,6 @@
           transition-delay: 0.2s;
 }
 
-.feature .margin.onscreen-effect {
-  content-visibility: auto;
-}
-
 .feature .margin.onscreen-effect::before {
   width: 0;
 }

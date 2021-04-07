@@ -1,11 +1,12 @@
 @import "../../style/scss/variable.scss";
-header {
+.header {
 	background-color: #3a3a3a48;
 	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 999;
+	transition: 0.3s ease;
 	.nav {
 		padding: 12px 0;
 		@media screen and (max-width: 576px) {
@@ -112,5 +113,9 @@ header {
 				align-items: center;
 			}
 		}
+	}
+
+	&--dark {
+		background-color: #1f1f1fbd;
 	}
 }

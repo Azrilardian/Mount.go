@@ -5,20 +5,31 @@ import mountImgOne from "../../img/cristina-gottardi.jpg";
 import mountImgTwo from "../../img/arno-senoner.jpg";
 import typeWritterEffect from "../../js/writtingeffect";
 class Jumbotron extends Component {
-	state = {};
+	state = {
+		setNavbarBackground: false,
+	};
 	componentDidMount() {
 		typeWritterEffect();
 		const target = document.querySelector(`.${styles.tagline}`);
 		const button = document.querySelector(`.${styles.tagline__button}`);
 		const entries = (entries) => {
 			entries.map((entry) => {
-				if (!entry.isIntersecting) return button.classList.add(`${styles["tagline__button--fixed"]}`);
-				button.classList.remove(`${styles["tagline__button--fixed"]}`);
+				if (!entry.isIntersecting) {
+					button.classList.add(`${styles["tagline__button--fixed"]}`);
+					this.setState({
+						setNavbarBackground: true,
+					});
+				} else {
+					button.classList.remove(`${styles["tagline__button--fixed"]}`);
+					this.setState({
+						setNavbarBackground: false,
+					});
+				}
 				return false;
 			});
 		};
 		const observer = new IntersectionObserver(entries, {
-			rootMargin: "-150px",
+			rootMargin: "-230px",
 		});
 		observer.observe(target);
 	}
@@ -26,7 +37,7 @@ class Jumbotron extends Component {
 	render() {
 		return (
 			<>
-				<Navbar></Navbar>
+				<Navbar setBackgroundColor={this.state.setNavbarBackground}></Navbar>
 				<section className={`overflow-hidden ${styles.jumbotron}`}>
 					<div className={`container d-flex justify-content-center h-100 align-items-center ${styles.container}`}>
 						<div className={`row w-100 flex-column justify-content-evenly ${styles.row}`}>

@@ -8,6 +8,7 @@
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   z-index: 1;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 578px) {

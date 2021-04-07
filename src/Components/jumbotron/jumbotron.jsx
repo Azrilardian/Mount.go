@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 import Navbar from "../navbar/navbar";
 import styles from "../../style/css/jumbotron.module.css";
-import mountImgOne from "../../img/cristina-gottardi.jpg";
-import mountImgTwo from "../../img/arno-senoner.jpg";
+import mountImgOneCompress from "../../img/over-compress/jumbotron-pict-1.webp";
+import mountImgTwoCompress from "../../img/over-compress/jumbotron-pict-2.webp";
+import mountImgOne from "../../img/jumbotron-pict-1.webp";
+import mountImgTwo from "../../img/jumbotron-pict-2.webp";
 import typeWritterEffect from "../../js/writtingeffect";
+import lazyLoadEffect from "../../js/lazyLoadEffect";
 class Jumbotron extends Component {
 	state = {
 		setNavbarBackground: false,
 	};
 	componentDidMount() {
 		typeWritterEffect();
-		const target = document.querySelector(`.${styles.tagline}`);
+		lazyLoadEffect();
+		const tagline = document.querySelector(`.${styles.tagline}`);
 		const button = document.querySelector(`.${styles.tagline__button}`);
 		const entries = (entries) => {
 			entries.map((entry) => {
@@ -31,7 +35,7 @@ class Jumbotron extends Component {
 		const observer = new IntersectionObserver(entries, {
 			rootMargin: "-230px",
 		});
-		observer.observe(target);
+		observer.observe(tagline);
 	}
 
 	render() {
@@ -70,13 +74,13 @@ class Jumbotron extends Component {
 											<div className="picture__container">
 												<span className="lnr lnr-eye picture__icon"></span>
 											</div>
-											<img src={mountImgOne} alt="cristina-gottardi.jpg" loading="lazy" decoding="async" />
+											<img src={mountImgOneCompress} data-src={mountImgOne} alt="cristina-gottardi.jpg" loading="lazy" decoding="async" className="lazy-load" />
 										</picture>
 										<picture className="position-relative overflow-hidden d-flex justify-content-center align-items-center">
 											<div className="picture__container">
 												<span className="lnr lnr-eye picture__icon"></span>
 											</div>
-											<img src={mountImgTwo} alt="arno-senoner.jpg" loading="lazy" decoding="async" />
+											<img src={mountImgTwoCompress} data-src={mountImgTwo} alt="arno-senoner.jpg" loading="lazy" decoding="async" className="lazy-load" />
 										</picture>
 										<div className={styles.picture__button}>
 											<span className="lnr lnr-arrow-right"></span>

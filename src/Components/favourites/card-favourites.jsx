@@ -7,10 +7,10 @@ class Card extends Component {
 		onScreenEffect(".onscreen-component", styles["onscreen-effect"], "-30px");
 	}
 	render() {
-		const { name, daerah, country, picture, keteranganSingkat } = this.props;
+		const { name, daerah, country, picture, pictureCompress, keteranganSingkat } = this.props;
 		return (
 			<div className={`col-lg-6 col-md-6 col-sm-12 onscreen-component ${styles.card}`}>
-				<img src={picture} alt={picture} className="img-fluid" />
+				<img src={pictureCompress} data-src={picture} alt={picture} className="lazy-load" />
 				<div
 					className={styles.card__container}
 					onAnimationEnd={(e) => {

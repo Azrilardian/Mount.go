@@ -4,8 +4,8 @@
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 999;
+  width: 100vw;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -47,7 +47,7 @@
     -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 70%;

@@ -15,7 +15,7 @@ class Introduction extends Component {
 				<section className={`position-relative ${styles.introduction}`}>
 					<img src={dotPatternImage} alt="dot.png" className={`position-absolute ${styles.introduction__img}`} />
 					<div className="container">
-						<div className="row justify-content-between align-items-center">
+						<div className={`${styles.row} row justify-content-between align-items-center`}>
 							<div className={`col-lg-5 col-md-6 col-sm-12 text-white ${styles.introduction__left} onscreen-element`}>
 								<h1 className={styles.introduction__left__header}>
 									WHAT <span>US</span> ?

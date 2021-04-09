@@ -8,8 +8,13 @@
 		transform: scale(0.9);
 		z-index: 1;
 		pointer-events: none;
-		@media screen and(max-width:578px) {
+		@media screen and(max-width:576px) {
 			left: -240px;
+		}
+		@media screen and(max-width:425px) {
+			left: -200px;
+			top: 120px;
+			transform: scale(0.7);
 		}
 	}
 
@@ -24,6 +29,9 @@
 			font-weight: 600;
 			span {
 				color: $default-green-color;
+			}
+			@media screen and(max-width:425px) {
+				font-size: 30px;
 			}
 		}
 
@@ -52,13 +60,17 @@
 		@media screen and(max-width:992px) {
 			margin-top: 70px;
 		}
-		@media screen and(max-width:578px) {
-			transform: scale(0.9);
+		@media screen and(max-width:425px) {
+			margin-top: 30px;
+			transform: scale(0.85) !important;
 		}
 		&.onscreen-effect {
 			transform: unset;
 			content-visibility: auto;
 			opacity: 1;
 		}
+	}
+	@media screen and(max-width:425px) {
+		padding: 100px 0 0 0;
 	}
 }

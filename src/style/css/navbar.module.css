@@ -29,6 +29,12 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 425px) {
+  .header .nav__logo {
+    font-size: 21px;
+  }
+}
+
 .header .nav__navigations {
   list-style-type: none;
   display: -webkit-box;

@@ -18,6 +18,9 @@
 			a {
 				text-decoration: none;
 			}
+			@media screen and (max-width: 425px) {
+				font-size: 21px;
+			}
 		}
 		&__navigations {
 			list-style-type: none;

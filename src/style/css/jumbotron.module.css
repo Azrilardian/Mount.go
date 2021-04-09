@@ -33,11 +33,23 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .jumbotron .container .row .tagline__heading {
+    font-size: 30px;
+  }
+}
+
 .jumbotron .container .row .tagline__paragraph {
   width: 370px;
   font-size: 13px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+@media screen and (max-width: 425px) {
+  .jumbotron .container .row .tagline__paragraph {
+    width: 350px;
+  }
 }
 
 .jumbotron .container .row .tagline__button {
@@ -114,6 +126,12 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .jumbotron .container .row .mount-information .row .mount__name {
+    font-size: 20px;
+  }
+}
+
 .jumbotron .container .row .mount-information .row .mount__country {
   font-size: 17px;
   color: #6b6b6b;
@@ -122,6 +140,12 @@
 @media screen and (max-width: 1200px) {
   .jumbotron .container .row .mount-information .row .mount__country {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .jumbotron .container .row .mount-information .row .mount__country {
+    font-size: 13px;
   }
 }
 
@@ -201,6 +225,13 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .jumbotron .container .row .mount-information .row .mount__button {
+    width: 120px;
+    height: 30px;
+  }
+}
+
 .jumbotron .container .row .mount-information .row .picture picture {
   margin-right: 15px;
   border-radius: 10px;
@@ -269,6 +300,12 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .jumbotron .container .row .mount-information .row .picture picture img {
+    height: 145px;
+  }
+}
+
 .jumbotron .container .row .mount-information .row .picture picture:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -298,7 +335,6 @@
 
 @media screen and (max-width: 576px) {
   .jumbotron .container .row .mount-information {
-    width: 135%;
     padding-bottom: 30px;
   }
 }

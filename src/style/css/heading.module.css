@@ -1,5 +1,5 @@
 .heading {
-  margin-top: 60px;
+  margin: 80px 0;
 }
 
 .heading__backgroundtext {
@@ -15,11 +15,16 @@
 .heading__header {
   font-weight: 600;
   font-size: 34px;
-  margin-bottom: 100px;
 }
 
 .heading__header span {
   color: #0f5a58;
+}
+
+@media screen and (max-width: 425px) {
+  .heading__header {
+    font-size: 30px;
+  }
 }
 
 .heading.right .heading__backgroundtext--right {
@@ -176,6 +181,12 @@
           transform: translate(-190px, -50%);
   opacity: 1;
   content-visibility: auto;
+}
+
+@media screen and (max-width: 425px) {
+  .heading {
+    margin: 0 0 50px 0;
+  }
 }
 
 @media screen and (max-width: 576px) {

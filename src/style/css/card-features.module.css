@@ -54,6 +54,18 @@
   height: auto;
 }
 
+@media screen and (max-width: 425px) {
+  .feature__heading__icon {
+    width: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .feature__heading__header {
+    font-size: 19px;
+  }
+}
+
 .feature__paragraph {
   font-size: 13px;
   line-height: 28px;

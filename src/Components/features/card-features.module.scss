@@ -43,6 +43,14 @@
 		&__icon {
 			width: 20px;
 			height: auto;
+			@media screen and (max-width: 425px) {
+				width: 18px;
+			}
+		}
+		&__header {
+			@media screen and (max-width: 425px) {
+				font-size: 19px;
+			}
 		}
 	}
 

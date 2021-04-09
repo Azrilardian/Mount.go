@@ -1,6 +1,6 @@
 @import "../../style/scss/variable.scss";
 .heading {
-	margin-top: 60px;
+	margin: 80px 0;
 	&__backgroundtext {
 		user-select: none;
 		color: #0f5a587c;
@@ -9,9 +9,11 @@
 	&__header {
 		font-weight: 600;
 		font-size: 34px;
-		margin-bottom: 100px;
 		span {
 			color: $default-green-color;
+		}
+		@media screen and (max-width: 425px) {
+			font-size: 30px;
 		}
 	}
 	&.right {
@@ -134,6 +136,9 @@
 			opacity: 1;
 			content-visibility: auto;
 		}
+	}
+	@media screen and (max-width: 425px) {
+		margin: 0 0 50px 0;
 	}
 }
 

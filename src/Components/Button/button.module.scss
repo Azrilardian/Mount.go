@@ -9,6 +9,9 @@
 	font-size: 13px;
 	box-shadow: 3px 5px 10px #0a0a0a;
 	transition: 0.3s ease;
+	@media screen and (max-width: 425px) {
+		padding: 13px 25px;
+	}
 }
 
 .blue {

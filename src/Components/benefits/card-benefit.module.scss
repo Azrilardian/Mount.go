@@ -2,10 +2,12 @@
 
 .benefit {
 	min-height: 200px;
+	margin: 0 !important;
+	// background-color: lavender;
 	&__margin {
 		background-color: $default-green-color;
 		border-radius: 10px;
-		padding: 7px 30px;
+		padding: 20px 30px;
 		box-shadow: 3px 8px 10px #000000ce;
 		// transition: margin 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 		transition: transform 1s ease-out;
@@ -43,12 +45,10 @@
 				background-color: lighten($color: $default-green-color, $amount: 7);
 			}
 		}
-
 		@media screen and (max-width: 992px) {
 			margin-bottom: 30px;
 		}
 		@media screen and (max-width: 576px) {
-			margin-bottom: 25px;
 			padding: 25px 30px;
 		}
 		&.onscreen-effect {

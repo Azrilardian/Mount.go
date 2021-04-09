@@ -11,6 +11,12 @@
   transition: 0.3s ease;
 }
 
+@media screen and (max-width: 425px) {
+  .defaultbtn {
+    padding: 13px 25px;
+  }
+}
+
 .blue {
   background-color: #151d25;
 }

@@ -7,17 +7,14 @@ import styles from "../../style/css/benefits.module.css";
 const Benefits = () => {
 	const benefits = [
 		{
-			icon: "",
 			header: "Lorem Ipsum Donor",
 			paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini makan kamu kenapa gitu.`,
 		},
 		{
-			icon: "",
 			header: "Lorem Ipsum Donor",
 			paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini ada kamu menemani.`,
 		},
 		{
-			icon: "",
 			header: "Lorem Ipsum Donor",
 			paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini lah memangnya kenapa.`,
 		},

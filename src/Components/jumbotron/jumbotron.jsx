@@ -32,9 +32,7 @@ class Jumbotron extends Component {
 				return false;
 			});
 		};
-		const observer = new IntersectionObserver(entries, {
-			rootMargin: "-230px",
-		});
+		const observer = new IntersectionObserver(entries);
 		observer.observe(tagline);
 	}
 

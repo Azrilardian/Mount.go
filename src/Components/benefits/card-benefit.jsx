@@ -8,12 +8,12 @@ class Benefit extends Component {
 	}
 
 	render() {
-		const { icon, header, paragraph } = this.props;
+		const { header, paragraph } = this.props;
 		return (
-			<div className={`col-lg-4 col-md-6 col-sm-6 col-12 mb-3 ${styles.benefit}`}>
+			<div className={`col-lg-4 col-md-6 col-sm-6 col-12 m-0 ${styles.benefit}`}>
 				<div className={`position-relative overflow-hidden onscreen-element text-center ${styles.benefit__margin}`}>
 					<h5 className={`m-0 ${styles.benefit__margin__header}`}>{header}</h5>
-					<p className={styles.benefit__margin__paragraph}>{paragraph}</p>
+					<p className={`m-0 ${styles.benefit__margin__paragraph}`}>{paragraph}</p>
 				</div>
 			</div>
 		);

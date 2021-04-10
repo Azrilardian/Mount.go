@@ -20,22 +20,7 @@
 		justify-content: center;
 		flex-direction: column;
 		transition: 0.5s ease;
-		padding: 0 50px;
-		@media screen and (max-width: 1200px) {
-			height: 60%;
-		}
-		@media screen and (max-width: 992px) {
-			padding: 0 30px;
-			height: 70%;
-		}
-		@media screen and (max-width: 768px) {
-			height: 55%;
-			padding: 0 40px;
-		}
-		@media screen and (max-width: 576px) {
-			height: 190px;
-			padding: 0 20px;
-		}
+		padding: 0 30px;
 	}
 
 	&__name {
@@ -45,6 +30,9 @@
 		opacity: 0;
 		@media screen and (max-width: 1200px) {
 			font-size: 25px;
+		}
+		@media screen and (max-width: 992px) {
+			font-size: 20px;
 		}
 	}
 
@@ -59,6 +47,7 @@
 		font-size: 13px;
 		transition: 0.5s ease;
 		opacity: 0;
+		margin: 0;
 		@media screen and (max-width: 992px) {
 			width: unset;
 		}
@@ -69,7 +58,7 @@
 			animation: containerToBottom 2s ease;
 			animation-delay: 0.3s;
 			&.animation-end {
-				height: 50%;
+				height: 250px;
 				bottom: 0;
 				top: unset;
 				transition: unset;
@@ -78,6 +67,9 @@
 				.card__country,
 				.card__keterangan-singkat {
 					opacity: 1;
+				}
+				@media screen and (max-width: 992px) {
+					height: 180px !important;
 				}
 			}
 			&.animation-start {
@@ -96,18 +88,9 @@
 		}
 		&:hover {
 			.card__container {
-				height: 55%;
-				@media screen and (max-width: 1200px) {
-					height: 65%;
-				}
+				height: 270px !important;
 				@media screen and (max-width: 992px) {
-					height: 75%;
-				}
-				@media screen and (max-width: 768px) {
-					height: 60%;
-				}
-				@media screen and (max-width: 576px) {
-					height: 75%;
+					height: 200px !important;
 				}
 			}
 			.card__overlay {
@@ -156,5 +139,8 @@
 			content-visibility: auto;
 			opacity: 1;
 		}
+	}
+	@media screen and (max-width: 425px) {
+		height: 280px !important;
 	}
 }

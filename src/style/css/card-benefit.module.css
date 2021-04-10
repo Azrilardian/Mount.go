@@ -1,6 +1,5 @@
 .benefit {
   min-height: 200px;
-  margin: 0 !important;
 }
 
 .benefit__margin {
@@ -27,6 +26,7 @@
 .benefit__margin__paragraph {
   font-size: 13px;
   line-height: 28px;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 992px) {
   .benefit__margin {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
 }
 

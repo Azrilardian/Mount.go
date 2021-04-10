@@ -33,7 +33,7 @@ const Favourites = () => {
 		},
 	];
 	return (
-		<section className={styles["favourite-destination"]}>
+		<section className={`position-relative ${styles["favourite-destination"]}`}>
 			<Heading backgroundText="FAV DESTINATION" whiteText="FAV " greenText="DESTINATION" questionMark="false" position="right"></Heading>
 			<div className="row m-0 p-0 w-100">
 				{favourites.map((favourite, index) => {

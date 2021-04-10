@@ -1,5 +1,10 @@
 .favourite-destination {
   background-color: #10151a;
-  position: relative;
+}
+
+@media screen and (max-width: 425px) {
+  .favourite-destination {
+    padding: 50px 0 0;
+  }
 }
 /*# sourceMappingURL=favourites.module.css.map */

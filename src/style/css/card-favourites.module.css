@@ -29,34 +29,7 @@
           flex-direction: column;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  padding: 0 50px;
-}
-
-@media screen and (max-width: 1200px) {
-  .card__container {
-    height: 60%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .card__container {
-    padding: 0 30px;
-    height: 70%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .card__container {
-    height: 55%;
-    padding: 0 40px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .card__container {
-    height: 190px;
-    padding: 0 20px;
-  }
+  padding: 0 30px;
 }
 
 .card__name {
@@ -73,6 +46,12 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .card__name {
+    font-size: 20px;
+  }
+}
+
 .card__country {
   color: #6b6b6b;
   -webkit-transition: 0.5s ease;
@@ -86,6 +65,7 @@
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   opacity: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -102,7 +82,7 @@
 }
 
 .card.onscreen-effect .card__container.animation-end {
-  height: 50%;
+  height: 250px;
   bottom: 0;
   top: unset;
   -webkit-transition: unset;
@@ -117,6 +97,12 @@
 .card.onscreen-effect .card__container.animation-end .card__country,
 .card.onscreen-effect .card__container.animation-end .card__keterangan-singkat {
   opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .card.onscreen-effect .card__container.animation-end {
+    height: 180px !important;
+  }
 }
 
 .card.onscreen-effect .card__container.animation-start .card__name,
@@ -135,30 +121,12 @@
 }
 
 .card.onscreen-effect:hover .card__container {
-  height: 55%;
-}
-
-@media screen and (max-width: 1200px) {
-  .card.onscreen-effect:hover .card__container {
-    height: 65%;
-  }
+  height: 270px !important;
 }
 
 @media screen and (max-width: 992px) {
   .card.onscreen-effect:hover .card__container {
-    height: 75%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .card.onscreen-effect:hover .card__container {
-    height: 60%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .card.onscreen-effect:hover .card__container {
-    height: 75%;
+    height: 200px !important;
   }
 }
 
@@ -245,6 +213,12 @@
   to {
     content-visibility: auto;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    height: 280px !important;
   }
 }
 /*# sourceMappingURL=card-favourites.module.css.map */

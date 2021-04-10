@@ -40,6 +40,9 @@
 		@media screen and (max-width: 576px) {
 			margin: 0 50px 40px 50px;
 		}
+		@media screen and (max-width: 425px) {
+			margin: 0 0 40px 0;
+		}
 		&.onscreen-effect {
 			transform: unset;
 			opacity: 1;

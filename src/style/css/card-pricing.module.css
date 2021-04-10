@@ -62,6 +62,12 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .card__margin {
+    margin: 0 0 40px 0;
+  }
+}
+
 .card__margin.onscreen-effect {
   -webkit-transform: unset;
           transform: unset;

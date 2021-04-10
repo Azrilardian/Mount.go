@@ -111,6 +111,13 @@
   opacity: 0;
 }
 
+@media screen and (max-width: 992px) {
+  .card.onscreen-effect .card__container {
+    -webkit-animation: containerToBottomForTablet 2s ease;
+            animation: containerToBottomForTablet 2s ease;
+  }
+}
+
 .card.onscreen-effect .card__name,
 .card.onscreen-effect .card__country,
 .card.onscreen-effect .card__keterangan-singkat {
@@ -171,7 +178,7 @@
   100% {
     top: unset;
     bottom: 0;
-    height: 50%;
+    height: 250px;
   }
 }
 
@@ -190,7 +197,45 @@
   100% {
     top: unset;
     bottom: 0;
-    height: 50%;
+    height: 250px;
+  }
+}
+
+@-webkit-keyframes containerToBottomForTablet {
+  0% {
+    height: 0%;
+  }
+  15% {
+    height: 100%;
+  }
+  50% {
+    top: unset;
+    bottom: 0;
+    height: 0%;
+  }
+  100% {
+    top: unset;
+    bottom: 0;
+    height: 180px;
+  }
+}
+
+@keyframes containerToBottomForTablet {
+  0% {
+    height: 0%;
+  }
+  15% {
+    height: 100%;
+  }
+  50% {
+    top: unset;
+    bottom: 0;
+    height: 0%;
+  }
+  100% {
+    top: unset;
+    bottom: 0;
+    height: 180px;
   }
 }
 

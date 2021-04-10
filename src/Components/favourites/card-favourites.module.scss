@@ -79,6 +79,9 @@
 					opacity: 0;
 				}
 			}
+			@media screen and (max-width: 992px) {
+				animation: containerToBottomForTablet 2s ease;
+			}
 		}
 		.card__name,
 		.card__country,
@@ -126,7 +129,25 @@
 		100% {
 			top: unset;
 			bottom: 0;
-			height: 50%;
+			height: 250px;
+		}
+	}
+	@keyframes containerToBottomForTablet {
+		0% {
+			height: 0%;
+		}
+		15% {
+			height: 100%;
+		}
+		50% {
+			top: unset;
+			bottom: 0;
+			height: 0%;
+		}
+		100% {
+			top: unset;
+			bottom: 0;
+			height: 180px;
 		}
 	}
 

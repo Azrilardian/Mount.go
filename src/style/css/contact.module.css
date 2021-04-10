@@ -59,4 +59,10 @@
 .contact.onscreen-effect {
   content-visibility: auto;
 }
+
+@media screen and (max-width: 425px) {
+  .contact {
+    padding: 50px 0;
+  }
+}
 /*# sourceMappingURL=contact.module.css.map */

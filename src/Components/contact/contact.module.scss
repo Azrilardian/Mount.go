@@ -51,4 +51,7 @@
 	&.onscreen-effect {
 		content-visibility: auto;
 	}
+	@media screen and (max-width: 425px) {
+		padding: 50px 0;
+	}
 }

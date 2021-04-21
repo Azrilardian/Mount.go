@@ -3,8 +3,11 @@
 	margin: 80px 0;
 	&__backgroundtext {
 		user-select: none;
-		color: #0f5a587c;
+		color: #0f5a582a;
 		transition: 1s ease-out;
+		font-family: "Kanit", sans-serif;
+		font-weight: 600;
+		font-size: 60px;
 	}
 	&__header {
 		font-weight: 600;
@@ -27,7 +30,7 @@
 					right: -140px;
 					transform: unset;
 					opacity: 1;
-					margin-top: -4px;
+					margin-top: -16px;
 					content-visibility: auto;
 				}
 			}
@@ -105,7 +108,7 @@
 					transform: unset;
 					opacity: 1;
 					content-visibility: auto;
-					margin-top: -4px;
+					margin-top: -18px;
 				}
 			}
 		}

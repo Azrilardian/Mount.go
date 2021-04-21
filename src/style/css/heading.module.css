@@ -7,9 +7,12 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: #0f5a587c;
+  color: #0f5a582a;
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
 }
 
 .heading__header {
@@ -40,7 +43,7 @@
   -webkit-transform: unset;
           transform: unset;
   opacity: 1;
-  margin-top: -4px;
+  margin-top: -16px;
   content-visibility: auto;
 }
 
@@ -142,7 +145,7 @@
           transform: unset;
   opacity: 1;
   content-visibility: auto;
-  margin-top: -4px;
+  margin-top: -18px;
 }
 
 .heading.left .heading__header::after {

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link as LinkR } from "react-router-dom";
 import Navbar from "../navbar/navbar";
 import styles from "../../style/css/jumbotron.module.css";
 import mountImgOneCompress from "../../img/over-compress/jumbotron-pict-1.webp";
@@ -82,7 +83,11 @@ class Jumbotron extends Component {
 										</picture>
 										<div className={styles.picture__button}>
 											<span className="lnr lnr-arrow-right"></span>
-											<p>See All</p>
+											<p>
+												<LinkR to="./detail" className="text-white">
+													See Detail
+												</LinkR>
+											</p>
 										</div>
 									</div>
 								</div>

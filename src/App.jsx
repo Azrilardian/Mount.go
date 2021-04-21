@@ -1,25 +1,17 @@
 import React from "react";
-import Jumbotron from "./Components/jumbotron/jumbotron";
-import Introduction from "./Components/introduction/introduction";
-import Features from "./Components/features/features";
-import Benefits from "./Components/benefits/benefits";
-import Favourites from "./Components/favourites/favourites";
-import Pricing from "./Components/pricing/pricing";
-import Contact from "./Components/contact/contact";
-import Footer from "./Components/footer/footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import DetailPages from "./pages/DetailPages/DetailPages";
 
 const App = () => {
 	return (
-		<>
-			<Jumbotron></Jumbotron>
-			<Introduction></Introduction>
-			<Features></Features>
-			<Benefits></Benefits>
-			<Favourites></Favourites>
-			<Pricing></Pricing>
-			<Contact></Contact>
-			<Footer></Footer>
-		</>
+		<Router>
+			<Switch>
+				<Route path="/" component={Home} exact></Route>
+				<Route path="/detail" component={DetailPages} exact></Route>
+			</Switch>
+		</Router>
+		// <DetailPages></DetailPages>
 	);
 };
 

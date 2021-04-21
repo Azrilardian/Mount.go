@@ -13,13 +13,13 @@
   height: 100%;
 }
 
-.jumbotron .container .row .tagline {
+.jumbotron .container .row .jumbotron__tagline {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.jumbotron .container .row .tagline__heading {
+.jumbotron .container .row .jumbotron__tagline__heading {
   font-weight: 800;
   font-size: 50px;
   letter-spacing: 2px;
@@ -28,18 +28,18 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .jumbotron .container .row .tagline__heading {
+  .jumbotron .container .row .jumbotron__tagline__heading {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .jumbotron .container .row .tagline__heading {
+  .jumbotron .container .row .jumbotron__tagline__heading {
     font-size: 30px;
   }
 }
 
-.jumbotron .container .row .tagline__paragraph {
+.jumbotron .container .row .jumbotron__tagline__paragraph {
   width: 370px;
   font-size: 13px;
   -webkit-transition: 0.3s ease;
@@ -47,12 +47,12 @@
 }
 
 @media screen and (max-width: 425px) {
-  .jumbotron .container .row .tagline__paragraph {
+  .jumbotron .container .row .jumbotron__tagline__paragraph {
     width: 350px;
   }
 }
 
-.jumbotron .container .row .tagline__button {
+.jumbotron .container .row .jumbotron__tagline__button {
   width: 40px;
   height: 40px;
   border: 3px solid white;
@@ -64,12 +64,12 @@
   transition: 0.3s ease;
 }
 
-.jumbotron .container .row .tagline__button:hover {
+.jumbotron .container .row .jumbotron__tagline__button:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
 
-.jumbotron .container .row .tagline__button--fixed {
+.jumbotron .container .row .jumbotron__tagline__button--fixed {
   position: fixed;
   -webkit-transform: translate(0, 950%) scale(1.1) rotate(180deg);
           transform: translate(0, 950%) scale(1.1) rotate(180deg);
@@ -81,7 +81,7 @@
           animation: rotate 0.3s ease;
 }
 
-.jumbotron .container .row .tagline__button--fixed:hover {
+.jumbotron .container .row .jumbotron__tagline__button--fixed:hover {
   -webkit-transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
           transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
 }
@@ -108,7 +108,7 @@
   }
 }
 
-.jumbotron .container .row .mount-information {
+.jumbotron .container .row .jumbotron__mount-information {
   padding: 0;
   padding-bottom: 80px;
   -webkit-box-flex: 1;
@@ -116,60 +116,60 @@
           flex: 1;
 }
 
-.jumbotron .container .row .mount-information .row .mount__name {
+.jumbotron .container .row .jumbotron__mount-information__mount__name {
   font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
-  .jumbotron .container .row .mount-information .row .mount__name {
+  .jumbotron .container .row .jumbotron__mount-information__mount__name {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .jumbotron .container .row .mount-information .row .mount__name {
+  .jumbotron .container .row .jumbotron__mount-information__mount__name {
     font-size: 20px;
   }
 }
 
-.jumbotron .container .row .mount-information .row .mount__country {
+.jumbotron .container .row .jumbotron__mount-information__mount__country {
   font-size: 17px;
   color: #6b6b6b;
 }
 
 @media screen and (max-width: 1200px) {
-  .jumbotron .container .row .mount-information .row .mount__country {
+  .jumbotron .container .row .jumbotron__mount-information__mount__country {
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .jumbotron .container .row .mount-information .row .mount__country {
+  .jumbotron .container .row .jumbotron__mount-information__mount__country {
     font-size: 13px;
   }
 }
 
-.jumbotron .container .row .mount-information .row .mount__description__container {
+.jumbotron .container .row .jumbotron__mount-information__mount__description {
   height: 80px;
 }
 
 @media screen and (max-width: 992px) {
-  .jumbotron .container .row .mount-information .row .mount__description__container {
+  .jumbotron .container .row .jumbotron__mount-information__mount__description {
     height: auto;
   }
 }
 
-.jumbotron .container .row .mount-information .row .mount__description {
+.jumbotron .container .row .jumbotron__mount-information__mount__description__text {
   font-size: 13px;
 }
 
 @media screen and (max-width: 992px) {
-  .jumbotron .container .row .mount-information .row .mount__description {
+  .jumbotron .container .row .jumbotron__mount-information__mount__description__text {
     display: none;
   }
 }
 
-.jumbotron .container .row .mount-information .row .mount__button {
+.jumbotron .container .row .jumbotron__mount-information__mount__button {
   padding-left: 10px;
   width: 150px;
   height: 35px;
@@ -179,7 +179,7 @@
   border: none;
 }
 
-.jumbotron .container .row .mount-information .row .mount__button span:last-child {
+.jumbotron .container .row .jumbotron__mount-information__mount__button__icon {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   height: 100%;
@@ -195,18 +195,18 @@
   padding: 0 7px;
 }
 
-.jumbotron .container .row .mount-information .row .mount__button span:last-child:hover {
+.jumbotron .container .row .jumbotron__mount-information__mount__button__icon:hover {
   background-color: #cfcfcf;
 }
 
 @media screen and (max-width: 768px) {
-  .jumbotron .container .row .mount-information .row .mount__button span:last-child {
+  .jumbotron .container .row .jumbotron__mount-information__mount__button__icon {
     display: none;
   }
 }
 
 @media screen and (max-width: 578px) {
-  .jumbotron .container .row .mount-information .row .mount__button span:last-child {
+  .jumbotron .container .row .jumbotron__mount-information__mount__button__icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -214,32 +214,32 @@
 }
 
 @media screen and (max-width: 768px) {
-  .jumbotron .container .row .mount-information .row .mount__button {
+  .jumbotron .container .row .jumbotron__mount-information__mount__button {
     width: 90px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .jumbotron .container .row .mount-information .row .mount__button {
+  .jumbotron .container .row .jumbotron__mount-information__mount__button {
     width: 130px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .jumbotron .container .row .mount-information .row .mount__button {
+  .jumbotron .container .row .jumbotron__mount-information__mount__button {
     width: 120px;
     height: 30px;
   }
 }
 
-.jumbotron .container .row .mount-information .row .picture picture {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container {
   margin-right: 15px;
   border-radius: 10px;
   -webkit-box-shadow: 3px 4px 10px #0f0f0f50;
           box-shadow: 3px 4px 10px #0f0f0f50;
 }
 
-.jumbotron .container .row .mount-information .row .picture picture div {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container__overflow {
   position: absolute;
   top: 0;
   left: 0;
@@ -265,14 +265,14 @@
   z-index: 2;
 }
 
-.jumbotron .container .row .mount-information .row .picture picture div span {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container__overflow__icon {
   font-size: 27px;
   cursor: pointer;
   -webkit-filter: drop-shadow(10px 10px 40px 3px black);
           filter: drop-shadow(10px 10px 40px 3px black);
 }
 
-.jumbotron .container .row .mount-information .row .picture picture img {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container__img {
   width: 250px;
   height: 150px;
   border-radius: 10px;
@@ -281,60 +281,60 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .jumbotron .container .row .mount-information .row .picture picture img {
+  .jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container__img {
     width: 220px;
     height: 130px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .jumbotron .container .row .mount-information .row .picture picture img {
+  .jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container__img {
     height: 120px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .jumbotron .container .row .mount-information .row .picture picture img {
+  .jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container__img {
     height: 185px;
     margin-left: -20px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .jumbotron .container .row .mount-information .row .picture picture img {
+  .jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container__img {
     height: 145px;
   }
 }
 
-.jumbotron .container .row .mount-information .row .picture picture:hover img {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container:hover .jumbotron__mount-information__picture__container__overflow {
+  opacity: 1 !important;
+}
+
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__container:hover .jumbotron__mount-information__picture__container__img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.jumbotron .container .row .mount-information .row .picture picture:hover div {
-  opacity: 1 !important;
-}
-
-.jumbotron .container .row .mount-information .row .picture__button {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__button {
   cursor: pointer;
 }
 
-.jumbotron .container .row .mount-information .row .picture__button span {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__button__icon {
   font-size: 24px;
 }
 
-.jumbotron .container .row .mount-information .row .picture__button p {
+.jumbotron .container .row .jumbotron__mount-information .jumbotron__mount-information__picture__button__text {
   font-size: 13px;
 }
 
 @media screen and (max-width: 576px) {
-  .jumbotron .container .row .mount-information .row {
+  .jumbotron .container .row .jumbotron__mount-information {
     width: 135%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .jumbotron .container .row .mount-information {
+  .jumbotron .container .row .jumbotron__mount-information {
     padding-bottom: 30px;
   }
 }
@@ -344,4 +344,4 @@
     margin: -85px 0 0 0;
   }
 }
-/*# sourceMappingURL=jumbotron.module.css.map */
+/*# sourceMappingURL=jumbotron.css.map */

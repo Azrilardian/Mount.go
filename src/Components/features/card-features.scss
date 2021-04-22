@@ -1,7 +1,7 @@
 @import "../../style/scss/variable.scss";
 
 .feature {
-	.margin {
+	&__margin {
 		position: relative;
 		padding: 10px;
 		border-radius: 10px;
@@ -30,12 +30,15 @@
 			transition: 0.8s ease;
 			transition-delay: 0.2s;
 		}
-	}
-	.margin.onscreen-effect::before {
-		width: 0;
-	}
-	.margin.onscreen-effect::after {
-		width: 0;
+
+		&.onscreen-effect::before,
+		&.onscreen-effect::after {
+			width: 0;
+		}
+
+		&.onscreen-effect .feature__paragraph {
+			opacity: 1;
+		}
 	}
 	&__heading {
 		color: $default-green-color;
@@ -61,9 +64,5 @@
 		opacity: 0;
 		transition: 1s ease;
 		transition-delay: 0.6s;
-	}
-
-	.margin.onscreen-effect &__paragraph {
-		opacity: 1;
 	}
 }

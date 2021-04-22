@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "./card-features";
 import Heading from "../heading/heading";
 import Button from "../Button/button";
-import styles from "../../style/css/features.module.css";
+import Card from "./card-features";
 import timeIcon from "../../icon/lnr-hourglass.png";
 import LicenseIcon from "../../icon/lnr-license.png";
 import bubbleIcon from "../../icon/lnr-bubble.png";
 import smileIcon from "../../icon/lnr-smile.png";
+import "../../style/css/features.css";
 
 const Features = () => {
 	const features = [
@@ -31,8 +31,9 @@ const Features = () => {
 			paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai dan bersuka cita  disana hah saying aku disini ayo pergi lreom ke p maksn.`,
 		},
 	];
+
 	return (
-		<section className={`position-relative ${styles.features}`}>
+		<section className="position-relative features">
 			<div className="container">
 				<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true" position="right"></Heading>
 				<div className="row">

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Heading from "../heading/heading";
 import Card from "./card-favourites";
-import styles from "../../style/css/favourites.module.css";
+import "../../style/css/favourites.css";
 import favouriteOneCompress from "../../img/over-compress/favourite-one.webp";
 import favouriteTwoCompress from "../../img/over-compress/favourite-two.webp";
 import favouriteOne from "../../img/favourite-one.webp";
@@ -11,7 +11,8 @@ import lazyLoadEffect from "../../js/lazyLoadEffect";
 const Favourites = () => {
 	useEffect(() => {
 		lazyLoadEffect();
-	});
+	}, []);
+
 	const favourites = [
 		{
 			name: "Meru",
@@ -33,7 +34,7 @@ const Favourites = () => {
 		},
 	];
 	return (
-		<section className={`position-relative ${styles["favourite-destination"]}`}>
+		<section className="position-relative favourite-destination">
 			<Heading backgroundText="FAV DESTINATION" whiteText="FAV " greenText="DESTINATION" questionMark="false" position="right"></Heading>
 			<div className="row m-0 p-0 w-100">
 				{favourites.map((favourite, index) => {

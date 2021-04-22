@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "../../style/css/input-contact.module.css";
+import "../../style/css/input-contact.css";
 
-const Input = (props) => {
+const Input = ({ height, children }) => {
 	return (
-		<div className={styles["form__input-container"]}>
-			<p className={styles["form__input-container__paragraph"]}>{props.children}</p>
-			<input type="text" className={styles["form__input-container__input"]} style={{ height: `${props.height}px` }} />
+		<div className="form__input-container">
+			<p className="form__input-container__paragraph">{children}</p>
+			<input type="text" className="form__input-container__input" style={{ height: `${height}px` }} />
 		</div>
 	);
 };

@@ -2,7 +2,7 @@ import React from "react";
 import Benefit from "./card-benefit";
 import Heading from "../heading/heading";
 import Button from "../Button/button";
-import styles from "../../style/css/benefits.module.css";
+import "../../style/css/benefits.css";
 
 const Benefits = () => {
 	const benefits = [
@@ -19,8 +19,9 @@ const Benefits = () => {
 			paragraph: `makansana rumahsaya dimana kamu berada saying aku disini ayo kita Pergi ke pantai dan bersuka cita  disana hah. aku disini lah memangnya kenapa.`,
 		},
 	];
+
 	return (
-		<section className={`position-relative ${styles.benefits}`}>
+		<section className="position-relative benefits">
 			<div className="container">
 				<Heading backgroundText="WHAT YOU GET ?" whiteText="WHAT YOU " greenText="GET" questionMark="true" position="left"></Heading>
 				<div className="row">

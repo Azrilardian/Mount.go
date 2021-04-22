@@ -1,4 +1,4 @@
-.defaultbtn {
+.default-btn {
   padding: 13px 30px;
   border-radius: 50px;
   outline: none;
@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .defaultbtn {
+  .default-btn {
     padding: 13px 25px;
   }
 }
@@ -44,4 +44,4 @@
 .green:active {
   background-color: #082e2d;
 }
-/*# sourceMappingURL=button.module.css.map */
+/*# sourceMappingURL=button.css.map */

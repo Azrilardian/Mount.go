@@ -1,10 +1,8 @@
 import React from "react";
-import styles from "../../style/css/button.module.css";
+import "../../style/css/button.css";
 
-const Button = (props) => {
-	let color = `${styles.blue}`;
-	if (props.color === "green") color = `${styles.green}`;
-	return <button className={`text-white ${styles.defaultbtn} ${color}`}>{props.children}</button>;
+const Button = ({ color = "blue", children }) => {
+	return <button className={`text-white default-btn ${color}`}>{children}</button>;
 };
 
 export default Button;

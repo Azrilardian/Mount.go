@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,QAAQ,CAAC;EACR,MAAM,EAAE,OAAO;CACf",
     "sources": [
-        "../../Components/pricing/pricing.module.scss"
+        "../../Components/pricing/pricing.scss"
     ],
     "names": [],
-    "file": "pricing.module.css"
+    "file": "pricing.css"
 }

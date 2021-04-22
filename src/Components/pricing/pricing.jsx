@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../heading/heading";
 import Card from "./card-pricing";
-import style from "../../style/css/pricing.module.css";
+import "../../style/css/pricing.css";
 
 const Pricing = () => {
 	const packages = [
@@ -39,7 +39,7 @@ const Pricing = () => {
 
 	return (
 		<>
-			<section className={`position-relative ${style.pricing}`}>
+			<section className="position-relative pricing">
 				<div className="container">
 					<Heading backgroundText="PRICE AND PACKAGE ?" whiteText="PRICE AND " greenText="PACKAGE" questionMark="false" position="left"></Heading>
 					<div className="row">

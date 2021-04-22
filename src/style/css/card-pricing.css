@@ -1,8 +1,8 @@
-.card {
+.pricing-card {
   min-height: 500px;
 }
 
-.card__margin {
+.pricing-card__margin {
   background-color: #10151a;
   border-radius: 10px;
   -webkit-box-shadow: 5px 10px 10px #0a0a0a63;
@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.card__margin::before {
+.pricing-card__margin::before {
   content: "";
   position: absolute;
   top: 0;
@@ -32,60 +32,60 @@
   transition: 0.4s ease-in-out;
 }
 
-.card__margin:hover {
+.pricing-card__margin:hover {
   -webkit-transform: scale(1.03) !important;
           transform: scale(1.03) !important;
   -webkit-box-shadow: 10px 15px 10px #0a0a0a98;
           box-shadow: 10px 15px 10px #0a0a0a98;
 }
 
-.card__margin:hover::before {
+.pricing-card__margin:hover::before {
   -webkit-transform: rotate(-40deg) translateX(-200px) translateY(480px);
           transform: rotate(-40deg) translateX(-200px) translateY(480px);
 }
 
 @media screen and (max-width: 992px) {
-  .card__margin {
+  .pricing-card__margin {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .card__margin {
+  .pricing-card__margin {
     margin: 0 60px 40px 60px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .card__margin {
+  .pricing-card__margin {
     margin: 0 70px 40px 70px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .card__margin {
+  .pricing-card__margin {
     margin: 0 0 40px 0;
   }
 }
 
-.card__margin.onscreen-effect {
+.pricing-card__margin.onscreen-effect {
   -webkit-transform: unset;
           transform: unset;
   opacity: 1;
   content-visibility: auto;
 }
 
-.card__header {
+.pricing-card__header {
   padding: 20px 0;
   background-color: #151d25;
 }
 
-.card__header h3 {
+.pricing-card__header h3 {
   font-size: 24px;
   font-weight: 500;
 }
 
-.card__price::before {
+.pricing-card__price::before {
   position: absolute;
   content: "";
   bottom: -30px;
@@ -98,33 +98,33 @@
 }
 
 @media screen and (max-width: 768px) {
-  .card__price::before {
+  .pricing-card__price::before {
     width: 84%;
   }
 }
 
-.card__benefits {
+.pricing-card__benefits {
   margin-top: 70px;
 }
 
-.card__benefits span {
+.pricing-card__benefits span {
   padding: 0 30px;
 }
 
-.card__benefits span img {
+.pricing-card__benefits span img {
   width: 17px;
   height: auto;
   margin: 2px 8px 0 0;
 }
 
-.card__benefits span p {
+.pricing-card__benefits span p {
   font-size: 13px;
   color: #acacac;
 }
 
 @media screen and (max-width: 768px) {
-  .card__benefits span {
+  .pricing-card__benefits span {
     padding: 0 30px;
   }
 }
-/*# sourceMappingURL=card-pricing.module.css.map */
+/*# sourceMappingURL=card-pricing.css.map */

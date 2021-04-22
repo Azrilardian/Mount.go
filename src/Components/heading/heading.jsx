@@ -1,25 +1,22 @@
-import React, { Component } from "react";
-import styles from "../../style/css/heading.module.css";
+import React, { useEffect } from "react";
+import "../../style/css/heading.css";
 import onScreenEffect from "../../js/onScreenEffect";
 
-class Heading extends Component {
-	componentDidMount() {
-		onScreenEffect(".onscreen-element", styles["onscreen-effect"]);
-	}
+const Heading = ({ backgroundText, whiteText, greenText, questionMark, position }) => {
+	useEffect(() => {
+		onScreenEffect(".onscreen-element", "onscreen-effect");
+	}, []);
 
-	render() {
-		const { backgroundText, whiteText, greenText, questionMark, position } = this.props;
-		return (
-			<div className={`row ${styles.heading} ${position === "right" ? styles.right : styles.left}`}>
-				<h1 className={`position-absolute onscreen-element ${styles.heading__backgroundtext}  ${styles["heading__backgroundtext--left"]}`}>{backgroundText}</h1>
-				<h1 className={`position-absolute onscreen-element ${styles.heading__backgroundtext} ${styles["heading__backgroundtext--right"]}`}>{backgroundText}</h1>
-				<h1 className={`text-center position-relative onscreen-element w-100 ${styles.heading__header}`}>
-					{whiteText}
-					<span>{greenText}</span> {questionMark === "true" ? "?" : ""}
-				</h1>
-			</div>
-		);
-	}
-}
+	return (
+		<div className={`row heading ${position === "right" ? "right" : "left"}`}>
+			<h1 className="position-absolute onscreen-element heading__backgroundtext  heading__backgroundtext--left">{backgroundText}</h1>
+			<h1 className="position-absolute onscreen-element heading__backgroundtext heading__backgroundtext--right">{backgroundText}</h1>
+			<h1 className="text-center position-relative onscreen-element w-100 heading__header">
+				{whiteText}
+				<span>{greenText}</span> {questionMark === "true" ? "?" : ""}
+			</h1>
+		</div>
+	);
+};
 
 export default Heading;

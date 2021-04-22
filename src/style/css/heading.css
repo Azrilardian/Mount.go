@@ -1,0 +1,200 @@
+.heading {
+  margin: 80px 0;
+}
+
+.heading__backgroundtext {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #0f5a582a;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.heading__header {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.heading__header span {
+  color: #0f5a58;
+}
+
+@media screen and (max-width: 425px) {
+  .heading__header {
+    font-size: 30px;
+  }
+}
+
+.heading.right .heading__backgroundtext--right {
+  right: 26%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+  content-visibility: hidden;
+}
+
+.heading.right .heading__backgroundtext--right.onscreen-effect {
+  right: -140px;
+  -webkit-transform: unset;
+          transform: unset;
+  opacity: 1;
+  margin-top: -16px;
+  content-visibility: auto;
+}
+
+.heading.right .heading__backgroundtext--left {
+  left: 26%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+  content-visibility: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .heading.right .heading__backgroundtext--left {
+    display: none;
+  }
+}
+
+.heading.right .heading__backgroundtext--left.onscreen-effect {
+  left: -210px;
+  -webkit-transform: unset;
+          transform: unset;
+  opacity: 1;
+  margin-top: 10px;
+  content-visibility: auto;
+}
+
+.heading.right .heading__header::after {
+  content: "";
+  position: absolute;
+  top: 49%;
+  right: 0;
+  -webkit-transform: translate(130%, -50%);
+          transform: translate(130%, -50%);
+  width: 60%;
+  height: 3px;
+  background-color: #474747;
+  border-radius: 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  opacity: 0;
+  content-visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading.right .heading__header::after {
+    -webkit-transform: translate(210px, -50%);
+            transform: translate(210px, -50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading.right .heading__header::after {
+    display: none;
+  }
+}
+
+.heading.right .heading__header.onscreen-effect::after {
+  right: -12%;
+  -webkit-transform: translate(190px, -50%);
+          transform: translate(190px, -50%);
+  opacity: 1;
+  content-visibility: auto;
+}
+
+.heading.left .heading__backgroundtext--right {
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  opacity: 0;
+  content-visibility: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .heading.left .heading__backgroundtext--right {
+    display: none;
+  }
+}
+
+.heading.left .heading__backgroundtext--right.onscreen-effect {
+  right: -140px;
+  -webkit-transform: unset;
+          transform: unset;
+  opacity: unset;
+  content-visibility: auto;
+  margin-top: 10px;
+}
+
+.heading.left .heading__backgroundtext--left {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  content-visibility: hidden;
+}
+
+.heading.left .heading__backgroundtext--left.onscreen-effect {
+  left: -140px;
+  -webkit-transform: unset;
+          transform: unset;
+  opacity: 1;
+  content-visibility: auto;
+  margin-top: -18px;
+}
+
+.heading.left .heading__header::after {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 0;
+  -webkit-transform: translate(-130%, -50%);
+          transform: translate(-130%, -50%);
+  width: 60%;
+  height: 3px;
+  background-color: #474747;
+  border-radius: 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  opacity: 0;
+  content-visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading.left .heading__header::after {
+    -webkit-transform: translate(210px, -50%);
+            transform: translate(210px, -50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading.left .heading__header::after {
+    display: none;
+  }
+}
+
+.heading.left .heading__header.onscreen-effect::after {
+  left: -12%;
+  -webkit-transform: translate(-190px, -50%);
+          transform: translate(-190px, -50%);
+  opacity: 1;
+  content-visibility: auto;
+}
+
+@media screen and (max-width: 425px) {
+  .heading {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading__backgroundtext {
+    display: none;
+  }
+}
+/*# sourceMappingURL=heading.css.map */

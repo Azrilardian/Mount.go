@@ -1,0 +1,19 @@
+@import "../../../style/scss/variable.scss";
+
+.form__input-container {
+	margin: 20px 0;
+	&__paragraph {
+		font-size: 13px;
+	}
+	&__input {
+		border-radius: 5px;
+		background-color: #151d25;
+		width: 100%;
+		border: none;
+		outline: none;
+		margin-top: -10px;
+		padding: 10px;
+		color: $default-light-gray-color;
+		font-size: 13px;
+	}
+}

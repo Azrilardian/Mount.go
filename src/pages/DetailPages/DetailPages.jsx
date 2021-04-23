@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../Components/navbar/navbar";
+import Navbar from "../../components/Utility/Navbar/Navbar";
 
 const DetailPages = () => {
 	return (

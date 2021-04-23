@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAEA,AAAA,sBAAsB,CAAC;EACtB,MAAM,EAAE,MAAM;CAed;;AAdC,AAAD,iCAAY,CAAC;EACZ,SAAS,EAAE,IAAI;CACf;;AACA,AAAD,6BAAQ,CAAC;EACR,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,IAAI;EACb,KAAK,ECboB,OAAO;EDchC,SAAS,EAAE,IAAI;CACf",
     "sources": [
-        "../../Components/contact/input-contact.scss",
+        "../../Components/Home/contact/input-contact.scss",
         "../scss/variable.scss"
     ],
     "names": [],

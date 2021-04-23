@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,SAAS,CAAC;EACT,cAAc,EAAE,KAAK;CACrB",
     "sources": [
-        "../../Components/features/features.scss"
+        "../../Components/Home/features/features.scss"
     ],
     "names": [],
     "file": "features.css"

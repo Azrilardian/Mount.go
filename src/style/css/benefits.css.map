@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,SAAS,CAAC;EACT,cAAc,EAAE,KAAK;CACrB",
     "sources": [
-        "../../Components/benefits/benefits.scss"
+        "../../Components/Home/benefits/benefits.scss"
     ],
     "names": [],
     "file": "benefits.css"

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACP,aAAa,EAAE,KAAK;CAMpB;;AAPD,AAGC,OAHM,CAGN,CAAC,CAAC;EACD,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CACf",
+    "sources": [
+        "../../components/DetailPages/Detail/detail.scss"
+    ],
+    "names": [],
+    "file": "detail.css"
+}

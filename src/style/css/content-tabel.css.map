@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,AAAD,qBAAQ,CAAC;EACR,KAAK,EAAE,KAAK;CACZ;;AACA,AAAD,qBAAQ,CAAC;EACR,YAAY,EAAE,IAAI;CAIlB;;AAHA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAFnC,AAAD,qBAAQ,CAAC;IAGP,YAAY,EAAE,IAAI;GAEnB;;;AACA,AAAD,uBAAU,CAAC;EACV,KAAK,EAAE,KAAK;CACZ",
+    "sources": [
+        "../../components/DetailPages/Detail/content-tabel.scss"
+    ],
+    "names": [],
+    "file": "content-tabel.css"
+}

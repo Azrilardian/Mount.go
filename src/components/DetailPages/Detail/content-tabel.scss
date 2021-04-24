@@ -1,0 +1,14 @@
+.content-tabel {
+	&__label {
+		width: 170px;
+	}
+	&__colon {
+		margin-right: 70px;
+		@media screen and (max-width: 576px) {
+			margin-right: 30px;
+		}
+	}
+	&__content {
+		width: 480px;
+	}
+}

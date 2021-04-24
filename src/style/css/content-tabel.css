@@ -1,0 +1,18 @@
+.content-tabel__label {
+  width: 170px;
+}
+
+.content-tabel__colon {
+  margin-right: 70px;
+}
+
+@media screen and (max-width: 576px) {
+  .content-tabel__colon {
+    margin-right: 30px;
+  }
+}
+
+.content-tabel__content {
+  width: 480px;
+}
+/*# sourceMappingURL=content-tabel.css.map */

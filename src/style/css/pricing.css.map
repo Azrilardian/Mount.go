@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,QAAQ,CAAC;EACR,MAAM,EAAE,OAAO;CACf",
     "sources": [
-        "../../Components/Home/pricing/pricing.scss"
+        "../../components/Home/Pricing/pricing.scss"
     ],
     "names": [],
     "file": "pricing.css"

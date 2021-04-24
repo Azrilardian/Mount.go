@@ -1,0 +1,53 @@
+@import "../../../style//scss/variable.scss";
+
+.jumbotron-detail {
+	min-height: 50vh;
+	margin: -55px 0 0 0;
+	background-position: center !important;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	background: linear-gradient(#23232360, #202020bb, #131414e5, #101010), url(../../assets/img/jumbotron-pict-1.webp);
+
+	&__heading {
+		&__picture {
+			&__img {
+				filter: drop-shadow(3px 4px 10px #0f0f0f50);
+				width: 100%;
+				height: 220px;
+				border-radius: 30px;
+				@media screen and (max-width: 1200px) {
+					height: 190px;
+				}
+				@media screen and (max-width: 992px) {
+					height: 170px;
+				}
+
+				@media screen and (max-width: 425px) {
+					height: 130px;
+				}
+			}
+
+			&__text {
+				&__mount-name {
+					font-weight: 600;
+					margin: 0;
+					@media screen and (max-width: 992px) {
+						font-size: 24px;
+					}
+
+					@media screen and (max-width: 576px) {
+						font-size: 20px;
+					}
+				}
+
+				&__mount-country {
+					color: $default-dark-gray-color;
+
+					@media screen and (max-width: 425px) {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,17 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import Navbar from "./components/Utility/Navbar/Navbar";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import Home from "./pages/Home/Home";
 import DetailPages from "./pages/DetailPages/DetailPages";
 
 const App = () => {
 	return (
-		<Router>
-			<Switch>
-				<Route path="/" component={Home} exact></Route>
-				<Route path="/detail" component={DetailPages} exact></Route>
-			</Switch>
-		</Router>
-		// <DetailPages></DetailPages>
+		// <Router>
+		// 	<Navbar></Navbar>
+		// 	<Switch>
+		// 		<Route path="/" component={Home} exact></Route>
+		// 		<Route path="/detail" component={DetailPages} exact></Route>
+		// 	</Switch>
+		// </Router>
+		<>
+			<Navbar></Navbar>
+			<DetailPages></DetailPages>
+		</>
 	);
 };
 

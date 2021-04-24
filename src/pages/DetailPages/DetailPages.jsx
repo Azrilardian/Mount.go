@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Utility/Navbar/Navbar";
+import JumbotronDetail from "../../components/DetailPages/JumbotronDetail/JumbotronDetail";
 
 const DetailPages = () => {
 	return (
 		<>
-			<Navbar></Navbar>
+			<JumbotronDetail></JumbotronDetail>
 		</>
 	);
 };

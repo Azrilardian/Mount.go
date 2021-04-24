@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAEA,AAAA,sBAAsB,CAAC;EACtB,gBAAgB,EAAE,OAAO;CAIzB;;AAHA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAFpC,AAAA,sBAAsB,CAAC;IAGrB,OAAO,EAAE,QAAQ;GAElB",
     "sources": [
-        "../../Components/Home/favourites/favourites.scss",
+        "../../components/Home/Favourites/favourites.scss",
         "../scss/variable.scss"
     ],
     "names": [],

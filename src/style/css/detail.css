@@ -5,5 +5,7 @@
 .detail p {
   font-weight: 300;
   font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 /*# sourceMappingURL=detail.css.map */

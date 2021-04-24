@@ -1,0 +1,20 @@
+.heading-detail {
+	position: relative;
+	font-weight: 500;
+	display: inline-block;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -170px;
+		width: 150px;
+		height: 2px;
+		background-color: hsl(0, 0%, 100%);
+	}
+
+	@media screen and (max-width: 425px) {
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,24 @@
+.heading-detail {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.heading-detail::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -170px;
+  width: 150px;
+  height: 2px;
+  background-color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .heading-detail {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=heading-detail.css.map */

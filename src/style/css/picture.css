@@ -1,0 +1,100 @@
+.picture {
+  margin-bottom: 150px;
+}
+
+.picture__images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 200px 70px 70px 200px;
+      grid-template-rows: 200px 70px 70px 200px;
+      grid-template-areas: "img1 img2 img3" "img1 img5 img3" "img4 img5 img3" "img4 img5 img6";
+  gap: 20px;
+}
+
+.picture__images__image {
+  border-radius: 10px;
+  overflow: hidden;
+  -o-object-fit: fill;
+     object-fit: fill;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  z-index: 2;
+}
+
+.picture__images__image.one {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img1;
+}
+
+.picture__images__image.two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img2;
+}
+
+.picture__images__image.three {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: img3;
+}
+
+.picture__images__image.four {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img4;
+}
+
+.picture__images__image.five {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: img5;
+}
+
+.picture__images__image.six {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: img6;
+}
+
+.picture__images__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .picture__images {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 170px 80px 150px 100px 150px;
+        grid-template-rows: 170px 80px 150px 100px 150px;
+        grid-template-areas: "img1 img2" "img1 img4" "img3 img4" "img3 img6" "img5 img6";
+    gap: 15px;
+  }
+}
+
+.picture .picture__dot-img {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.picture .picture__dot-img--left {
+  top: 0;
+  right: -163px;
+}
+
+.picture .picture__dot-img--right {
+  bottom: 30px;
+  left: -210px;
+}
+/*# sourceMappingURL=picture.css.map */

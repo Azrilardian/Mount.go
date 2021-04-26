@@ -6,7 +6,7 @@
 	background-position: center !important;
 	background-repeat: no-repeat;
 	background-size: cover !important;
-	background: linear-gradient(#23232360, #202020bb, #131414e5, #101010), url(../../assets/img/jumbotron-pict-1.webp);
+	background: linear-gradient(#23232360, #202020bb, #131414e5, #0f0f0f), url(../../assets/img/jumbotron-pict-1.webp);
 
 	&__heading {
 		&__picture {
@@ -32,6 +32,15 @@
 			}
 
 			&__text {
+				transform: translateY(40px);
+				transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+				opacity: 0;
+				content-visibility: hidden;
+				&.onscreen-effect {
+					transform: unset;
+					opacity: 1;
+					content-visibility: auto;
+				}
 				&__mount-name {
 					font-weight: 600;
 					margin: 0;

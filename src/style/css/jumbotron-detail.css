@@ -4,8 +4,8 @@
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(#23232360), color-stop(#202020bb), color-stop(#131414e5), to(#101010)), url(../../assets/img/jumbotron-pict-1.webp);
-  background: linear-gradient(#23232360, #202020bb, #131414e5, #101010), url(../../assets/img/jumbotron-pict-1.webp);
+  background: -webkit-gradient(linear, left top, left bottom, from(#23232360), color-stop(#202020bb), color-stop(#131414e5), to(#0f0f0f)), url(../../assets/img/jumbotron-pict-1.webp);
+  background: linear-gradient(#23232360, #202020bb, #131414e5, #0f0f0f), url(../../assets/img/jumbotron-pict-1.webp);
 }
 
 .jumbotron-detail__heading__picture__img {
@@ -40,6 +40,22 @@
   .jumbotron-detail__heading__picture__img {
     height: 150px;
   }
+}
+
+.jumbotron-detail__heading__picture__text {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
+  content-visibility: hidden;
+}
+
+.jumbotron-detail__heading__picture__text.onscreen-effect {
+  -webkit-transform: unset;
+          transform: unset;
+  opacity: 1;
+  content-visibility: auto;
 }
 
 .jumbotron-detail__heading__picture__text__mount-name {

@@ -1,7 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import imgProfilOne from "../../../assets/img/review-pict-1.jpg";
+import imgProfilOne from "../../../assets/img/reviewer.jpg";
 import "../../../style/css/review.css";
 
 const reviewers = [
@@ -9,15 +9,13 @@ const reviewers = [
 		reviewerPict: imgProfilOne,
 		reviewerName: "Azril Ardian Ifansyah",
 		as: "Hikers",
-		say:
-			"makansana rumahsaya dimana kam berada saying aku disini ayo kita pergi ke pantai dan bersuka cita  disana hah saying aku disini ayo kita pergilreom ke pantai dan pergi kemanapun yang kita mau",
+		say: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus vero autem ex commodi expedita eveniet quibusdam voluptates, adipisci, quia ducimus explicabo repellat.",
 	},
 	{
 		reviewerPict: imgProfilOne,
-		reviewerName: "Azril Ardian Ifansyah",
+		reviewerName: "Tomy Dwi Refandy",
 		as: "Hikers",
-		say:
-			"makansana rumahsaya dimana kam berada saying aku disini ayo kita pergi ke pantai dan bersuka cita  disana hah saying aku disini ayo kita pergilreom ke pantai dan pergi kemanapun yang kita mau",
+		say: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus ipsa sit laudantium incidunt consequatur atque cum nemo fugit quas.",
 	},
 ];
 
@@ -27,7 +25,7 @@ const Review = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col">
-						<Carousel>
+						<Carousel autoPlay={true} infiniteLoop={true} showStatus={false}>
 							{reviewers.map(({ reviewerPict, reviewerName, as, say }, i) => {
 								return (
 									<div className="review__reviewer pb-5 d-flex flex-column align-items-center" key={i}>

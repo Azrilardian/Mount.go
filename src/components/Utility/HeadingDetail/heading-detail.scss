@@ -3,8 +3,9 @@
 	font-weight: 500;
 	display: inline-block;
 	opacity: 0;
-	transform: translateY(40px);
-	transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+	transform: translateY(50px);
+	// transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: 1s ease-out;
 	&.onscreen-effect {
 		opacity: 1;
 		transform: unset;

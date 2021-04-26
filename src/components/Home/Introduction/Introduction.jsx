@@ -6,7 +6,7 @@ import "../../../style/css/introduction.css";
 
 const Introduction = () => {
 	useEffect(() => {
-		onScreenEffect(".onscreen-element", "onscreen-effect", "-60px");
+		onScreenEffect(".onscreen-element", "onscreen-effect");
 	}, []);
 
 	return (

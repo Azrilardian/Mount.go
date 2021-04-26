@@ -20,7 +20,7 @@
 
 	&__left {
 		z-index: 2;
-		transform: translateY(100px);
+		transform: translateY(50px);
 		transition: 1s ease-out;
 		content-visibility: hidden;
 		min-height: 360px;
@@ -52,7 +52,7 @@
 
 	&__right {
 		z-index: 2;
-		transform: translateX(100px);
+		transform: translateX(50px);
 		content-visibility: hidden;
 		transition: 1s ease-out;
 		opacity: 0;

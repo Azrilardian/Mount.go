@@ -43,10 +43,10 @@
 }
 
 .jumbotron-detail__heading__picture__text {
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  -webkit-transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
   opacity: 0;
   content-visibility: hidden;
 }

@@ -7,11 +7,9 @@
 		border-radius: 10px;
 		padding: 20px 30px;
 		box-shadow: 3px 8px 10px #000000ce;
-		// transition: margin 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		transition: transform 1s ease-out;
-		transform: translateY(100px);
+		transition: 1s ease-out;
+		transform: translateY(50px);
 		opacity: 0;
-		content-visibility: hidden;
 		&__header {
 			font-size: 20px;
 			font-weight: 600;
@@ -34,7 +32,7 @@
 			width: 4%;
 			height: 100%;
 			background-color: darken($color: $default-green-color, $amount: 5);
-			transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			transition: 1s ease-out;
 		}
 
 		&:hover {
@@ -53,7 +51,6 @@
 		&.onscreen-effect {
 			transform: unset;
 			opacity: 1;
-			content-visibility: auto;
 		}
 	}
 }

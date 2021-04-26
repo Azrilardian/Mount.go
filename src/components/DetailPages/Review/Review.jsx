@@ -28,9 +28,9 @@ const Review = () => {
 				<div className="row">
 					<div className="col">
 						<Carousel>
-							{reviewers.map(({ reviewerPict, reviewerName, as, say }) => {
+							{reviewers.map(({ reviewerPict, reviewerName, as, say }, i) => {
 								return (
-									<div className="review__reviewer pb-5 d-flex flex-column align-items-center">
+									<div className="review__reviewer pb-5 d-flex flex-column align-items-center" key={i}>
 										<div className="review__reviewer__profile">
 											<picture className="review__reviewer__profile__picture">
 												<img src={reviewerPict} alt="" className="review__reviewer__profile__picture__img" />

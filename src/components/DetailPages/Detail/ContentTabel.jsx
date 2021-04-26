@@ -41,9 +41,9 @@ const ContentTabel = () => {
 	return (
 		<div className="row content-tabel">
 			<div className="col-lg-8 col-md-10 col-sm-12 col-12">
-				{contents.map((content) => {
+				{contents.map((content, key) => {
 					return (
-						<div className="d-flex">
+						<div className="d-flex" key={key}>
 							<p className="content-tabel__label">{content.detailName}</p>
 							<p className="content-tabel__colon">:</p>
 							<p className="content-tabel__content">{content.detailContent}</p>

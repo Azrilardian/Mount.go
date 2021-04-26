@@ -179,6 +179,11 @@
   border: none;
 }
 
+.jumbotron .container .row .jumbotron__mount-information__mount__button a {
+  color: #111213;
+  text-decoration: none;
+}
+
 .jumbotron .container .row .jumbotron__mount-information__mount__button__icon {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;

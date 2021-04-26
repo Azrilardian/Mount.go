@@ -1,0 +1,41 @@
+.review {
+  margin-bottom: 150px;
+  background-color: #10151a;
+  padding-top: 60px;
+}
+
+.review__reviewer__profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.review__reviewer__profile__picture__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.review__reviewer__name {
+  font-size: 14px;
+}
+
+.review__reviewer__as {
+  font-weight: 400;
+  color: #6b6b6b;
+}
+
+.review__reviewer__say {
+  width: 60%;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .review__reviewer__say {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=review.css.map */

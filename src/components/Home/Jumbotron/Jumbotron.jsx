@@ -7,6 +7,7 @@ import mountImgTwo from "../../../assets/img/jumbotron-pict-2.webp";
 import typeWritterEffect from "../../../js/writtingeffect";
 import lazyLoadEffect from "../../../js/lazyLoadEffect";
 import "../../../style/css/jumbotron.css";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const Jumbotron = () => {
 	const [navbarBgColor, setNavbarBgColor] = useState(false);
 
@@ -55,8 +56,10 @@ const Jumbotron = () => {
 									></p>
 								</div>
 								<button className="d-flex justify-content-between align-items-center overflow-hidden jumbotron__mount-information__mount__button">
-									<span className="jumbotron__mount-information__mount__button__text">See Detail</span>
-									<span className="lnr lnr-arrow-right jumbotron__mount-information__mount__button__icon"></span>
+									<span className="jumbotron__mount-information__mount__button__text">
+										<LinkR to="./detail">See Detail</LinkR>
+									</span>
+									<LinkR className="lnr lnr-arrow-right jumbotron__mount-information__mount__button__icon" to="./detail"></LinkR>
 								</button>
 							</div>
 							<div className="col-lg-8 col-md-8 col-sm-6 col-7 d-flex justify-content-end align-items-center p-0 jumbotron__mount-information__picture">
@@ -89,8 +92,8 @@ const Jumbotron = () => {
 								<div className="jumbotron__mount-information__picture__button">
 									<span className="lnr lnr-arrow-right jumbotron__mount-information__picture__button__icon"></span>
 									<p className="jumbotron__mount-information__picture__button__text">
-										<LinkR to="./detail" className="text-white">
-											See Detail
+										<LinkR to="" className="text-white">
+											See All
 										</LinkR>
 									</p>
 								</div>

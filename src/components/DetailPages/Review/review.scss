@@ -1,0 +1,38 @@
+@import "../../../style/scss/variable.scss";
+.review {
+	margin-bottom: 150px;
+	background-color: #10151a;
+	padding-top: 60px;
+
+	&__reviewer {
+		&__profile {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			overflow: hidden;
+			&__picture {
+				&__img {
+					object-fit: cover;
+				}
+			}
+		}
+		&__name {
+			font-size: 14px;
+		}
+		&__as {
+			font-weight: 400;
+			color: $default-dark-gray-color;
+		}
+		&__say {
+			width: 60%;
+			font-size: 13px;
+			letter-spacing: 1px;
+			font-weight: 300;
+			line-height: 30px;
+
+			@media screen and (max-width: 992px) {
+				width: 80%;
+			}
+		}
+	}
+}

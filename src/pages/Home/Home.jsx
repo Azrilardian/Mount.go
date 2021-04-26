@@ -6,7 +6,7 @@ import Benefits from "../../components/Home/Benefits/Benefits";
 import Favourites from "../../components/Home/Favourites/Favourites";
 import Pricing from "../../components/Home/Pricing/Pricing";
 import Contact from "../../components/Home/Contact/Contact";
-import Footer from "../../components/Home/Footer/Footer";
+import Footer from "../../components/Utility/Footer/Footer";
 
 const Home = () => {
 	return (

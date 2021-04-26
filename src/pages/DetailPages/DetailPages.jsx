@@ -3,6 +3,8 @@ import JumbotronDetail from "../../components/DetailPages/JumbotronDetail/Jumbot
 import Description from "../../components/DetailPages/Description/Description";
 import Detail from "../../components/DetailPages/Detail/Detail";
 import Picture from "../../components/DetailPages/Picture/Picture";
+import Review from "../../components/DetailPages/Review/Review";
+import Footer from "../../components/Utility/Footer/Footer";
 
 const DetailPages = () => {
 	return (
@@ -11,6 +13,8 @@ const DetailPages = () => {
 			<Description></Description>
 			<Detail></Detail>
 			<Picture></Picture>
+			<Review></Review>
+			<Footer></Footer>
 		</>
 	);
 };

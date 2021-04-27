@@ -27,8 +27,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
   padding: 0 30px;
 }
 
@@ -128,12 +126,12 @@
 }
 
 .card.onscreen-effect:hover .card__container {
-  height: 270px !important;
+  height: 270px;
 }
 
 @media screen and (max-width: 992px) {
   .card.onscreen-effect:hover .card__container {
-    height: 200px !important;
+    height: 200px;
   }
 }
 
@@ -241,22 +239,18 @@
 
 @-webkit-keyframes textToTop {
   from {
-    content-visibility: hidden;
     opacity: 0;
   }
   to {
-    content-visibility: auto;
     opacity: 1;
   }
 }
 
 @keyframes textToTop {
   from {
-    content-visibility: hidden;
     opacity: 0;
   }
   to {
-    content-visibility: auto;
     opacity: 1;
   }
 }

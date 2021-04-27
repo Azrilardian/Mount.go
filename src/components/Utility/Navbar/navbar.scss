@@ -6,7 +6,7 @@
 	left: 0;
 	z-index: 999;
 	width: 100vw;
-	transition: 0.3s ease;
+	transition: background-color 0.3s ease, width 0s unset;
 	&__nav {
 		padding: 12px 0;
 		@media screen and (max-width: 576px) {
@@ -27,6 +27,7 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin-right: 18px;
 			@media screen and (max-width: 576px) {
 				transition: 0.3s ease-out;
 				visibility: hidden;
@@ -42,6 +43,7 @@
 				align-items: flex-end;
 				box-shadow: 10px 10px 30px 10px #1b1b1bd3;
 				transform: translateX(105%);
+				margin-right: 0 !important;
 			}
 			&.active {
 				visibility: visible;
@@ -118,5 +120,13 @@
 
 	&--dark {
 		background-color: #1f1f1fbd;
+	}
+}
+
+.header .container {
+	padding: 0 6px;
+
+	@media screen and (max-width: 576px) {
+		padding: 0 15px;
 	}
 }

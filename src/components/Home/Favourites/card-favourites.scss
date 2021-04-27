@@ -20,7 +20,6 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		transition: 0.5s ease;
 		padding: 0 30px;
 	}
 
@@ -92,9 +91,9 @@
 		}
 		&:hover {
 			.card__container {
-				height: 270px !important;
+				height: 270px;
 				@media screen and (max-width: 992px) {
-					height: 200px !important;
+					height: 200px;
 				}
 			}
 			.card__overlay {
@@ -154,11 +153,9 @@
 
 	@keyframes textToTop {
 		from {
-			content-visibility: hidden;
 			opacity: 0;
 		}
 		to {
-			content-visibility: auto;
 			opacity: 1;
 		}
 	}

@@ -47,23 +47,23 @@
 					}
 					&--fixed {
 						position: fixed;
-						transform: translate(0, 950%) scale(1.1) rotate(180deg);
+						transform: translate(0, 60vh) scale(1.1) rotate(180deg);
 						background-color: $default-blue-grey-darken-color;
 						opacity: 0.5;
 						border: 3px solid $default-black-color;
 						z-index: 3;
 						animation: rotate 0.3s ease;
 						&:hover {
-							transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
+							transform: translate(0, 60vh) scale(1.1) scale(0.95) rotate(180deg);
 						}
 					}
 
 					@keyframes rotate {
 						from {
-							transform: translate(0, 950%) scale(1.1) rotate(30deg);
+							transform: translate(0, 60vh) scale(1.1) rotate(30deg);
 						}
 						to {
-							transform: translate(0, 950%) scale(1.1) rotate(180deg);
+							transform: translate(0, 60vh) scale(1.1) rotate(180deg);
 						}
 					}
 				}

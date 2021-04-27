@@ -25,7 +25,7 @@ const Review = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col">
-						<Carousel autoPlay={true} infiniteLoop={true} showStatus={false}>
+						<Carousel autoPlay={true} infiniteLoop={true} showStatus={false} showThumbs={false}>
 							{reviewers.map(({ reviewerPict, reviewerName, as, say }, i) => {
 								return (
 									<div className="review__reviewer pb-5 d-flex flex-column align-items-center" key={i}>

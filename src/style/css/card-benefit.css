@@ -8,11 +8,13 @@
   padding: 20px 30px;
   -webkit-box-shadow: 3px 8px 10px #000000ce;
           box-shadow: 3px 8px 10px #000000ce;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
   opacity: 0;
+  -webkit-transition: margin 0.3s ease-out, background-color 0.3s ease-out, -webkit-transform 1s ease-out;
+  transition: margin 0.3s ease-out, background-color 0.3s ease-out, -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out, margin 0.3s ease-out, background-color 0.3s ease-out;
+  transition: transform 1s ease-out, margin 0.3s ease-out, background-color 0.3s ease-out, -webkit-transform 1s ease-out;
 }
 
 .benefit__margin__header {

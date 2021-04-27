@@ -1,28 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import "../../../style/css/navbar.css";
 
 const Navbar = (props) => {
 	const [sidebar, setSidebar] = useState(false);
-
+	const [navbarBgColor, setNavbarBgColor] = useState(false);
 	const handleSidebar = () => setSidebar(!sidebar);
+	const changeNavbarBgColor = () => {
+		if (window.scrollY >= 150) return setNavbarBgColor(true);
+		return setNavbarBgColor(false);
+	};
+
+	useEffect(() => {
+		const navbarBgColorListener = window.addEventListener("scroll", changeNavbarBgColor);
+		return () => document.removeEventListener("scroll", navbarBgColorListener);
+	}, [navbarBgColor]);
 
 	return (
-		<header className={`position-sticky header ${props.setBackgroundColor ? "header--dark" : ""}`}>
+		<header className={`position-sticky header ${navbarBgColor ? "header--dark" : ""}`}>
 			<div className="container">
 				<nav className="row justify-content-between align-items-center header__nav">
-					<div className="col-lg-7 col-md-5 col-sm-4 col-8">
+					<div className="col-lg-7 col-md-5 col-sm-4 col-8 m-0">
 						<h3 className="m-0 header__nav__logo">
-							{/* <LinkR to="/" className="text-white">
+							<LinkR to="/" className="text-white">
 								Mount.go
-							</LinkR> */}
-							<a href="#" className="text-white">
-								Mount.go
-							</a>
+							</LinkR>
 						</h3>
 					</div>
-					<ul className={`col-lg-5 col-md-7 col-sm-8 m-0 header__nav__navigations  ${sidebar ? "active" : ""}`}>
+					<ul className={`col-lg-4 col-md-6 col-sm-7 my-0 header__nav__navigations ${sidebar ? "active" : ""}`}>
 						<li className="position-relative header__nav__navigations__navigation header__nav__navigations__navigation--first">
 							<LinkS to="navbar" className="text-white">
 								Home

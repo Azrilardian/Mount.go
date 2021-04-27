@@ -10,16 +10,16 @@ const Footer = () => {
 						<p className="m-0 text-white footer__copyright">Copyright Azril ardian | 2020 All rights reserved.</p>
 					</div>
 					<div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 footer__socmed">
-						<a href="#" className="text-white mr-4">
+						<a href="In https://www.linkedin.com/in/azril-ardian-03b7471a7/" className="text-white mr-4">
 							In
 						</a>
-						<a href="#" className="text-white mr-4">
+						<a href="https://www.facebook.com/azril.ardian.1/" className="text-white mr-4">
 							Fb
 						</a>
-						<a href="#" className="text-white mr-4">
+						<a href="https://twitter.com/azrilardian" className="text-white mr-4">
 							Tw
 						</a>
-						<a href="#" className="text-white">
+						<a href="https://www.instagram.com/azrilardian_/" className="text-white">
 							Ig
 						</a>
 					</div>

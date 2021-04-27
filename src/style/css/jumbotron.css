@@ -71,8 +71,8 @@
 
 .jumbotron .container .row .jumbotron__tagline__button--fixed {
   position: fixed;
-  -webkit-transform: translate(0, 950%) scale(1.1) rotate(180deg);
-          transform: translate(0, 950%) scale(1.1) rotate(180deg);
+  -webkit-transform: translate(0, 60vh) scale(1.1) rotate(180deg);
+          transform: translate(0, 60vh) scale(1.1) rotate(180deg);
   background-color: #151d25;
   opacity: 0.5;
   border: 3px solid #111213;
@@ -82,29 +82,29 @@
 }
 
 .jumbotron .container .row .jumbotron__tagline__button--fixed:hover {
-  -webkit-transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
-          transform: translate(0, 950%) scale(1.1) scale(0.95) rotate(180deg);
+  -webkit-transform: translate(0, 60vh) scale(1.1) scale(0.95) rotate(180deg);
+          transform: translate(0, 60vh) scale(1.1) scale(0.95) rotate(180deg);
 }
 
 @-webkit-keyframes rotate {
   from {
-    -webkit-transform: translate(0, 950%) scale(1.1) rotate(30deg);
-            transform: translate(0, 950%) scale(1.1) rotate(30deg);
+    -webkit-transform: translate(0, 60vh) scale(1.1) rotate(30deg);
+            transform: translate(0, 60vh) scale(1.1) rotate(30deg);
   }
   to {
-    -webkit-transform: translate(0, 950%) scale(1.1) rotate(180deg);
-            transform: translate(0, 950%) scale(1.1) rotate(180deg);
+    -webkit-transform: translate(0, 60vh) scale(1.1) rotate(180deg);
+            transform: translate(0, 60vh) scale(1.1) rotate(180deg);
   }
 }
 
 @keyframes rotate {
   from {
-    -webkit-transform: translate(0, 950%) scale(1.1) rotate(30deg);
-            transform: translate(0, 950%) scale(1.1) rotate(30deg);
+    -webkit-transform: translate(0, 60vh) scale(1.1) rotate(30deg);
+            transform: translate(0, 60vh) scale(1.1) rotate(30deg);
   }
   to {
-    -webkit-transform: translate(0, 950%) scale(1.1) rotate(180deg);
-            transform: translate(0, 950%) scale(1.1) rotate(180deg);
+    -webkit-transform: translate(0, 60vh) scale(1.1) rotate(180deg);
+            transform: translate(0, 60vh) scale(1.1) rotate(180deg);
   }
 }
 

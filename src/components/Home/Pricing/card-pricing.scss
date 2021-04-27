@@ -7,10 +7,11 @@
 		background-color: #10151a;
 		border-radius: 10px;
 		box-shadow: 5px 10px 10px #0a0a0a63;
-		transition: 1s ease-out;
-		transform: translateY(50px);
+		margin-top: 50px;
 		content-visibility: hidden;
+		contain-intrinsic-size: 500px;
 		opacity: 0;
+		transition: margin 1s ease-out, transform 0.3s ease-out;
 		&::before {
 			content: "";
 			position: absolute;
@@ -43,7 +44,7 @@
 			margin: 0 0 40px 0;
 		}
 		&.onscreen-effect {
-			transform: unset;
+			margin-top: 0;
 			opacity: 1;
 			content-visibility: auto;
 		}

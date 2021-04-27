@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link as LinkR } from "react-router-dom";
 import mountImgOneCompress from "../../../assets/img/over-compress/jumbotron-pict-1.webp";
 import mountImgTwoCompress from "../../../assets/img/over-compress/jumbotron-pict-2.webp";
@@ -10,9 +10,8 @@ import "photoswipe/dist/photoswipe.css";
 import "photoswipe/dist/default-skin/default-skin.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "../../../style/css/jumbotron.css";
-const Jumbotron = () => {
-	const [navbarBgColor, setNavbarBgColor] = useState(false);
 
+const Jumbotron = () => {
 	useEffect(() => {
 		typeWritterEffect();
 		lazyLoadEffect();
@@ -20,14 +19,8 @@ const Jumbotron = () => {
 		const button = document.querySelector(".jumbotron__tagline__button");
 		const entries = (entries) => {
 			entries.map((entry) => {
-				if (!entry.isIntersecting) {
-					button.classList.add("jumbotron__tagline__button--fixed");
-					setNavbarBgColor(true);
-				} else {
-					button.classList.remove("jumbotron__tagline__button--fixed");
-					setNavbarBgColor(false);
-				}
-				return false;
+				if (!entry.isIntersecting) return button.classList.add("jumbotron__tagline__button--fixed");
+				return button.classList.remove("jumbotron__tagline__button--fixed");
 			});
 		};
 		const observer = new IntersectionObserver(entries);

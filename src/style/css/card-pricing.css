@@ -8,12 +8,14 @@
   border-radius: 10px;
   -webkit-box-shadow: 5px 10px 10px #0a0a0a63;
           box-shadow: 5px 10px 10px #0a0a0a63;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  margin-top: 50px;
   content-visibility: hidden;
+  contain-intrinsic-size: 500px;
   opacity: 0;
+  -webkit-transition: margin 1s ease-out, -webkit-transform 0.3s ease-out;
+  transition: margin 1s ease-out, -webkit-transform 0.3s ease-out;
+  transition: margin 1s ease-out, transform 0.3s ease-out;
+  transition: margin 1s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .pricing-card__margin::before {
@@ -69,8 +71,7 @@
 }
 
 .pricing-card__margin.onscreen-effect {
-  -webkit-transform: unset;
-          transform: unset;
+  margin-top: 0;
   opacity: 1;
   content-visibility: auto;
 }

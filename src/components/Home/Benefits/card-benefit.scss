@@ -7,9 +7,9 @@
 		border-radius: 10px;
 		padding: 20px 30px;
 		box-shadow: 3px 8px 10px #000000ce;
-		transition: 1s ease-out;
 		transform: translateY(50px);
 		opacity: 0;
+		transition: transform 1s ease-out, margin 0.3s ease-out, background-color 0.3s ease-out;
 		&__header {
 			font-size: 20px;
 			font-weight: 600;

@@ -23,7 +23,7 @@ const Review = () => {
 	return (
 		<section className="review">
 			<div className="container">
-				<div className="row">
+				<div className="row mb-5">
 					<div className="col">
 						<Carousel autoPlay={true} infiniteLoop={true} showStatus={false} showThumbs={false}>
 							{reviewers.map(({ reviewerPict, reviewerName, as, say }, i) => {

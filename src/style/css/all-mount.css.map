@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACV,UAAU,EAAE,KAAK;CACjB",
+    "sources": [
+        "../../components/AllMount/AllMount/all-mount.scss"
+    ],
+    "names": [],
+    "file": "all-mount.css"
+}

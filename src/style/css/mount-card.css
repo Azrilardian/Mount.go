@@ -1,0 +1,165 @@
+.card-mount {
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+
+.card-mount__smallest {
+  position: relative;
+  border-radius: 5px;
+  padding: 50px 40px 50px 0;
+  gap: 30px;
+}
+
+.card-mount__smallest__picture__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@media screen and (max-width: 425px) {
+  .card-mount__smallest__picture__img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.card-mount__smallest__information__name {
+  font-weight: 600;
+  color: #0f5a58;
+}
+
+.card-mount__smallest__information__description {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.card-mount__smallest__information__button-container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card-mount__smallest__information__button-container__detail-button {
+  padding: 13px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: #151d25;
+  letter-spacing: 2px;
+  font-size: 13px;
+  -webkit-box-shadow: 3px 5px 10px #0a0a0a;
+          box-shadow: 3px 5px 10px #0a0a0a;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 425px) {
+  .card-mount__smallest__information__button-container__detail-button {
+    padding: 13px 25px;
+  }
+}
+
+.card-mount__smallest__information__button-container__detail-button:hover {
+  -webkit-transform: translateY(-5px) scale(0.99);
+          transform: translateY(-5px) scale(0.99);
+  background-color: #131a22;
+}
+
+.card-mount__smallest__information__button-container__detail-button:active {
+  background-color: #0c1015;
+}
+
+.card-mount__smallest::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  background-color: #10151a;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  .card-mount__smallest::before {
+    width: 100%;
+    height: 85%;
+    top: unset;
+    bottom: 0;
+  }
+}
+
+.card-mount__smallest::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 100%;
+  background-color: #0f5a58;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .card-mount__smallest::after {
+    height: 85%;
+    top: unset;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-mount__smallest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 40px 50px 40px;
+  }
+}
+
+.card-mount--img-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card-mount--img-right .mount-card__smallest__picture__img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card-mount--img-right .mount-card__smallest__information {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-mount--img-right .mount-card__smallest__information__name, .card-mount--img-right .mount-card__smallest__information__description-title, .card-mount--img-right .mount-card__smallest__information__description {
+  text-align: right;
+}
+
+.card-mount--img-right .mount-card__smallest__information__button-container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/*# sourceMappingURL=mount-card.css.map */

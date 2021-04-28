@@ -95,9 +95,11 @@ const Jumbotron = () => {
 									</Item>
 								</Gallery>
 								<div className="jumbotron__mount-information__picture__button">
-									<span className="lnr lnr-arrow-right jumbotron__mount-information__picture__button__icon"></span>
+									<LinkR to="./allmount" className="text-white">
+										<span className="lnr lnr-arrow-right jumbotron__mount-information__picture__button__icon"></span>
+									</LinkR>
 									<p className="jumbotron__mount-information__picture__button__text">
-										<LinkR to="" className="text-white">
+										<LinkR to="./allmount" className="text-white">
 											See All
 										</LinkR>
 									</p>

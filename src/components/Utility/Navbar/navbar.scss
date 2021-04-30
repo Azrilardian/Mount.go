@@ -52,25 +52,31 @@
 
 			&__navigation {
 				font-size: 15px;
+
 				a {
+					position: relative;
 					cursor: pointer;
 					text-decoration: none;
-				}
 
-				&:hover::before {
-					width: 25px;
-				}
+					&:hover::before {
+						width: 25px;
+					}
 
-				&::before {
-					content: "";
-					position: absolute;
-					bottom: -2px;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					width: 0;
-					height: 2px;
-					background-color: #fff;
-					transition: 0.3s ease-in-out;
+					&::before {
+						content: "";
+						position: absolute;
+						bottom: -2px;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 0;
+						height: 2px;
+						background-color: #fff;
+						transition: 0.3s ease-in-out;
+					}
+
+					&.active::before {
+						width: 25px;
+					}
 				}
 
 				@media screen and (max-width: 576px) {

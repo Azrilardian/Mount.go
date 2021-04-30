@@ -13,7 +13,7 @@ const Contact = () => {
 	const inputLabel = ["First Name", "Last Name", "Email", "Subject"];
 
 	return (
-		<section className="position-relative onscreen-element contact">
+		<section className="position-relative onscreen-element contact" id="contact">
 			<div className="container">
 				<Heading backgroundText="CONTACT US" whiteText="CONTACT " greenText="US" questionMark="false" position="right"></Heading>
 				<div className="row justify-content-center px-3">

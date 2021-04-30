@@ -10,7 +10,7 @@ const Introduction = () => {
 	}, []);
 
 	return (
-		<section className="position-relative introduction">
+		<section className="position-relative introduction" id="introduction">
 			<img src={dotPatternImage} alt="dot.png" className="position-absolute introduction__img" />
 			<div className="container">
 				<div className="row justify-content-between align-items-center">

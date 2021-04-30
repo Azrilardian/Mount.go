@@ -64,6 +64,10 @@
   transition: 0.3s ease;
 }
 
+.jumbotron .container .row .jumbotron__tagline__button a {
+  text-decoration: none;
+}
+
 .jumbotron .container .row .jumbotron__tagline__button:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
@@ -323,6 +327,10 @@
 
 .jumbotron .container .row .jumbotron__mount-information .row .jumbotron__mount-information__picture__button {
   cursor: pointer;
+}
+
+.jumbotron .container .row .jumbotron__mount-information .row .jumbotron__mount-information__picture__button a {
+  text-decoration: none;
 }
 
 .jumbotron .container .row .jumbotron__mount-information .row .jumbotron__mount-information__picture__button__icon {

@@ -33,7 +33,7 @@ const Features = () => {
 	];
 
 	return (
-		<section className="position-relative features">
+		<section className="position-relative features" id="features">
 			<div className="container">
 				<Heading backgroundText="WHY CHOOSE US ?" whiteText="WHY CHOOSE " greenText="US" questionMark="true" position="right"></Heading>
 				<div className="row">

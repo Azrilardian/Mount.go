@@ -42,6 +42,10 @@
 					border-radius: 50%;
 					box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
 					transition: 0.3s ease;
+
+					a {
+						text-decoration: none;
+					}
 					&:hover {
 						transform: scale(0.95);
 					}
@@ -212,9 +216,14 @@
 						}
 						&__button {
 							cursor: pointer;
+							a {
+								text-decoration: none;
+							}
+
 							&__icon {
 								font-size: 24px;
 							}
+
 							&__text {
 								font-size: 13px;
 							}

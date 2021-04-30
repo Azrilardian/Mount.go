@@ -92,15 +92,16 @@
 }
 
 .header__nav__navigations__navigation a {
+  position: relative;
   cursor: pointer;
   text-decoration: none;
 }
 
-.header__nav__navigations__navigation:hover::before {
+.header__nav__navigations__navigation a:hover::before {
   width: 25px;
 }
 
-.header__nav__navigations__navigation::before {
+.header__nav__navigations__navigation a::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -112,6 +113,10 @@
   background-color: #fff;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.header__nav__navigations__navigation a.active::before {
+  width: 25px;
 }
 
 @media screen and (max-width: 576px) {

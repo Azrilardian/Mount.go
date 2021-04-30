@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 import mountImgOneCompress from "../../../assets/img/over-compress/jumbotron-pict-1.webp";
 import mountImgTwoCompress from "../../../assets/img/over-compress/jumbotron-pict-2.webp";
 import mountImgOne from "../../../assets/img/jumbotron-pict-1.webp";
@@ -12,6 +13,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import "../../../style/css/jumbotron.css";
 
 const Jumbotron = () => {
+	const [to, setTo] = useState("introduction");
 	useEffect(() => {
 		typeWritterEffect();
 		lazyLoadEffect();
@@ -19,8 +21,13 @@ const Jumbotron = () => {
 		const button = document.querySelector(".jumbotron__tagline__button");
 		const entries = (entries) => {
 			entries.map((entry) => {
-				if (!entry.isIntersecting) return button.classList.add("jumbotron__tagline__button--fixed");
-				return button.classList.remove("jumbotron__tagline__button--fixed");
+				if (!entry.isIntersecting) {
+					button.classList.add("jumbotron__tagline__button--fixed");
+					setTo("jumbotron");
+				} else {
+					button.classList.remove("jumbotron__tagline__button--fixed");
+					setTo("introduction");
+				}
 			});
 		};
 		const observer = new IntersectionObserver(entries);
@@ -28,14 +35,16 @@ const Jumbotron = () => {
 	}, []);
 
 	return (
-		<section className="overflow-hidden jumbotron">
+		<section className="overflow-hidden jumbotron" id="jumbotron">
 			<div className="container d-flex justify-content-center h-100 align-items-center">
 				<div className="row w-100 flex-column justify-content-evenly">
 					<div className="d-flex flex-column justify-content-center align-items-center text-white pt-5 jumbotron__tagline">
 						<h1 className="m-0 jumbotron__tagline__heading">TO THE MOUNT.</h1>
 						<p className="text-center jumbotron__tagline__paragraph">makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai.</p>
 						<button className="jumbotron__tagline__button">
-							<span className="lnr lnr-arrow-down text-white"></span>
+							<LinkS to={to} smooth={true} duration={500} spy={true} exact="true" offset={-80} activeClass={"active"} className="text-white">
+								<span className="lnr lnr-arrow-down text-white"></span>
+							</LinkS>
 						</button>
 					</div>
 					<div className="col jumbotron__mount-information">

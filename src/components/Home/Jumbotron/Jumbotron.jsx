@@ -38,7 +38,7 @@ const Jumbotron = () => {
 		<section className="overflow-hidden jumbotron" id="jumbotron">
 			<div className="container d-flex justify-content-center h-100 align-items-center">
 				<div className="row w-100 flex-column justify-content-evenly">
-					<div className="d-flex flex-column justify-content-center align-items-center text-white pt-5 jumbotron__tagline">
+					<div className="d-flex w-100 flex-column justify-content-center align-items-center text-white pt-5 jumbotron__tagline">
 						<h1 className="m-0 jumbotron__tagline__heading">TO THE MOUNT.</h1>
 						<p className="text-center jumbotron__tagline__paragraph">makansana rumahsaya dimana kamu berada saying aku disini ayo kita ergi ke pantai.</p>
 						<button className="jumbotron__tagline__button">

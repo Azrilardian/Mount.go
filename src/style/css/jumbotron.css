@@ -1,5 +1,5 @@
 .jumbotron {
-  height: 100vh;
+  height: 100%;
   border-radius: 0px;
   margin: -55px 0 0 0;
   background-position: center !important;
@@ -10,13 +10,14 @@
 }
 
 .jumbotron .container .row {
-  height: 100%;
+  margin-top: 20px;
 }
 
 .jumbotron .container .row .jumbotron__tagline {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-bottom: 250px;
 }
 
 .jumbotron .container .row .jumbotron__tagline__heading {

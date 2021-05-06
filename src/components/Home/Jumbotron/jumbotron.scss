@@ -1,7 +1,7 @@
 @import "../../../style/scss/variable.scss";
 
 .jumbotron {
-	height: 100vh;
+	height: 100%;
 	border-radius: 0px;
 	margin: -55px 0 0 0;
 	background-position: center !important;
@@ -10,9 +10,10 @@
 	background: linear-gradient(#23232360, #202020bb, #131414e5, #0f0f0f), url(../../assets/img/jumbotron-pict-1.webp);
 	.container {
 		.row {
-			height: 100%;
+			margin-top: 20px;
 			.jumbotron__tagline {
 				flex: 1;
+				margin-bottom: 250px;
 				&__heading {
 					font-weight: 800;
 					font-size: 50px;
